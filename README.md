@@ -2,6 +2,15 @@
 https://sed-ml.github.io/  
 http://www.sed-ml.org/
 
+## Site creator
+To update the site generator change the information in the
+```
+/site_generator/templates/
+```
+files and recreate the HTML via
+```
+/site_generator/create_static_html.py
+```
 
 ## TODO
 * migration to github
