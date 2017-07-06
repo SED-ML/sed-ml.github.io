@@ -1,8 +1,10 @@
 # Website 
+https://sed-ml.github.io/  
+http://www.sed-ml.org/
+
 
 ## TODO
 * migration to github
-    * complete migration
 
 * webpage
     * HTML templates
