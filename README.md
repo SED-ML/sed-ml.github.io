@@ -3,17 +3,12 @@ https://sed-ml.github.io/
 http://www.sed-ml.org/
 
 ## Site creator
-To update the site generator change the information in the
-```
-/site_generator/templates/
-```
-files and recreate the HTML via
-```
-/site_generator/create_static_html.py
-```
+To update the webpage see `./site_creator/README.md`
 
 ## TODO
 * migration to github
+    * remove content from sourceforge
+    * move issues to new tracker
 
 * webpage
     * update references
