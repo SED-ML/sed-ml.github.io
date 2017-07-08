@@ -6,6 +6,7 @@ import codecs
 import os
 import warnings
 from jinja2 import Environment, FileSystemLoader
+import yaml
 
 # template location
 TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
@@ -18,6 +19,26 @@ SITES = ['index.html',
          'showcase.html',
          'specifications.html',
          ]
+
+
+def read_yaml(name):
+    """ Read yaml data.
+
+        'speakers' : ordered list of upcoming speakers (next to last)
+        'talks' : ordered list of past talks (last to first)
+        'alumnis': list of alumnis
+
+    :param path:
+    :return:
+    """
+    if name not in ['publications', 'libraries', 'tools']:
+        raise ValueError
+    path = '{}.yaml'.format(name)
+    stram = open(path, "r")
+    data = yaml.load(stram)
+    return data[name]
+
+PUBLICATIONS = read_yaml("publications")
 
 
 def create_site(template="index.html", out_dir="_site"):
@@ -46,9 +67,12 @@ def _create_html(html_template='report.html'):
                       trim_blocks=True,
                       lstrip_blocks=True)
     template = env.get_template(html_template)
+
+
     # Context
     c = {
-        'data': 'data'
+        'data': 'data',
+        'publications': PUBLICATIONS,
     }
     return template.render(c)
 
