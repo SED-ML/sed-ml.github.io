@@ -33,12 +33,15 @@ def read_yaml(name):
     """
     if name not in ['publications', 'libraries', 'tools']:
         raise ValueError
-    path = '{}.yaml'.format(name)
+    path = 'templates/{}.yaml'.format(name)
     stram = open(path, "r")
     data = yaml.load(stram)
     return data[name]
 
 PUBLICATIONS = read_yaml("publications")
+
+from pprint import pprint
+print(PUBLICATIONS)
 
 
 def create_site(template="index.html", out_dir="_site"):

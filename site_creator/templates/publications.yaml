@@ -1,0 +1,14 @@
+publications:
+- id:       'Waltemath2011'
+  authors:  'Waltemath D, Adams R, Bergmann FT, Hucka M, Kolpakov F, Miller AK, Moraru II, Nickerson D, Sahle S, Snoep JL, Le Novère N.'
+  title:    'Reproducible computational biology experiments with SED-ML--the Simulation Experiment Description Markup Language.'
+  journal:  'BMC Syst Biol. 2011 Dec 15;5:198. doi: 10.1186/1752-0509-5-198.'
+  pmid:     '22172142'
+  link:     'https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-5-198'
+- id:
+  authors:  'Dagmar Köhn, Nicolas Le Novère'
+  title:    'SED-ML – An XML Format for the Implementation of the MIASE Guidelines.'
+  journal:  'Lecture Notes in Computer Science, Computational Methods in Systems Biology 2008'
+  pmid:
+  link:     'https://link.springer.com/chapter/10.1007%2F978-3-540-88562-7_15'
+
