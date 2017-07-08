@@ -9,7 +9,15 @@ from jinja2 import Environment, FileSystemLoader
 
 # template location
 TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
-SITES = ['index.html']
+SITES = ['index.html',
+         'about.html',
+         'contact.html',
+         'documents.html',
+         'examples.html',
+         'publications.html',
+         'showcase.html',
+         'specifications.html',
+         ]
 
 
 def create_site(template="index.html", out_dir="_site"):

@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    >
 
-
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
     <meta name="author" content="sed-ml.org">
-    <link rel="icon" href="_report/images/sbml.ico">
+    <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
+
     <title>SED-ML: The Simulation Experiment Description Markup Language</title>
+    <link rel="icon" href="./images/sedml.ico">
 
     <!-- css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="_report/css/font-awesome-4.7.0.min.css">
-    <link rel="stylesheet" href="styles/sed-ml.css" type="text/css"/>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- <link rel="stylesheet" href="styles/sed-ml.css" type="text/css"/> -->
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -30,234 +33,594 @@
 
 <body>
 
-<!-- CONTAINER -->
-<div class="container-fluid">
+    <div id="wrapper">
 
-    <!-- ROW -->
-    <div class="row">
-        <!-- LEFT -->
-        <div class="col-sm-3 col-md-2 sidebar">
-
-            <ul class="nav nav-sidebar">
-                <li><a href="#doc"><b>SBMLDocument</b></a></li>
-                <li><a href="#model">Model</a></li>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="index.html"><img src="images/logoSEDML_H75.png" alt="SED-ML logo" height="50"/>Simulation Experiment Description Markup Language</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-        <!-- END LEFT -->
 
-        <!-- RIGHT -->
-        <div class="col-lg-8 col-lg-offset-2 main">
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Introduction</a>
+                    </li>
+                    <li>
+                        <a href="documents.html"><i class="fa fa-fw fa-table"></i> Information</a>
+                    </li>
+                    <li>
+                        <a href="specifications.html"><i class="fa fa-fw fa-bar-chart-o"></i> Specification</a>
+                    </li>
+                    <li>
+                        <a href="examples.html"><i class="fa fa-fw fa-table"></i> Examples</a>
+                    </li>
+                    <li>
+                        <a href="showcase.html"><i class="fa fa-fw fa-edit"></i> Tools & Libraries</a>
+                    </li>
+                    <li>
+                        <a href="publications.html"><i class="fa fa-fw fa-desktop"></i> Publications</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-fw fa-desktop"></i> Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-fw fa-wrench"></i> Editors</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
 
-            <!-- CONTENT -->
-            <div class="content">
+        <div id="page-wrapper">
 
-<!-- Maintenance warning -->
-<!--
-<div style="text-align: center; border: 1px solid rgb(191, 191, 191); color: black; font-weight: bold; background-color: rgb(244, 182, 182); margin-left: 2em; margin-right: 2em; padding-bottom: 8px; margin-top: 1em;">
-<p style="font-size:14px">
-A maintenance is planned in the WTSI/EBI data centre from Thursday, 14th July 2011 (08:30 GMT) to Thursday, 14th July 2011 (11:00 GMT).
-</p>
-
-<p style="font-size:14px">
-This work is related to Combined Heat and Power generation. There is a very small risk that something goes wrong. If the temperature gets too high in the data center (which they thing is very unlikely), they will need to power off machines and storage.
-This will affect access to all services hosted at the EBI, including sed-ml.org.
-</p>
-<p style="font-size:14px">
-We apologise for any inconvenience this may cause.
-</p>
-
+            <div class="container-fluid">
+                <!-- CONTENT -->
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            What is SED-ML?
+        </h1>
+    </div>
 </div>
--->
 
 <!-- main -->
-<h2>What is SED-ML?</h2>
-<p>
-    Welcome to the home page of the <b>Simulation Experiment
-    Description Markup Language</b> (SED-ML). SED-ML is an XML-based format
-    for encoding simulation setups, to ensure exchangeability and
-    reproducibility of simulation experiments. It follows the
-    requirements defined in the <a href="http://biomodels.net/miase">MIASE
-    guidelines</a>.
-</p>
-<p>
-    The current version is <b>SED-ML Level 1 Version 2</b> and covers
-    the description of time course simulation experiments as well as
-    repeated tasks and steady state experiments.
-</p>
-<div id="documentbox">
-    <a href="documents/sed-ml-L1V2.pdf" target="_blank"> <img
-            alt="logo" src="images/logoSEDML_w90_t.png"> <br> <span>SED-ML
-								Level 1 Version 2 (official specification document) </span></a>
+<div class="row">
+    <div class="col-lg-12">
+        <p>
+            Welcome to the home page of the <b>Simulation Experiment
+            Description Markup Language</b> (SED-ML). SED-ML is an XML-based format
+            for encoding simulation setups, to ensure exchangeability and
+            reproducibility of simulation experiments. It follows the
+            requirements defined in the <a href="http://biomodels.net/miase">MIASE
+            guidelines</a>.
+        </p>
+        <p>
+            The current version is <b>SED-ML Level 1 Version 2</b> and covers
+            the description of time course simulation experiments as well as
+            repeated tasks and steady state experiments.
+        </p>
+        <div id="documentbox">
+            <a href="documents/sed-ml-L1V2.pdf" target="_blank"> <img
+                    alt="logo" src="images/logoSEDML_w90_t.png"> <br> <span>SED-ML
+                                        Level 1 Version 2 (official specification document) </span></a>
+        </div>
+
+        <p>
+            For further specification documents and proposals see the <a
+                href="specifications.html" title="Specifications">Specifications</a>
+            page.
+        </p>
+
+
+        <h2>SED-ML News</h2>
+        <dl>
+            <dt>Matthias K&ouml;nig and Dagmar Waltemath elected as SED-ML editors</dt>
+            <dd>[2017-06-26] Matthias K&oumlnig and Dagmar Waltemath have been elected to replace Ion Moraru and Sven
+                Sahle.
+            </dd>
+
+            <dt>HARMONY 2017 in Seattle, WA, USA</dt>
+            <dd>Come along and join members of the SED-ML community and others from throughout the COMBINE network at <a
+                    href="http://co.mbine.org/events/HARMONY_2017">HARMONY 2017</a> to be held June 26-30 in Seattle,
+                WA, USA.
+            </dd>
+
+            <dt>Lucian Smith elected as SED-ML editor</dt>
+            <dd>[2016-01-01] Lucian Smith has been elected to replace Jonathan Cooper on
+                the SED-ML editorial board.
+            </dd>
+
+            <dt>HARMONY 2016 to be held in Auckland, New Zealand</dt>
+            <dd>Come along and join members of the SED-ML community and others from throughout the COMBINE network at <a
+                    href="http://co.mbine.org/events/HARMONY_2016">HARMONY 2016</a> to be held June 7-11 in Auckland,
+                New Zealand.
+            </dd>
+
+            <dt>David Nickerson and Brett Olivier elected as SED-ML Editors</dt>
+            <dd>[2015-01-26] David Nickerson has been re-elected as SED-ML Editor. The
+                community also elected Brett Olivier as new editor. Thanks again to
+                Frank T. Bergmann and Dagmar Waltemath!
+            </dd>
+        </dl>
+
+        <h2>The SED-ML community</h2>
+        <p>
+            SED-ML is a <b>community project</b> that is under continuous
+            development, currently exploring the extension of SED-ML to cover
+            more simulation experiment types. <br/> The SED-ML community
+            comprises simulation software developers and modelers from the
+            different communities applying computational methods on biology,
+            medicine, neuroscience etc. Several instruments guarantee the open
+            discussion of the SED-ML language development:<br/>
+        </p>
+
+        <dl>
+            <dt>sed-ml-discuss (mailing list and forum)</dt>
+            <dd>
+                The official mailing list for the SED-ML project is sed-ml-discuss.
+                The mailing list is free for everyone to join. It is the place
+                where all issues regarding the SED-ML language are being discussed.
+                Announcements of SED-ML related events and support issues are
+                posted on SED-ML disucss. Requests for new SED-ML features should
+                be made through the mailing list also. Another important function
+                of the mailing list is the voting for SED-ML editors, as well as
+                for SED-ML proposals. Write and subscribe to the <a
+                    href="https://groups.google.com/forum/#!forum/sed-ml-discuss/">google group</a> or write an email to
+                <a href="mailto:sed-ml-editors@googlegroups.com">sed-ml-discuss AT googlegroups.com</a>.
+            </dd>
+
+            <dt>Github project site</dt>
+            <dd>
+                We are in the process of migrating all SED-ML information to github <a target="_blank"
+                                                                                       href="https://github.com/SED-ML/">project
+                site</a>.
+                Until the migration is complete please use the sourceforge project site below to access information.
+            </dd>
+
+            <dt>Sourceforge project site</dt>
+            <dd>
+                The SED-ML Sourceforge <a target="_blank" href="http://sourceforge.net/projects/sed-ml/">project
+                site</a>
+                hosts all code related to the SED-ML language, including the SED-ML
+                XML Schema, the SED-ML specification document, SED-ML feature
+                requests and proposals for SED-ML extensions.
+            </dd>
+
+            <dt>SED-ML editors</dt>
+            <dd>
+                The <a href="about.html">SED-ML editors</a> are being elected by the members of the
+                sed-ml-discuss mailing list for a period of three years. SED-ML
+                editors are responsible for hosting all material relevant to
+                SED-ML, coordinating the SED-ML development, maintaining the SED-ML
+                sourceforge website and the SED-ML specification document.
+            </dd>
+            <dt>SED-ML meetings</dt>
+            <dd>
+                SED-ML is part of the <a href="http://co.mbine.org/">COMBINE</a>
+                effort. The SED-ML community meets twice a year in person, at the annual
+                COMBINE meeting and at the annual HARMONY meeting. In addition there are regular online meetings.
+            </dd>
+        </dl>
+    </div>
 </div>
 
-<p>
-    For further specification documents and proposals see the <a
-        href="specifications.html" title="Specifications">Specifications</a>
-    page.
-</p>
+
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Dashboard
+            <small>Statistics Overview</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li class="active">
+                <i class="fa fa-dashboard"></i> Dashboard
+            </li>
+        </ol>
+    </div>
+</div>
+
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <i class="fa fa-info-circle"></i> <strong>Like SB Admin?</strong> Try out <a
+                href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for
+            additional features!
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-comments fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">26</div>
+                        <div>New Comments!</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-green">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-tasks fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">12</div>
+                        <div>New Tasks!</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-shopping-cart fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">124</div>
+                        <div>New Orders!</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-support fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">13</div>
+                        <div>Support Tickets!</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Area Chart</h3>
+            </div>
+            <div class="panel-body">
+                <div id="morris-area-chart"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Donut Chart</h3>
+            </div>
+            <div class="panel-body">
+                <div id="morris-donut-chart"></div>
+                <div class="text-right">
+                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <span class="badge">just now</span>
+                        <i class="fa fa-fw fa-calendar"></i> Calendar updated
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">4 minutes ago</span>
+                        <i class="fa fa-fw fa-comment"></i> Commented on a post
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">23 minutes ago</span>
+                        <i class="fa fa-fw fa-truck"></i> Order 392 shipped
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">46 minutes ago</span>
+                        <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">1 hour ago</span>
+                        <i class="fa fa-fw fa-user"></i> A new user has been added
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">2 hours ago</span>
+                        <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">yesterday</span>
+                        <i class="fa fa-fw fa-globe"></i> Saved the world
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">two days ago</span>
+                        <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
+                    </a>
+                </div>
+                <div class="text-right">
+                    <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>Order #</th>
+                            <th>Order Date</th>
+                            <th>Order Time</th>
+                            <th>Amount (USD)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>3326</td>
+                            <td>10/21/2013</td>
+                            <td>3:29 PM</td>
+                            <td>$321.33</td>
+                        </tr>
+                        <tr>
+                            <td>3325</td>
+                            <td>10/21/2013</td>
+                            <td>3:20 PM</td>
+                            <td>$234.34</td>
+                        </tr>
+                        <tr>
+                            <td>3324</td>
+                            <td>10/21/2013</td>
+                            <td>3:03 PM</td>
+                            <td>$724.17</td>
+                        </tr>
+                        <tr>
+                            <td>3323</td>
+                            <td>10/21/2013</td>
+                            <td>3:00 PM</td>
+                            <td>$23.71</td>
+                        </tr>
+                        <tr>
+                            <td>3322</td>
+                            <td>10/21/2013</td>
+                            <td>2:49 PM</td>
+                            <td>$8345.23</td>
+                        </tr>
+                        <tr>
+                            <td>3321</td>
+                            <td>10/21/2013</td>
+                            <td>2:23 PM</td>
+                            <td>$245.12</td>
+                        </tr>
+                        <tr>
+                            <td>3320</td>
+                            <td>10/21/2013</td>
+                            <td>2:15 PM</td>
+                            <td>$5663.54</td>
+                        </tr>
+                        <tr>
+                            <td>3319</td>
+                            <td>10/21/2013</td>
+                            <td>2:13 PM</td>
+                            <td>$943.45</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-right">
+                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+                <!-- END CONTENT -->
+
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr/>
+                        <p>&copy; 2017 sed-ml.org</p>
+                    </div>
+                </div>
+                <!-- END FOOTER -->
 
 
-<h2>SED-ML News</h2>
-<dl>
-    <dt>Matthias K&ouml;nig and Dagmar Waltemath elected as SED-ML editors</dt>
-    <dd>[2017-06-26] Matthias K&ouml;enig and Dagmar Waltemath have been elected to replace Ion Moraru and Sven Sahle.
-    </dd>
 
-    <dt>HARMONY 2017 in Seattle, WA, USA</dt>
-    <dd>Come along and join members of the SED-ML community and others from throughout the COMBINE network at <a
-            href="http://co.mbine.org/events/HARMONY_2017">HARMONY 2017</a> to be held June 26-30 in Seattle, WA, USA.
-    </dd>
-
-    <dt>Lucian Smith elected as SED-ML editor</dt>
-    <dd>[2016-01-01] Lucian Smith has been elected to replace Jonathan Cooper on
-        the SED-ML editorial board.
-    </dd>
-
-    <dt>HARMONY 2016 to be held in Auckland, New Zealand</dt>
-    <dd>Come along and join members of the SED-ML community and others from throughout the COMBINE network at <a
-            href="http://co.mbine.org/events/HARMONY_2016">HARMONY 2016</a> to be held June 7-11 in Auckland,
-        New Zealand.
-    </dd>
-
-    <dt>David Nickerson and Brett Olivier elected as SED-ML Editors</dt>
-    <dd>[2015-01-26] David Nickerson has been re-elected as SED-ML Editor. The
-        community also elected Brett Olivier as new editor. Thanks again to
-        Frank T. Bergmann and Dagmar Waltemath!
-    </dd>
-
-    <!--
-    <dt>Ion Moraru new SED-ML Editor (2014-01-18)</dt>
-    <dd>We welcome Ion Moraru (University of Connecticut Health
-        Center) as new SED-ML editor.
-    </dd>
-
-    <dt>Sven Sahle new SED-ML Editor (2014-01-04)</dt>
-    <dd>
-        We welcome Sven Sahle (BIOQUANT, University of Heidelberg) as new
-        SED-ML editor. Three candidates tied for the second position. The <a
-            href="https://www.surveymonkey.com/s/3DNXJKF">vote for the
-        remaining position</a> is open until January 13, 2014.
-    </dd>
-
-    Hide old news items
-    <dt>Vote for new SED-ML editors before December 30, 2013
-        (2013-12-16)</dt>
-    <dd>
-        The vote for new SED-ML editors is now open! See the candidates and
-        cast your ballot <a href="https://www.surveymonkey.com/s/QVTBB7H">here</a>.
-    </dd>
-    <dt>Release of SED-ML Level 1 Version 2 out now (2013-12-02)</dt>
-    <dd>
-        The final specification of <a href="documents/sed-ml-L1V2.pdf"
-            target="_blank"> SED-ML Level 1 Version 2 </a> is now available.
-    </dd>
-    <dt>Call for nominations for two SED-ML Editors (2013-11-28)</dt>
-    <dd>
-        The SED-ML Editorial Board seeks two new editors for 2014. Please
-        submit <a href="https://www.surveymonkey.com/s/V5QJ2DR">nominations</a>
-        before December 11, 2013.
-    </dd>
-
-    <dt>SED-ML Level 1 Version 2 - New Release Candidate
-        (2013-11-13)</dt>
-    <dd>
-        A release candidate of the next version of the <a
-            href="http://tinyurl.com/sed-ml-l1v2-rc">SED-ML Level 1
-            Version 2 Specification</a> is available online.
-    </dd>
-
-    <dt>Next SED-ML community event: COMBINE 2013</dt>
-    <dd>
-        The next official meeting of the SED-ML community will be as part
-        of the <a href="http://co.mbine.org/events/COMBINE_2013">annual
-            COMBINE Meeting</a> taking place in Paris/France from 17th-20th of
-        September.
-    </dd>
-    <dt>Repeated Tasks Proposal accepted</dt>
-    <dd>
-        The proposal to include repeated tasks in SED-ML has been accepted
-        (<a target="_blank"
-            href="http://sourceforge.net/mailarchive/forum.php?thread_name=8FC626CD-6D08-402A-B503-3D66EE30DFB6%40caltech.edu&forum_name=sed-ml-discuss">summary
-            here</a>), the editors are working on including it into the
-        specification.
-    </dd>
-    -->
-</dl>
-
-<h2>The SED-ML community</h2>
-<p>
-    SED-ML is a <b>community project</b> that is under continuous
-    development, currently exploring the extension of SED-ML to cover
-    more simulation experiment types. <br/> The SED-ML community
-    comprises simulation software developers and modelers from the
-    different communities applying computational methods on biology,
-    medicine, neuroscience etc. Several instruments guarantee the open
-    discussion of the SED-ML language development:<br/>
-</p>
-
-<dl>
-    <dt>sed-ml-discuss (mailing list and forum)</dt>
-    <dd>
-        The official mailing list for the SED-ML project is sed-ml-discuss.
-        The mailing list is free for everyone to join. It is the place
-        where all issues regarding the SED-ML language are being discussed.
-        Announcements of SED-ML related events and support issues are
-        posted on SED-ML disucss. Requests for new SED-ML features should
-        be made through the mailing list also. Another important function
-        of the mailing list is the voting for SED-ML editors, as well as
-        for SED-ML proposals. Write and subscribe to the <a
-            href="https://groups.google.com/forum/#!forum/sed-ml-discuss/">google group</a> or write an email to
-        <a href="mailto:sed-ml-editors@googlegroups.com">sed-ml-discuss AT googlegroups.com</a>.
-    </dd>
-
-    <dt>Github project site</dt>
-    <dd>
-        We are in the process of migrating all SED-ML information to github <a target="_blank"
-                                                                               href="https://github.com/SED-ML/">project
-        site</a>.
-        Until the migration is complete please use the sourceforge project site below to access information.
-    </dd>
-
-    <dt>Sourceforge project site</dt>
-    <dd>
-        The SED-ML Sourceforge <a target="_blank" href="http://sourceforge.net/projects/sed-ml/">project site</a>
-        hosts all code related to the SED-ML language, including the SED-ML
-        XML Schema, the SED-ML specification document, SED-ML feature
-        requests and proposals for SED-ML extensions.
-    </dd>
-
-    <dt>SED-ML editors</dt>
-    <dd>
-        The <a href="about.html">SED-ML editors</a> are being elected by the members of the
-        sed-ml-discuss mailing list for a period of three years. SED-ML
-        editors are responsible for hosting all material relevant to
-        SED-ML, coordinating the SED-ML development, maintaining the SED-ML
-        sourceforge website and the SED-ML specification document.
-    </dd>
-    <dt>SED-ML meetings</dt>
-    <dd>
-        SED-ML is part of the <a href="http://co.mbine.org/">COMBINE</a>
-        effort. The SED-ML community meets twice a year in person, at the annual
-        COMBINE meeting and at the annual HARMONY meeting. In addition there are regular online meetings.
-    </dd>
-</dl>
 
             </div>
-            <!-- END CONTENT -->
-
-            <!-- FOOTER -->
-            <div class="footer">
-                <hr/>
-                <p>&copy; 2017 sed-ml.org</p>
-            </div>
-            <!-- END FOOTER -->
+            <!-- /.container-fluid -->
 
         </div>
-        <!-- END RIGHT -->
+        <!-- /#page-wrapper -->
+
     </div>
-    <!-- END ROW -->
-</div>
-<!-- END CONTAINER -->
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
 
 </body>
+
 </html>
+

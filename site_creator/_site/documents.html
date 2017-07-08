@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="sed-ml.org">
+    <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
+
+    <title>SED-ML editorial board</title>
+    <link rel="icon" href="./images/sedml.ico">
+
+    <!-- css -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- <link rel="stylesheet" href="styles/sed-ml.css" type="text/css"/> -->
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="_report/js/bootstrap-3.3.7.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="index.html"><img src="images/logoSEDML_H75.png" alt="SED-ML logo" height="50"/>Simulation Experiment Description Markup Language</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Introduction</a>
+                    </li>
+                    <li>
+                        <a href="documents.html"><i class="fa fa-fw fa-table"></i> Information</a>
+                    </li>
+                    <li>
+                        <a href="specifications.html"><i class="fa fa-fw fa-bar-chart-o"></i> Specification</a>
+                    </li>
+                    <li>
+                        <a href="examples.html"><i class="fa fa-fw fa-table"></i> Examples</a>
+                    </li>
+                    <li>
+                        <a href="showcase.html"><i class="fa fa-fw fa-edit"></i> Tools & Libraries</a>
+                    </li>
+                    <li>
+                        <a href="publications.html"><i class="fa fa-fw fa-desktop"></i> Publications</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-fw fa-desktop"></i> Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-fw fa-wrench"></i> Editors</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                <!-- CONTENT -->
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Publications</h1>
+    </div>
+</div>
+
+<!-- main -->
+<div class="row">
+    <div class="col-lg-12">
+
+        <div id="accordion">
+            <!-- Overview -->
+            <h2 id="sedmlMain"><a href="#">SED-ML Overview</a></h2>
+            <div>
+                <p> SED-ML is build of five main classes: the <a
+                        href="#modelClass" title="Model Class"> Model Class</a>,
+                    the <a href="#simulationClass" title="Simulation Class">Simulation
+
+                        Class</a>, the <a href="#taskClass" title="Task Class">Task
+                        Class</a>, the <a href="#dataGeneratorClass"
+                                          title="DataGenerator Class">DataGenerator Class</a>, and
+                    the <a href="#outputClass" title="Output Class">Output
+                        Class</a>. </p>
+                <h3 id="modelClass"> The Model Class</h3>
+                <p> The <b>Model</b> class is used to reference the models
+                    used in the simulation experiment. SED-ML itself is
+                    independent of the model encoding underlying the models.
+                    The only requirement is that the model needs to be
+                    referenced by using an unambiguous identifier which allows
+                    for finding it, for example using a <a
+                            href="http://biomodels.net/miriam/#miriam_uris"
+                            title="MIRIAM URI">MIRIAM URI</a>. To specify the
+                    language in which the model is encoded, a set of
+                    predefined <a href="#sedmlLanguage">language URNs</a> is
+                    provided. </p>
+                <p> The SED-ML <b>Change</b> class allows the application
+                    of changes to the referenced models, including changes on
+                    the XML attributes, e.g. changing the value of an
+                    observable, computing the change of a value using
+                    mathematics, or general changes on any XML element of the
+                    model representation that is addressable by XPath
+                    expressions, e.g. substituting a piece of XML by an
+                    updated one. </p>
+                <h3 id="simulationClass"> The Simulation Class</h3>
+                <p> The <b>Simulation</b> class defines the simulation
+                    settings and the steps taken during simulation. These
+                    include the particular type of simulation and the
+                    algorithm used for the execution of the simulation;
+                    preferably an unambiguous reference to such an algorithm
+                    should be given, using a controlled vocabulary, or
+                    ontologies. One example for an ontology of simulation
+                    algorithms is the <em>Kinetic Simulation Algorithm
+                        Ontology</em> <a href="http://biomodels.net/kisao/">KiSAO</a>.
+                    Further information encodable in the Simulation class
+                    includes the step size, simulation duration, and other
+                    simulation-type dependent information. </p>
+                <h3 id="taskClass"> The Task Class</h3>
+                <p> SED-ML makes use of the notion of a <b>Task</b> class
+                    to combine a defined model (from the Model class) and a
+                    defined simulation setting (from the Simulation class). A
+                    task always holds one reference each. To refer to a
+                    specific model and to a specific simulation, the
+                    corresponding IDs are used. </p>
+                <h3 id="dataGeneratorClass"> The DataGenerator Class</h3>
+                <p> The raw simulation result sometimes does not correspond
+                    to the desired output of the simulation, e.g. one might
+                    want to normalise a plot before output, or apply
+                    post-processing like mean-value calculation. The <b>DataGenerator</b>
+                    class allows for the encoding of such post-processings
+                    which need to be applied to the simulation result before
+                    output. To define data generators, any addressable
+                    variable or parameter of any defined model (from instances
+                    of the Model class) may be referenced, and new entities
+                    might be specified using MathML definitions. </p>
+                <h3 id="outputClass"> The Output Class</h3>
+                <p> The <b>Output</b> class defines the output of the
+                    simulation, in the sense that it specifies <em>what</em>
+                    shall be plotted in the output. To do so, an output type
+                    is defined, e.g. 2D-plot, 3D-plot or data table, and the
+                    according axes or columns are all assigned to one of the
+                    formerly specified instances of the DataGenerator class. </p>
+            </div>
+
+            <h2 id="sedmlLanguage"><a href="#">Language URNs</a></h2>
+            <div>
+                <p> The following languages have to our knowledge so far
+                    been used with SED-ML. To specify the language of a model
+                    in the Model class, please use the according URN given.
+                    The general scheme for a language URN in SED-ML is <code>urn:sedml:language:</code><i>language
+                        name and version</i>. </p>
+                <table style="border-collapse: collapse; border: 1px solid
+              #0066bb;" align="center" border="1">
+                    <tbody>
+                    <tr>
+                        <th> Language</th>
+                        <th> URN</th>
+                        <th> Specification URL</th>
+                    </tr>
+                    <tr>
+                        <td> CellML (generic)</td>
+                        <td><code>urn:sedml:language:cellml</code></td>
+                        <td> none</td>
+                    </tr>
+                    <tr>
+                        <td> CellML 1.0</td>
+                        <td><code>urn:sedml:language:cellml.1_0</code></td>
+                        <td> http://www.cellml.org/specifications/cellml_1.0</td>
+                    </tr>
+                    <tr>
+                        <td> CellML 1.1</td>
+                        <td><code>urn:sedml:language:cellml.1_1</code></td>
+                        <td> http://www.cellml.org/specifications/cellml_1.1</td>
+                    </tr>
+                    <tr>
+                        <td> NeuroML (generic)</td>
+                        <td><code>urn:sedml:language:neuroml</code></td>
+                        <td> none</td>
+                    </tr>
+                    <tr>
+                        <td> NeuroML Version 1.8.1 Level 1</td>
+                        <td><code>urn:sedml:language:neuroml.version-1_8_1.level-1</code>
+                        </td>
+                        <td> none</td>
+                    </tr>
+                    <tr>
+                        <td> NeuroML Version 1.8.1 Level 2</td>
+                        <td><code>urn:sedml:language:neuroml.version-1_8_1.level-2</code>
+                        </td>
+                        <td> none</td>
+                    </tr>
+                    <tr>
+                        <td> SBML (generic)</td>
+                        <td><code>urn:sedml:language:sbml</code></td>
+                        <td> none</td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 1 Version 1</td>
+                        <td><code>urn:sedml:language:sbml.level-1.version-1</code>
+                        </td>
+                        <td>
+                            http://sbml.org/Special/specifications/sbml-level-1/version-1/html/
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 1 Version 2</td>
+                        <td><code>urn:sedml:language:sbml.level-1.version-2</code>
+                        </td>
+                        <td>
+                            http://sbml.org/Special/specifications/sbml-level-1/version-2/html/
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 2 Version 1</td>
+                        <td><code>urn:sedml:language:sbml.level-2.version-1</code>
+                        </td>
+                        <td>
+                            http://www.sbml.org/specifications/sbml-level-2/version-1/html/
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 2 Version 2</td>
+                        <td><code>urn:sedml:language:sbml.level-2.version-2</code>
+                        </td>
+                        <td>
+                            http://www.sbml.org/specifications/sbml-level-2/version-2/revision-1/sbml-level-2-version-2-rev1.pdf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 2 Version 3</td>
+                        <td><code>urn:sedml:language:sbml.level-2.version-3</code>
+                        </td>
+                        <td>
+                            http://www.sbml.org/specifications/sbml-level-2/version-3/release-1/sbml-level-2-version-3-rel-1.pdf
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 2 Version 4</td>
+                        <td><code>urn:sedml:language:sbml.level-2.version-4</code>
+                        </td>
+                        <td>
+                            http://precedings.nature.com/documents/2715/version/1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> SBML Level 3 Version 1</td>
+                        <td><code>urn:sedml:language:sbml.level-3.version-1</code>
+                        </td>
+                        <td>
+                            http://precedings.nature.com/documents/4123/version/1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> VCML (generic)</td>
+                        <td><code>urn:sedml:language:vcml</code></td>
+                        <td> none</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 id="sedmlSymbols"><a href="#">Predefined Symbol /
+                Implicit Variable URNs</a></h2>
+            <div>
+                <p> As described in <a href="documents.html#publications">the SED-ML specification</a> some modeling
+                    languages use predefined symbols or implicit variables. In order to
+                    allow these variables to be adressed the SED-ML language
+                    introduced symbol URNs. The general scheme for a symbol
+                    URN in SED-ML is <code>urn:sedml:sybmol:</code><i>symbolName</i>.
+                </p>
+                <table style="border-collapse: collapse; border: 1px solid
+              #0066bb;" align="center" border="1">
+                    <tbody>
+                    <tr>
+                        <th> Language</th>
+                        <th> URN</th>
+                        <th> Definition</th>
+                    </tr>
+                    <tr>
+                        <td> SBML</td>
+                        <td><code>urn:sedml:symbol:time</code></td>
+                        <td> Time in SBML is an intrinsic model variable that
+                            is addressable in model equations via a csymbol
+                            'time'.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 id="sedmlExample"><a href="#">Examples</a></h2>
+            <div>
+                <ul>
+                    <li><a
+                            href="http://sed-ml.svn.sourceforge.net/viewvc/sed-ml/sed-ml/examples/"
+                            title="SED-ML examples from SED-ML SourceForge page">SED-ML examples from SED-ML SourceForge
+                        page</a>.
+                    </li>
+                    <li><a href="http://libsedml.svn.sourceforge.net/viewvc/libsedml/trunk/Samples/"
+                           title="SED-ML examples from libSEDML SourceForge page">SED-ML examples from libSEDML
+                        SourceForge page</a>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+                <!-- END CONTENT -->
+
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr/>
+                        <p>&copy; 2017 sed-ml.org</p>
+                    </div>
+                </div>
+                <!-- END FOOTER -->
+
+
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
+
