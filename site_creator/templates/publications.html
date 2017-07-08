@@ -5,7 +5,7 @@
 <!-- Page Heading -->
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Publications</h1>
+        <h1 class="page-header"><i class="fa fa-fw fa-newspaper-o"></i> Publications</h1>
     </div>
 </div>
 
@@ -27,9 +27,11 @@
                     <dd>
                         <div class="pubjournal"><em>{{ p.journal }}</em></div>
                     </dd>
+                    {% if p.link %}
                     <dd>
                         <a href="{{ p.link }}">{{ p.link }}</a>
                     </dd>
+                    {% endif %}
                     {% if p.pmid %}
                     <dd>
                         <a href="https://www.ncbi.nlm.nih.gov/pubmed/{{ p.pmid }}">PMID:{{ p.pmid }}</a>
