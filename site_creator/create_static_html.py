@@ -39,8 +39,12 @@ def read_yaml(name):
 PUBLICATIONS = read_yaml("publications")
 EDITORS = read_yaml("editors")
 
-# from pprint import pprint
-# print(PUBLICATIONS)
+from pprint import pprint
+print(EDITORS)
+
+EDITORS_ACTIVE = [e for e in EDITORS if e['active'] is True]
+
+
 
 
 def create_site(template="index.html", out_dir="_site"):
@@ -76,6 +80,7 @@ def _create_html(html_template='report.html'):
         'data': 'data',
         'publications': PUBLICATIONS,
         'editors': EDITORS,
+        'editors_active': EDITORS_ACTIVE,
     }
     return template.render(c)
 

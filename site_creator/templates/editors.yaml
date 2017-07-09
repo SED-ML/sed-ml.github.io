@@ -1,5 +1,62 @@
 editors:
+- name:      'David Nickerson'
+  active:    True
+  term:      'editor, 2015-2017'
+  image:     'nickerson_bio.jpg'
+  text:      '<a href="https://about.me/david.nickerson/">David Nickerson</a> (PhD in Bioengineering)
+                    is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz"
+                                                          class="external text"
+                                                          title="http://www.abi.auckland.ac.nz/">Auckland
+                    Bioengineering Institute</a> where he leads the Auckland Kidney
+                    Physiome project. David is also involved in many aspects of the CellML project as well
+                    as various cardiac modeling projects.
+                    He also develops several CellML-related software tools and is the current CellML
+                    delegate to the COMBINE coordination group.'
 
+- name:      'Lucian Smith'
+  active:    True
+  term:      'editor, 2016-2018'
+  image:     'lucian_bio.jpg'
+  text:      'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for both the
+                    University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and for
+                    Caltech with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a>. He is the
+                    co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and, more
+                    recently, of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML
+                    editor, working extensively with the SBML Hierarchical Model Composition specification.'
+
+- name:      'Matthias K&ouml;nig'
+  active:    True
+  term:      'editor, 2017-2020'
+  image:     'koenig_bio.jpg'
+  text:      'Matthias K&ouml;nig (PhD. in Biophysics) leads an independent <a
+                        href="https://www.livermetabolism.com">junior research group</a>
+                    for computational modeling of the liver within the German LiSyM consortium.
+                    He is lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a>
+                     and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a> and co-developer
+                     of the SBML simulation software <a href="https://github.com/sys-bio/roadrunner">roadrunner</a>
+                     and <a href="https://github.com/sys-bio/tellurium">tellurium</a>.'
+
+- name:      'Brett Olivier'
+  active:    True
+  term:      'editor, 2015-2017'
+  image:     'brett_bio.jpg'
+  text:      'Brett G. Olivier (Ph.D. in Biochemistry) is a Researcher in the Systems Bioinformatics
+                    group at the <a href="http://www.ibi.vu.nl/sysbio/doku.php/group/start">VU University
+                    Amsterdam </a>. His interests range from fundamental theoretical research (metabolic
+                    regulation analysis, control analysis, constraint based modelling) to software design
+                    and development (<a href="http://cbmpy.sourceforge.net">CBMPy</a>,
+                    <a href="http://pysces.sourceforge.net">PySCeS</a>,
+                    <a href="http://jjj.biochem.sun.ac.za">JWS Online</a>) and the development and
+                    implementation of open modelling standards.'
+
+- name:      'Brett Olivier'
+  active:    True
+  term:      'editor, 2015-2020'
+  image:     'waltemath_bio.jpg'
+  text:      '<a href="https://scholar.google.de/citations?user=wmBwmLIAAAAJ">Dagmar Waltemath</a> (Ph.D. in Computer Science) works on strategies for
+                    data and model management in computational biology. She has been
+                    actively involved in the development of SED-ML, SBML, and the COMBINE
+                    Archive format. She is the COMBINE coordinator for SED-ML.'
 
 
 #########################################################################
@@ -59,14 +116,10 @@ editors:
   active:    False
   term:      'editor, 2011-2014'
   image:     'waltemath_bio.jpg'
-  text:      '<a href="http://www.sbi.uni-rostock.de/team/single/dagmar-waltemath/" class="external text"
-           title="Dagmar Waltemath">Dagmar Waltemath</a> (Ph.D. in Computer Science) is a junior research group
-        leader at the <a href="http://www.sbi.uni-rostock.de/" class="external text"
-                         title="http://www.sbi.uni-rostock.de/" rel="nofollow">Systems Biology and
-        Bioinformatics group</a> at Rostock University (Germany).
-        Her group works on improving the management of computational models in standard formats and associated
-        simulations in SED-ML format (<a href="http://www.sbi.uni-rostock.de/sems">SEMS</a>).'
-
+  text:      '<a href="https://scholar.google.de/citations?user=wmBwmLIAAAAJ">Dagmar Waltemath</a> (Ph.D. in Computer Science) works on strategies for
+                    data and model management in computational biology. She has been
+                    actively involved in the development of SED-ML, SBML, and the COMBINE
+                    Archive format. She is the COMBINE coordinator for SED-ML.'
 - name:      'Andrew Miller'
   active:    False
   term:      'editor, 2011-2012'
