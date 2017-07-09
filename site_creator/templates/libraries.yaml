@@ -1,0 +1,35 @@
+libraries:
+- name:       'clibsedml'
+  homepage:
+  repository: 'http://sourceforge.net/projects/clibsedml/'
+  language:   'C'
+  image:      'clibsedml.png'
+  text:       'clibsedml is aimed at being a portable C library for SED-ML.'
+  features:
+
+- name:       'libSedML'
+  homepage:
+  repository: 'http://libsedml.sf.net'
+  language:   '.NET library'
+  image:      'libSedML.png'
+  text:       'libSedML is a set of .NET libraries for supporting SED-ML. The core
+                        library libSedML supports reading, validating and writing of SED-ML descriptions, along
+                        with all necessary utility functions for resolving models and XPath expressions. Two
+                        additional libraries are included: libSedMLRunner, which allows to schedule and execute
+                        simulation experiments encoded in SED-ML files using either RoadRunner# (Bergmann et
+                        al., 2006) or a variety of simulators exposed through the Systems Biology Workbench
+                        (SBW, Bergmann et al., 2006a) like iBioSim (Myers et al., 2009) and COPASI (Hoops et
+                        al., 2006). A third library, libSedMLScript, provides a script based language for
+                        defining SED-ML experiments.'
+  features:
+
+- name:       'jlibsedml'
+  homepage:
+  repository: 'http://sourceforge.net/projects/jlibsedml/'
+  language:   'Java'
+  image:      'jlibsedml.png'
+  text:       'An extensible open source Java library to create, manipulate,
+              validate and store SED-ML files. jlibsedml also provides XPath support and an execution
+              framework for running simulations and post-processing the results - clients provide the
+              simulation implementation.'
+  features:

@@ -1,0 +1,174 @@
+tools:
+- name:   'SED-ML Web Tools'
+  icon:
+  image:  'SED-ML_Web_Tools.png'
+  link:   'http://sysbioapps.dyndns.org/SED-ML_Web_Tools'
+  text:   'The SED-ML Web Tools is an online application providing support to
+            edit, simulate and validate SED-ML files online. It supports SBML as well as CellML
+            models.'
+  features:
+
+- name:   'CellDesigner'
+  icon:
+  image:  'CellDesigner.png'
+  link:  'http://celldesigner.org'
+  access:
+  text:   'CellDesigner is software for modeling and simulation of biochemical
+          and gene regulatory networks, originally developed by the Systems Biology Institute in
+          Japan. While CellDesigner itself is a sophisticated structured diagram editor, it
+          enables users to directly integrate various tools, such as built-in SBML ODE Solver,
+          COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on
+          various platforms such as Windows, MacOS X and Linux, and is freely available from
+          <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.'
+  features:
+
+- name:   'SED-ML Script Editor'
+  icon:
+  image:  'SED-ML_Script_Editor.png'
+  link:   'http://libsedml.sourceforge.net/libSedML/SedMLScript.html'
+  text:   'The SED-ML Script Editor allows to construct SED-ML documents using
+            a simplified script language. Starting out by directly importing SBML or CellML models
+            an initial script is generated that can be simulated. From there it is easy to modify it
+            to suite your needs.'
+  features:
+
+- name:   'SED-ED'
+  icon:
+  image:  'SED-ED.png'
+  link:   'http://sysbioapps.dyndns.org/SED-ML_Web_Tools'
+  text:   'SED-ED is a visual editor for viewing, editing and validating SED-ML documents
+            using a graphical workflow notation. SED-ED
+            <ul>
+                <li>previews model changes for any XML based model.
+                </li>
+                <li>generates XPath expressions for targetting model elements.
+                </li>
+                <li>displays and edits notes in an embedded browser.
+                </li>
+                <li>works with SEDX archives as well as plain SEDML files.
+                </li>
+                <li>retrieves models from Biomodels using Miriam URNs.
+                </li>
+                <li>provides standard undo/redo/copy/paste/align functionality for editing.
+                </li>
+            </ul>
+            SED-ED is available either as a standalone application, an Eclipse plugin (update site
+            http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin. If installed in the latter
+            environment, SEDML files may also be simulated using a range of 3rd party tools such as
+            Copasi,Dizzy,Fern or CVODE.'
+  features:
+
+
+- name:   'SBW Simulation Tool'
+  icon:
+  image:  'SBW_Simulation_Tool.png'
+  link:   'https://sourceforge.net/p/sbwsimtool/wiki/Home/'
+  text:   'This project hosts the Simulation Tool, an extensible, interactive
+            environment for carrying out simulation experiments of SBML models. This project can use
+            RoadRunner or SBW enabled simulators to carry out simulations.The simulation tool
+            directly supports SED-ML L1V1, and allows you to execute the simulations directly, with
+            support for remote models (even in BioModels.net) and the SED-ML archive.'
+  features:
+
+- name:   'Systems Biology Simulation Core Library'
+  icon:
+  image:  'Systems_Biology_Simulation_Core_Library.png'
+  link:   'http://sourceforge.net/projects/simulation-core/'
+  text:   'The Systems Biology Simulation Core Library provides an efficient
+            and exhaustive Java implementation of methods to interpret the content of models encoded
+            in the Systems Biology Markup Language (SBML) and its numerical solution. This library
+            is based on the JSBML project and can be used on every operating system for which a Java
+            Virtual Machine is available. Please note that this project does not contain any user
+            interface, neither a command-line interface, nor a graphical user interface. This
+            project has been developed as a pure programming library. To support the MIASE effort,
+            it understands SED-ML files. Its abstract type and interface hierarchy facilitates the
+            implementation of further community standards, such as CellML.'
+  features:
+
+- name:   'Copasi2SedML'
+  icon:
+  image:  'Copasi2SedML.png'
+  link:   'http://fbergmann.github.com/Copasi2SedML/'
+  text:   'Copasi2SBML contains a library and tools that allow to convert a
+           COPASI file containing a time course task to SED-ML L1V1.
+           This work is based on the COPASI C# bindings and libSedML..'
+  features:
+
+
+- name:   'SBML Testsuite'
+  icon:
+  image:  'SBML_Testsuite.png'
+  link:   'http://sbml.org/Software/SBML_Test_Suite'
+  text:   'The SBML Test Suite is a conformance testing system for SBML. It
+            allows developers and users to test the degree and correctness of SBML support provided
+            in an SBML-compatible software package. All tests are available also as SED-ML files.'
+  features:
+
+- name:   'SED-ML Testsuite'
+  icon:
+  image:
+  link:   'https://github.com/SED-ML/sedml-test-suite'
+  text:   'A test suite for SED-ML, modeled after the SBML test suite.'
+  features:
+
+- name:   'SED-ML Online Validator'
+  icon:
+  image:
+  link:   'http://www.sbsi.ed.ac.uk/html/sedml/index.html'
+  text:   'SED-ML Validator.'
+  features:
+
+- name:   'SED-ED'
+  icon:
+  image:
+  link:
+  text:   'SED-ED graphical editor for SED-ML.'
+  features:
+
+- name:   'Repose'
+  icon:
+  image:  'Repose.png'
+  link:   'http://sed.project.cwi.nl'
+  text:   'Repose is a web-based repository that lets modellers develop,
+            curate, and archive simulation-experiment descriptions written in XML, e.g. SBML, or in
+            imperative programming languages, e.g. C++. Repose encourages modellers to annotate
+            their simulation-experiments with text and images, experimental data and domain
+            meta-information. These informal annotations aid organisation and classification of the
+            simulation-experiments, and complement SED-ML formal precision to produce
+            simulation-experiments that can be understood by both men and machines.'
+  features:
+
+- name:   'SED-ML Processing Service'
+  icon:
+  image:
+  link:   'http://cellml-api.hg.sourceforge.net/hgweb/cellml-api/cellml-api/file/38e86c8b32e3/SProS'
+  text:   'SED-ML Processing Service.'
+  features:
+
+- name:   'iBioSim'
+  icon:
+  image:
+  link:
+  text:
+  features:
+
+- name:   'bioUML'
+  icon:
+  image:
+  link:
+  text:
+  features:
+
+- name:   'tellurium'
+  icon:
+  image:
+  link:
+  text:
+  features:
+
+- name:   'COPASI'
+  icon:
+  image:
+  link:
+  text:
+  features:
