@@ -31,17 +31,16 @@ def read_yaml(name):
     :param path:
     :return:
     """
-    if name not in ['publications', 'libraries', 'tools']:
-        raise ValueError
     path = 'templates/{}.yaml'.format(name)
     stram = open(path, "r")
     data = yaml.load(stram)
     return data[name]
 
 PUBLICATIONS = read_yaml("publications")
+EDITORS = read_yaml("editors")
 
-from pprint import pprint
-print(PUBLICATIONS)
+# from pprint import pprint
+# print(PUBLICATIONS)
 
 
 def create_site(template="index.html", out_dir="_site"):
@@ -76,6 +75,7 @@ def _create_html(html_template='report.html'):
     c = {
         'data': 'data',
         'publications': PUBLICATIONS,
+        'editors': EDITORS,
     }
     return template.render(c)
 
