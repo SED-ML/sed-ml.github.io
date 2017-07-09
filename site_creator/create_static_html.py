@@ -13,7 +13,6 @@ TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templat
 SITES = ['index.html',
          'about.html',
          'contact.html',
-         'documents.html',
          'examples.html',
          'publications.html',
          'showcase.html',
@@ -38,13 +37,8 @@ def read_yaml(name):
 
 PUBLICATIONS = read_yaml("publications")
 EDITORS = read_yaml("editors")
-
-from pprint import pprint
-print(EDITORS)
-
 EDITORS_ACTIVE = [e for e in EDITORS if e['active'] is True]
-
-
+NEWS = read_yaml("news")
 
 
 def create_site(template="index.html", out_dir="_site"):
@@ -81,6 +75,7 @@ def _create_html(html_template='report.html'):
         'publications': PUBLICATIONS,
         'editors': EDITORS,
         'editors_active': EDITORS_ACTIVE,
+        'news': NEWS,
     }
     return template.render(c)
 

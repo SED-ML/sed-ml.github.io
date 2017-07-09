@@ -1,0 +1,46 @@
+news:
+- show:  True
+  icon:  'fa-github'
+  link:  'https://github.com/sed-ml'
+  date:  '2017-07-07'
+  title: 'Migration to github'
+  text:  'All SED-ML repositories have been migrated to github.'
+
+- show:  True
+  icon:  'fa-user'
+  link:  'about.html'
+  date:  '2017-06-26'
+  title: 'Matthias K&ouml;nig and Dagmar Waltemath elected as SED-ML editors'
+  text:  'Matthias K&oumlnig and Dagmar Waltemath have been elected to replace Ion Moraru and Sven Sahle.'
+
+- show:  True
+  date:  '2017-06-26'
+  icon:  'fa-group'
+  link:  'http://co.mbine.org/events/HARMONY_2017'
+  title: 'HARMONY 2017 in Seattle, WA, USA'
+  text:  'Come along and join members of the SED-ML community and others from throughout the COMBINE network at
+          HARMONY 2017 held June 26-30 in Seattle, WA, USA.'
+
+- show:  True
+  icon:  'fa-user'
+  link:  'about.html'
+  date:  '2016-01-01'
+  title: 'Lucian Smith elected as SED-ML editor'
+  text:  'Lucian Smith has been elected to replace Jonathan Cooper on the SED-ML editorial board.'
+
+- show:  True
+  icon:  'fa-group'
+  link:  'http://co.mbine.org/events/HARMONY_2016'
+  date:  '2016-06-07'
+  title: 'HARMONY 2016 to be held in Auckland, New Zealand'
+  text:  'Come along and join members of the SED-ML community and others from throughout the COMBINE network at HARMONY 2016
+          held June 7-11 in Auckland, New Zealand.'
+
+- show:  True
+  icon:  'fa-user'
+  link:  'about.html'
+  date:  '2015-01-26'
+  title: 'David Nickerson and Brett Olivier elected as SED-ML Editors'
+  text:  'David Nickerson has been re-elected as SED-ML Editor. The
+                community also elected Brett Olivier as new editor. Thanks again to
+                Frank T. Bergmann and Dagmar Waltemath!'
