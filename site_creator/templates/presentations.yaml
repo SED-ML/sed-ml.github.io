@@ -1,0 +1,10 @@
+presentations:
+- author: 'Frank Bergmann'
+  date:   '2010'
+  title:  'SED-ML'
+  file:   'SED-ML_Bergmann2010.pdf'
+
+- author: 'Dagmar Waltemath'
+  date:   '2010'
+  title:  'Biomodels Meta Information and SED-ML'
+  file:   'Biomodel.Meta-Information.and.SED-ML_Waltemath2010.pdf'

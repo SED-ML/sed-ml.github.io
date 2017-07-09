@@ -1,0 +1,91 @@
+{% extends "base_template.html" %}
+{% block title %}SED-ML editorial board{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><i class="fa fa-fw fa-group"></i> SED-ML Editors</h1>
+        <p>
+            The SED-ML specification is written by an editorial board consisting of five editors. They are elected by
+            the SED-ML community (members of the <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss"
+                                                    target="_blank">sed-ml-discuss mailing list</a>) and serve for
+            3-year terms as volunteers.
+            SED-ML editors are responsible for hosting all material relevant to SED-ML,
+            coordinating the SED-ML development, maintaining the SED-ML website and the SED-ML specification documents.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    {% for k in range(0, 3) %}
+    {% set e = editors_active[k] %}
+    <div class="col-md-4">
+        <div class="thumbnail" style="border: 0;">
+            <img src="images/people/{{ e.image }}" alt="{{ e.name }}" class="img-rounded" style="height: 200px;">
+            <div class="caption">
+                <p style="font-weight: bold">{{ e.name }} ({{ e.term }})</p>
+                <p>{{ e.text }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="row">
+    {% for k in range(3, 5) %}
+    {% set e = editors_active[k] %}
+    <div class="col-md-4">
+        <div class="thumbnail" style="border: 0;">
+            <img src="images/people/{{ e.image }}" alt="{{ e.name }}" class="img-rounded" style="height: 200px;">
+            <div class="caption">
+                <p style="font-weight: bold">{{ e.name }} ({{ e.term }})</p>
+                <p>{{ e.text }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Editorial board meetings</h1>
+        <p>
+            The editors meet regularly in online meetings and during the yearly COMBINE and HARMONY meetings.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail" style="border: 0;">
+            <img src="images/meetings/HARMONY2017.jpg" class="img-rounded" />
+            <div class="caption">
+                <p style="font-weight: bold"> HARMONY2017</p>
+                <p>
+                    Meeting in Seattle, WA, US during HARMONY2017. Getting ready for the L1V3 release.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Past members of the SED-ML editorial board</h1>
+        <table class="table table-responsive">
+            {% for e in editors %}
+            {% if not e.active %}
+            <tr>
+                <td>
+                    <img src="images/people/{{ e.image }}" alt="{{ e.name }}" class="img-rounded"
+                         style="height: 80px;"/>
+                </td>
+                <td>
+                    <dt>{{ e.name }} ({{ e.term }})</dt>
+                    <dd>{{ e.text }}</dd>
+                </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+{% endblock %}

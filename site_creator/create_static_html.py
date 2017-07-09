@@ -1,0 +1,98 @@
+"""
+Static site creator for sed-ml.org
+"""
+from __future__ import print_function, absolute_import
+import codecs
+import os
+import warnings
+from jinja2 import Environment, FileSystemLoader
+import yaml
+
+# template location
+TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+SITES = ['index.html',
+         'about.html',
+         'contact.html',
+         'examples.html',
+         'publications.html',
+         'showcase.html',
+         'specifications.html',
+         ]
+
+
+def read_yaml(name):
+    """ Read yaml data.
+
+        'speakers' : ordered list of upcoming speakers (next to last)
+        'talks' : ordered list of past talks (last to first)
+        'alumnis': list of alumnis
+
+    :param path:
+    :return:
+    """
+    path = 'templates/{}.yaml'.format(name)
+    stram = open(path, "r")
+    data = yaml.load(stram)
+    return data[name]
+
+PUBLICATIONS = read_yaml("publications")
+EDITORS = read_yaml("editors")
+EDITORS_ACTIVE = [e for e in EDITORS if e['active'] is True]
+NEWS = read_yaml("news")
+PRESENTATIONS = read_yaml("presentations")
+LIBRARIES = read_yaml("libraries")
+TOOLS = read_yaml("tools")
+
+
+def create_site(template="index.html", out_dir="../"):
+    """ Creates site from given template. """
+
+    # write html (unicode)
+    html = _create_html(html_template=template)
+    f_html = codecs.open(os.path.join(out_dir, template), encoding='utf-8', mode='w')
+    f_html.write(html)
+    f_html.close()
+
+
+def _create_html(html_template='report.html'):
+    """Create HTML from SBML.
+
+    :param doc:
+    :type doc:
+    :param html_template:
+    :type html_template:
+    :return:
+    :rtype:
+    """
+    # template environment
+    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR),
+                      extensions=['jinja2.ext.autoescape'],
+                      trim_blocks=True,
+                      lstrip_blocks=True)
+    template = env.get_template(html_template)
+
+
+    # Context
+    c = {
+        'data': 'data',
+        'publications': PUBLICATIONS,
+        'editors': EDITORS,
+        'editors_active': EDITORS_ACTIVE,
+        'news': NEWS,
+        'presentations': PRESENTATIONS,
+        'libraries': LIBRARIES,
+        'tools': TOOLS,
+    }
+    return template.render(c)
+
+
+def create_sites(out_dir="../"):
+    print('-'*80)
+    print('Creating static site from templates')
+    print('-'*80)
+    for site in SITES:
+        create_site(template=site, out_dir=out_dir)
+
+
+if __name__ == "__main__":
+    create_sites(out_dir="../")
