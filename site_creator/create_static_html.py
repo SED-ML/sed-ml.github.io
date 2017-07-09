@@ -44,7 +44,7 @@ LIBRARIES = read_yaml("libraries")
 TOOLS = read_yaml("tools")
 
 
-def create_site(template="index.html", out_dir="_site"):
+def create_site(template="index.html", out_dir="../"):
     """ Creates site from given template. """
 
     # write html (unicode)
@@ -86,13 +86,13 @@ def _create_html(html_template='report.html'):
     return template.render(c)
 
 
-def create_sites():
+def create_sites(out_dir="../"):
     print('-'*80)
     print('Creating static site from templates')
     print('-'*80)
     for site in SITES:
-        create_site(template=site, out_dir="_site")
+        create_site(template=site, out_dir=out_dir)
 
 
 if __name__ == "__main__":
-    create_sites()
+    create_sites(out_dir="../")

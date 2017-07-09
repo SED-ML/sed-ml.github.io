@@ -1,15 +1,22 @@
 libraries:
+
+- name:       'libSEDML'
+  link: 'https://github.com/fbergmann/libSEDML'
+  language:   'C++, C# (Swig), Java (Swig), Perl (Swig), Python (Swig), R (Swig), Ruby (Swig)'
+  image:
+  text:       'C++ library for reading and writing SED-ML. Swig languange bindings for C#, Java, Python,
+              R and Ruby.'
+  features:
+
 - name:       'clibsedml'
-  homepage:
-  repository: 'http://sourceforge.net/projects/clibsedml/'
+  link: 'http://sourceforge.net/projects/clibsedml/'
   language:   'C'
   image:      'clibsedml.png'
   text:       'clibsedml is aimed at being a portable C library for SED-ML.'
   features:
 
 - name:       'libSedML'
-  homepage:
-  repository: 'http://libsedml.sf.net'
+  link:       'http://libsedml.sf.net'
   language:   '.NET library'
   image:      'libSedML.png'
   text:       'libSedML is a set of .NET libraries for supporting SED-ML. The core
@@ -24,8 +31,7 @@ libraries:
   features:
 
 - name:       'jlibsedml'
-  homepage:
-  repository: 'http://sourceforge.net/projects/jlibsedml/'
+  link: 'http://sourceforge.net/projects/jlibsedml/'
   language:   'Java'
   image:      'jlibsedml.png'
   text:       'An extensible open source Java library to create, manipulate,

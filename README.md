@@ -12,13 +12,8 @@ To update the webpage see `./site_creator/README.md`
 
 * webpage
     * update references
-    * update tools section
-        * http://sysbioapps.dyndns.org/SED-ML_Web_Tools
-
-    * HTML templates
-    * mobile friendly (bootstrap & favicons)
-    * SED-ML tool & library overview (table with images)
-    * SED-ML examples/showcases (archives & simulation)
+    * update tools & libraries section
+    * SED-ML examples (archives & simulation)
     * favicon
 * website added features
     * SED-ML example archives with link to execute them
@@ -27,11 +22,10 @@ To update the webpage see `./site_creator/README.md`
 
 * implementation
     * implement the data and plotting
+    * tesedml webtools (show case for tellurium support)
 
 * specification
     * read and update the specification
-
-* tesedml webtools (show case for tellurium support)
 
 * organise community
     * 2 weekly meetings at recurring time to discuss issues (open for community)
@@ -47,13 +41,3 @@ To update the webpage see `./site_creator/README.md`
 * https://www.ebi.ac.uk/ols/ontologies/teddy
     * Terminology for Description of Dynamics
     
-## libraries
-http://libsedml.sourceforge.net/libSedML/Welcome.html  
-https://sourceforge.net/p/libsedml/code/HEAD/tree/
-
-`python`: https://pypi.python.org/pypi/python-libsedml/0.4.1
-`c++`: https://github.com/fbergmann/libSEDML
-swig bindings to csharp, java, perl, python, r, ruby.
-
-`java`: https://sourceforge.net/projects/jlibsedml/
-svn checkout https://svn.code.sf.net/p/jlibsedml/code/trunk jlibsedml-code

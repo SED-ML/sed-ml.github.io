@@ -21,24 +21,29 @@
 
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner">
+          <div class="carousel-inner" role="listbox">
               {% for tool in tools %}
-
+                {% if tool.image %}
                 {% if loop.index == 1 %}
                 <div class="item active">
                 {% else %}
                 <div class="item">
                 {% endif %}
-                    <img src="./images/showcase/{{ tool.image }}" alt="{{ tool.name }}">
+                    <table class="table" style="width:85%;">
+                        <tr>
+                            <td><img class="d-block img-fluid" src="./images/showcase/{{ tool.image }}" alt="{{ tool.name }}"></td>
+                            <td>
+                                <br /><br />
+                                <dt>{{ tool.name }}</dt>
+                                {% if tool.link %}<dd><a href="{{ tool.link }}">{{ tool.link }}</a></dd>{% endif %}
+                                <dd>{{ tool.text }}</dd>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+                {% endif %}
 
               {% endfor %}
           </div>
@@ -69,14 +74,11 @@
             {% for lib in libraries %}
             <tr>
                 <td><b>{{ lib.name }}</b></td>
-                <td>
-                    {{ lib.repository }}<br />
-                    {{ lib.homepage }}
-                </td>
+                <td><a href="{{ lib.link }}">{{ lib.link }}</a></td>
                 <td>{{ lib.language }}</td>
                 <td>{{ lib.text }}</td>
                 <td>{% if lib.image %}
-                    <img src="./images/showcase/{{ lib.image }}">
+                    <img src="./images/showcase/{{ lib.image }}" height="100">
                     {% endif %}
                 </td>
             </tr>
@@ -100,10 +102,10 @@
             <tr>
                 <td><b>{{ tool.name }}</b></td>
                 <td>{% if tool.icon %}{{ tool.icon}}{% endif %}</td>
-                <td>{{ tool.link }}</td>
+                <td>{% if tool.link %}<a href="{{ tool.link }}">{{ tool.link }}</a>{% endif %}</td>
                 <td>{{ tool.text }}</td>
                 <td>{% if tool.image %}
-                    <img src="./images/showcase/{{ tool.image }}">
+                    <img src="./images/showcase/{{ tool.image }}"  height="100">
                     {% endif %}
                 </td>
             </tr>

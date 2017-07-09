@@ -1,77 +1,234 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="styles/sed-ml.css" type="text/css"/>
-    <title>Contact the SED-ML Team</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="sed-ml.org">
+    <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
+
+    <title>SED-ML editorial board</title>
+    <link rel="icon" href="./images/sedml.ico">
+
+    <!-- css -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- <link rel="stylesheet" href="styles/sed-ml.css" type="text/css"/> -->
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="_report/js/bootstrap-3.3.7.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
 </head>
+
 <body>
-<div id="container">
 
-    <!-- head -->
-    <div id="head">
-        <table width="100%" style="border=0; padding=0; margin=0;">
-            <tr>
-                <td align="left" valign="top">
-                    <a href="index.html" title="SED-ML home page">
-                        <img src="images/logoSEDML_H75.png" border="0" alt="SED-ML logo" height="75"/></a>
-                </td>
-                <td>
-                    <div id="pageTitle">Simulation Experiment Description Markup Language</div>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <div id="wrapper">
 
-    <!-- menu -->
-    <div id="menu">
-        <a class="tab" href="index.html" title="SED-ML home page">Home</a>
-        <a class="tab" href="specifications.html" title="SED-ML specifications">Specifications</a>
-        <a class="tab" href="documents.html" title="SED-ML information">Information</a>
-        <a class="tab" href="showcase.html" title="Showcase">Showcase</a>
-        <a class="activeTab" href="contact.html" title="Contact us">Contact</a>
-        <a class="tab" href="about.html" title="Editors">Editors</a>
-    </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="index.html"><img src="images/logoSEDML_H75.png" alt="SED-ML logo" height="50"/>&nbsp;&nbsp;&nbsp;<span style="color: white; font-size: large">Simulation Experiment Description Markup Language</span></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question-circle"></i> Resources <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> SED-ML discuss</a>
+                        </li>
+                        <li>
+                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Mail to editors</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-github"></i> github/SED-ML</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pivotaltracker.com/projects/2074517" target="_blank"><i class="fa fa-fw fa-fire"></i>Issue tracker</a>
+                        </li>
+                        <li class="divider"></li>
+                         <li>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-editors" target="_blank"><i class="fa fa-fw fa-wrench"></i> SED-ML editors group</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-home"></i> SED-ML</a>
+                    </li>
+                    <li>
+                        <a href="specifications.html"><i class="fa fa-fw fa-file-code-o"></i> Specification</a>
+                    </li>
+                    <li>
+                        <a href="examples.html"><i class="fa fa-fw fa-line-chart"></i> Examples</a>
+                    </li>
+                    <li>
+                        <a href="showcase.html"><i class="fa fa-fw fa-wrench"></i> Tools & Libraries</a>
+                    </li>
+                    <li>
+                        <a href="publications.html"><i class="fa fa-fw fa-file-text"></i> Publications</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-fw fa-group"></i> Editors</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
 
-    <!-- content -->
-    <div id="content">
+        <div id="page-wrapper">
 
-        <h2 id="contact">Contact us</h2>
+            <div class="container-fluid">
+                <!-- CONTENT -->
 
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><i class="fa fa-fw fa-envelope"></i> Contact Us</h1>
+        <h2>The SED-ML community</h2>
         <p>
-            SED-ML is a community effort, involving software developers of various simulation tools and model
+            SED-ML is a <b>community project</b> that is under continuous development, involving software developers of
+            various simulation tools and model
             representation formats. Our effort values all opinion and contributions. If you have a question,
             want to discuss the evolution of SED-ML, want to voice an opinion, write and subscribe
-            to <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank">sed-ml-discuss</a> on googlegroups.
-        </p>
-
-        <p>
-            The SED-ML specification is written by an editorial board. If you want to directly contact the editors,
-            please send a mail to <a href="mailto:sed-ml-editors@googlegroups.com" target="_blank">sed-ml-editors AT
-            googlegroups.com</a>.
+            to <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank">sed-ml-discuss</a>.
         </p>
         <p>
-            The SED-ML github repository is available at <a href="https://github.com/SED-ML">https://github.com/SED-ML</a>.
-        </p>
-        <p>
-            To report a bug or record an issue with the current specification, please submit an item to the <a
-                href="https://sourceforge.net/p/sed-ml/sed-ml-l1v2/">L1V2 tracker</a>.
+            SED-ML is part of the <a href="http://co.mbine.org/">COMBINE</a>
+            effort. The SED-ML community meets twice a year in person, at the annual
+            COMBINE meeting and at the annual HARMONY meeting. In addition there are regular online meetings.
         </p>
 
-        <p>
-            To record a feature request with future specifications, please submit an item to the <a
-                href="https://sourceforge.net/p/sed-ml/feature-requests/">feature request tracker</a>.
-        </p>
+        <table class="table table-striped table-condensed table-hover">
+            <tr>
+                <td><a href="https://groups.google.com/forum/#!forum/cysbml-cyfluxviz"><span
+                        class="fa fa-users fa-2x fa-fw icon-black"></span></a></td>
+                <td><b>Forum</b></td>
+                <td>
+                    <dt>
+                        <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss">https://groups.google.com/forum/#!forum/sed-ml-discuss</a>
+                    </dt>
+                    <dd>
+                        The official mailing list for the SED-ML project is sed-ml-discuss.
+                        The mailing list is free for everyone to join. It is the place
+                        where all issues regarding the SED-ML language and SED-ML features are being discussed.
+                        Announcements of SED-ML related events and support issues are posted on SED-ML discuss.<br />
+                        Another important function of the mailing list is the voting for SED-ML editors, as well as
+                        for SED-ML proposals. Write and subscribe to the <a
+                            href="https://groups.google.com/forum/#!forum/sed-ml-discuss/">google group</a> or write an
+                        email to
+                        <a href="mailto:sed-ml-editors@googlegroups.com">sed-ml-discuss@googlegroups.com</a>.
+                    </dd>
+                </td>
+            </tr>
 
+            <tr>
+                <td><a href="https://github.com/SED-ML"><span
+                        class="fa fa-github fa-2x fa-fw icon-black"></span></a></td>
+                <td><b>Repository</b></td>
+                <td>
+                    <dt><a href="https://github.com/SED-ML">https://github.com/SED-ML</a></dt>
+                    <dd>
+                        The SED-ML repository hosts all code related to the SED-ML language, including the SED-ML
+                        XML Schema, the SED-ML specification document, SED-ML feature
+                        requests and proposals for SED-ML extensions.
+                    </dd>
+                </td>
+            </tr>
 
-        <!-- footer -->
-        <div id="foot">sed-ml.org</div>
+            <tr>
+                <td><a href="mailto:sed-ml-editors@googlegroups.com"><span
+                        class="fa fa-envelope fa-2x fa-fw icon-black"></span></a></td>
+                <td><b>Email</b></td>
+                <td>
+                    <dt><a href="mailto:sed-ml-editors@googlegroups.com"
+                           target="_blank">sed-ml-editors@googlegroups.com</a></dt>
+                    <dd>If you want to directly contact the <a href="about.html">SED-ML editors</a>,
+                        please send a mail to <a href="mailto:sed-ml-editors@googlegroups.com" target="_blank">sed-ml-editors@googlegroups.com</a>.
+                    </dd>
+                </td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.pivotaltracker.com/n/projects/2074517"><span
+                        class="fa fa-fire fa-2x fa-fw icon-black"></span></a></td>
+                <td><b>Issue Tracker</b></td>
+                <td>
+                    <dt><a href="https://www.pivotaltracker.com/n/projects/2074517">https://www.pivotaltracker.com/n/projects/2074517</a>
+                    </dt>
+                    <dd>
+                        To report a bug or record an issue with the current specification, please submit an item to the
+                        issue tracker <a
+                            href="https://www.pivotaltracker.com/n/projects/2074517">L1V2 tracker</a>.
+
+                        For feature requests for future specifications, please submit an item to the <a
+                            href="https://www.pivotaltracker.com/n/projects/2074517/">feature request tracker</a>.
+                    </dd>
+                </td>
+            </tr>
+
+        </table>
 
     </div>
-
 </div>
+                <!-- END CONTENT -->
+
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr/>
+                        <p>&copy; 2017 sed-ml.org</p>
+                    </div>
+                </div>
+                <!-- END FOOTER -->
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
 </body>
+
 </html>
+

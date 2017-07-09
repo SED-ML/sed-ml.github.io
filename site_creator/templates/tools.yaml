@@ -35,7 +35,7 @@ tools:
 - name:   'SED-ED'
   icon:
   image:  'SED-ED.png'
-  link:   'http://sysbioapps.dyndns.org/SED-ML_Web_Tools'
+  link:   'http://jlibsedml.sourceforge.net/sed-ed/index.html'
   text:   'SED-ED is a visual editor for viewing, editing and validating SED-ML documents
             using a graphical workflow notation. SED-ED
             <ul>
@@ -56,6 +56,7 @@ tools:
             http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin. If installed in the latter
             environment, SEDML files may also be simulated using a range of 3rd party tools such as
             Copasi,Dizzy,Fern or CVODE.'
+  status: 'last commit: 2012-02-06'
   features:
 
 
@@ -116,13 +117,6 @@ tools:
   image:
   link:   'http://www.sbsi.ed.ac.uk/html/sedml/index.html'
   text:   'SED-ML Validator.'
-  features:
-
-- name:   'SED-ED'
-  icon:
-  image:
-  link:
-  text:   'SED-ED graphical editor for SED-ML.'
   features:
 
 - name:   'Repose'
