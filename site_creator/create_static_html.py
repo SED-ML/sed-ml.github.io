@@ -39,6 +39,7 @@ PUBLICATIONS = read_yaml("publications")
 EDITORS = read_yaml("editors")
 EDITORS_ACTIVE = [e for e in EDITORS if e['active'] is True]
 NEWS = read_yaml("news")
+PRESENTATIONS = read_yaml("presentations")
 
 
 def create_site(template="index.html", out_dir="_site"):
@@ -76,6 +77,7 @@ def _create_html(html_template='report.html'):
         'editors': EDITORS,
         'editors_active': EDITORS_ACTIVE,
         'news': NEWS,
+        'presentations': PRESENTATIONS,
     }
     return template.render(c)
 
