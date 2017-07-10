@@ -46,6 +46,7 @@ body {
 
 .top-nav {
     padding: 0 15px;
+    background-color: #222;
 }
 
 .top-nav>li {
