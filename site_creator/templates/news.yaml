@@ -36,7 +36,7 @@ news:
   text:  'Come along and join members of the SED-ML community and others from throughout the COMBINE network at HARMONY 2016
           held June 7-11 in Auckland, New Zealand.'
 
-- show:  True
+- show:  False
   icon:  'fa-user'
   link:  'about.html'
   date:  '2015-01-26'

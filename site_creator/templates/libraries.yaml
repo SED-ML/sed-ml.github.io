@@ -39,3 +39,14 @@ libraries:
               framework for running simulations and post-processing the results - clients provide the
               simulation implementation.'
   features:
+
+- name:       'phraSED-ML'
+  link:       'http://sourceforge.net/projects/jlibsedml/'
+  language:   'C++, Python (Swig)'
+  image:
+  text:       'A paraphrased, human-readable adaptation of SED-ML, phraSED-ML language allows modelers to use
+               simple text commands to encode various elements of SED-ML
+               (models, tasks, simulations, and results) in a format easy to read and modify.
+               The library can translate this script to SED-ML for use in other softwares.'
+  features:
+

@@ -12,7 +12,6 @@
             Description Markup Language</b> (SED-ML). SED-ML is an XML-based format
             for encoding simulation setups, to ensure exchangeability and
             reproducibility of simulation experiments.
-            It follows the requirements defined in the <a href="http://biomodels.net/miase">MIASE guidelines</a>.
         </p>
         <p>
             The current version is <a href="documents/sed-ml-L1V2.pdf" target="_blank"><b>SED-ML Level 1 Version
@@ -30,7 +29,64 @@
             </span>
         </a>
 
-        <h2>SED-ML Overview</h2>
+        <h2>Introduction</h2>
+        <p>
+            The increasing use of computational simulation experiments to inform modern biological
+            research creates new challenges to annotate, archive, share and reproduce such experiments.
+            The recently published <a href="http://biomodels.net/miase">Minimum Information About a Simulation
+            Experiment (MIASE)</a>
+            proposes a minimal set of information that should be provided to allow the reproduction of simulation
+            experiments
+            among users and software tools.
+        </p>
+
+        <p>
+            SED-ML encodes in a computer-readable exchange format the information required by MIASE to enable
+            reproduction of simulation experiments. It has been developed as a community project and it is defined
+            in a detailed technical specification and additionally provides an XML schema.
+        </p>
+        <p>
+            SED-ML covers the description of the most frequent type of simulation experiments in the area,
+            namely time course simulations. SED-ML documents specify
+        <ul>
+            <li>which models to use in an experiment,</li>
+            <li>modifications to apply on the models before using them,</li>
+            <li>which simulation procedures to run on each model,</li>
+            <li>what analysis results to output,</li>
+            <li>and how the results should be presented.</li>
+        </ul>
+        These descriptions are independent of the underlying model implementation.
+        SED-ML is a software-independent format for encoding the description of simulation experiments;
+        it is not specific to particular simulation tools.
+        </p>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> News</h3>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    {% for n in news %}
+                    {% if n.show == True %}
+                    <a href="{{ n.link }}" class="list-group-item">
+                        <span class="badge">{{ n.date }}</span>
+                        <i class="fa fa-fw {{ n.icon }}"></i> <b>{{ n.title }}</b><br/>
+                        {{ n.text }}
+                    </a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Overview</h2>
         <p>
             SED-ML is build of the following main objects: the <code>Model</code>,
             the <code>Simulation</code>, the <code>Task</code>, the <code>DataGenerator</code>, and
@@ -38,7 +94,7 @@
         </p>
         <img src="images/sedml/main.png"/>
 
-        <h3><code>Model</code></h3>
+        <h3>Model</h3>
         <p>
             The <code>Model</code> class is used to reference the models
             used in the simulation experiment. SED-ML itself is
@@ -63,7 +119,7 @@
             updated one.
         </p>
 
-        <h3><code>Simulation</code></h3>
+        <h3>Simulation</h3>
         <p>
             The <b>Simulation</b> class defines the simulation
             settings and the steps taken during simulation. These
@@ -79,7 +135,7 @@
             simulation-type dependent information.
         </p>
 
-        <h3><code>Task</code></h3>
+        <h3>Task</h3>
         <p>
             SED-ML makes use of the notion of a <b>Task</b> class
             to combine a defined model (from the Model class) and a
@@ -89,7 +145,7 @@
             corresponding IDs are used.
         </p>
 
-        <h3><code>DataGenerator</code></h3>
+        <h3>DataGenerator</h3>
         <p>
             The raw simulation result sometimes does not correspond
             to the desired output of the simulation, e.g. one might
@@ -102,7 +158,7 @@
             of the Model class) may be referenced, and new entities
             might be specified using MathML definitions.
         </p>
-        <h3><code>Output</code></h3>
+        <h3>Output</h3>
         <p>
             The <b>Output</b> class defines the output of the
             simulation, in the sense that it specifies <em>what</em>
@@ -112,168 +168,149 @@
             formerly specified instances of the DataGenerator class.
         </p>
     </div>
-
-    <div class="col-lg-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> News</h3>
-            </div>
-            <div class="panel-body">
-                <div class="list-group">
-                    {% for n in news %}
-                    <a href="{{ n.link }}" class="list-group-item">
-                        <span class="badge">{{ n.date }}</span>
-                        <i class="fa fa-fw {{ n.icon }}"></i> <b>{{ n.title }}</b><br/>
-                        {{ n.text }}
-                    </a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
-    </div>
 </div>
 
 <div class="row">
     <div class="col-lg-12">
+    <h3 id="sedmlLanguage">Language URNs</h3>
+    <p>
+        The following languages have to our knowledge so far
+        been used with SED-ML. To specify the language of a model
+        in the Model class, please use the according URN given.
+        The general scheme for a language URN in SED-ML is <code>urn:sedml:language:</code><i>language
+            name and version</i>.
+    </p>
+    <table class="table table-responsive">
+        <tbody>
+        <tr>
+            <th> Language</th>
+            <th> URN</th>
+            <th> Specification URL</th>
+        </tr>
+        <tr>
+            <td> CellML (generic)</td>
+            <td><code>urn:sedml:language:cellml</code></td>
+            <td> none</td>
+        </tr>
+        <tr>
+            <td> CellML 1.0</td>
+            <td><code>urn:sedml:language:cellml.1_0</code></td>
+            <td> http://www.cellml.org/specifications/cellml_1.0</td>
+        </tr>
+        <tr>
+            <td> CellML 1.1</td>
+            <td><code>urn:sedml:language:cellml.1_1</code></td>
+            <td> http://www.cellml.org/specifications/cellml_1.1</td>
+        </tr>
+        <tr>
+            <td> NeuroML (generic)</td>
+            <td><code>urn:sedml:language:neuroml</code></td>
+            <td> none</td>
+        </tr>
+        <tr>
+            <td> NeuroML Version 1.8.1 Level 1</td>
+            <td><code>urn:sedml:language:neuroml.version-1_8_1.level-1</code>
+            </td>
+            <td> none</td>
+        </tr>
+        <tr>
+            <td> NeuroML Version 1.8.1 Level 2</td>
+            <td><code>urn:sedml:language:neuroml.version-1_8_1.level-2</code>
+            </td>
+            <td> none</td>
+        </tr>
+        <tr>
+            <td> SBML (generic)</td>
+            <td><code>urn:sedml:language:sbml</code></td>
+            <td> none</td>
+        </tr>
+        <tr>
+            <td> SBML Level 1 Version 1</td>
+            <td><code>urn:sedml:language:sbml.level-1.version-1</code>
+            </td>
+            <td>
+                http://sbml.org/Special/specifications/sbml-level-1/version-1/html/
+            </td>
+        </tr>
+        <tr>
+            <td> SBML Level 1 Version 2</td>
+            <td><code>urn:sedml:language:sbml.level-1.version-2</code>
+            </td>
+            <td>
+                http://sbml.org/Special/specifications/sbml-level-1/version-2/html/
+            </td>
+        </tr>
+        <tr>
+            <td> SBML Level 2 Version 1</td>
+            <td><code>urn:sedml:language:sbml.level-2.version-1</code>
+            </td>
+            <td>
+                http://www.sbml.org/specifications/sbml-level-2/version-1/html/
+            </td>
+        </tr>
+        <tr>
+            <td> SBML Level 2 Version 2</td>
+            <td><code>urn:sedml:language:sbml.level-2.version-2</code>
+            </td>
+            <td>
+                http://www.sbml.org/specifications/sbml-level-2/version-2/revision-1/sbml-level-2-version-2-rev1.pdf
+            </td>
+        </tr>
+        <tr>
+            <td> SBML Level 2 Version 3</td>
+            <td><code>urn:sedml:language:sbml.level-2.version-3</code>
+            </td>
+            <td>
+                http://www.sbml.org/specifications/sbml-level-2/version-3/release-1/sbml-level-2-version-3-rel-1.pdf
+            </td>
+        </tr>
+        <tr>
+            <td> SBML Level 2 Version 4</td>
+            <td><code>urn:sedml:language:sbml.level-2.version-4</code>
+            </td>
+            <td>
+                http://precedings.nature.com/documents/2715/version/1
+            </td>
+        </tr>
+        <tr>
+            <td> SBML Level 3 Version 1</td>
+            <td><code>urn:sedml:language:sbml.level-3.version-1</code>
+            </td>
+            <td>
+                http://precedings.nature.com/documents/4123/version/1
+            </td>
+        </tr>
+        <tr>
+            <td> VCML (generic)</td>
+            <td><code>urn:sedml:language:vcml</code></td>
+            <td> none</td>
+        </tr>
+        </tbody>
+    </table>
 
-        <h3 id="sedmlLanguage">Language URNs</h3>
-            <p> The following languages have to our knowledge so far
-                been used with SED-ML. To specify the language of a model
-                in the Model class, please use the according URN given.
-                The general scheme for a language URN in SED-ML is <code>urn:sedml:language:</code><i>language
-                    name and version</i>. </p>
-            <table class="table table-responsive">
-                <tbody>
-                <tr>
-                    <th> Language</th>
-                    <th> URN</th>
-                    <th> Specification URL</th>
-                </tr>
-                <tr>
-                    <td> CellML (generic)</td>
-                    <td><code>urn:sedml:language:cellml</code></td>
-                    <td> none</td>
-                </tr>
-                <tr>
-                    <td> CellML 1.0</td>
-                    <td><code>urn:sedml:language:cellml.1_0</code></td>
-                    <td> http://www.cellml.org/specifications/cellml_1.0</td>
-                </tr>
-                <tr>
-                    <td> CellML 1.1</td>
-                    <td><code>urn:sedml:language:cellml.1_1</code></td>
-                    <td> http://www.cellml.org/specifications/cellml_1.1</td>
-                </tr>
-                <tr>
-                    <td> NeuroML (generic)</td>
-                    <td><code>urn:sedml:language:neuroml</code></td>
-                    <td> none</td>
-                </tr>
-                <tr>
-                    <td> NeuroML Version 1.8.1 Level 1</td>
-                    <td><code>urn:sedml:language:neuroml.version-1_8_1.level-1</code>
-                    </td>
-                    <td> none</td>
-                </tr>
-                <tr>
-                    <td> NeuroML Version 1.8.1 Level 2</td>
-                    <td><code>urn:sedml:language:neuroml.version-1_8_1.level-2</code>
-                    </td>
-                    <td> none</td>
-                </tr>
-                <tr>
-                    <td> SBML (generic)</td>
-                    <td><code>urn:sedml:language:sbml</code></td>
-                    <td> none</td>
-                </tr>
-                <tr>
-                    <td> SBML Level 1 Version 1</td>
-                    <td><code>urn:sedml:language:sbml.level-1.version-1</code>
-                    </td>
-                    <td>
-                        http://sbml.org/Special/specifications/sbml-level-1/version-1/html/
-                    </td>
-                </tr>
-                <tr>
-                    <td> SBML Level 1 Version 2</td>
-                    <td><code>urn:sedml:language:sbml.level-1.version-2</code>
-                    </td>
-                    <td>
-                        http://sbml.org/Special/specifications/sbml-level-1/version-2/html/
-                    </td>
-                </tr>
-                <tr>
-                    <td> SBML Level 2 Version 1</td>
-                    <td><code>urn:sedml:language:sbml.level-2.version-1</code>
-                    </td>
-                    <td>
-                        http://www.sbml.org/specifications/sbml-level-2/version-1/html/
-                    </td>
-                </tr>
-                <tr>
-                    <td> SBML Level 2 Version 2</td>
-                    <td><code>urn:sedml:language:sbml.level-2.version-2</code>
-                    </td>
-                    <td>
-                        http://www.sbml.org/specifications/sbml-level-2/version-2/revision-1/sbml-level-2-version-2-rev1.pdf
-                    </td>
-                </tr>
-                <tr>
-                    <td> SBML Level 2 Version 3</td>
-                    <td><code>urn:sedml:language:sbml.level-2.version-3</code>
-                    </td>
-                    <td>
-                        http://www.sbml.org/specifications/sbml-level-2/version-3/release-1/sbml-level-2-version-3-rel-1.pdf
-                    </td>
-                </tr>
-                <tr>
-                    <td> SBML Level 2 Version 4</td>
-                    <td><code>urn:sedml:language:sbml.level-2.version-4</code>
-                    </td>
-                    <td>
-                        http://precedings.nature.com/documents/2715/version/1
-                    </td>
-                </tr>
-                <tr>
-                    <td> SBML Level 3 Version 1</td>
-                    <td><code>urn:sedml:language:sbml.level-3.version-1</code>
-                    </td>
-                    <td>
-                        http://precedings.nature.com/documents/4123/version/1
-                    </td>
-                </tr>
-                <tr>
-                    <td> VCML (generic)</td>
-                    <td><code>urn:sedml:language:vcml</code></td>
-                    <td> none</td>
-                </tr>
-                </tbody>
-            </table>
-
-        <h3 id="sedmlSymbols">Predefined Symbols</h3>
-            <p> As described in the <a href="specifications.html">SED-ML specification</a> some modeling
-                languages use predefined symbols or implicit variables. In order to
-                handle such variables the SED-ML introduced symbol URNs. The general scheme for a symbol
-                URN in SED-ML is <code>urn:sedml:symbol:</code><i>symbolName</i>.
-            </p>
-            <table class="table table-responsive">
-                <tbody>
-                <tr>
-                    <th> Language</th>
-                    <th> URN</th>
-                    <th> Definition</th>
-                </tr>
-                <tr>
-                    <td> SBML</td>
-                    <td><code>urn:sedml:symbol:time</code></td>
-                    <td> Time in SBML is an intrinsic model variable that
-                        is addressable in model equations via a csymbol
-                        'time'.
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-    </div>
+    <h3 id="sedmlSymbols">Predefined Symbols</h3>
+    <p> As described in the <a href="specifications.html">SED-ML specification</a> some modeling
+        languages use predefined symbols or implicit variables. In order to
+        handle such variables the SED-ML introduced symbol URNs. The general scheme for a symbol
+        URN in SED-ML is <code>urn:sedml:symbol:</code><i>symbolName</i>.
+    </p>
+    <table class="table table-responsive">
+        <tbody>
+        <tr>
+            <th> Language</th>
+            <th> URN</th>
+            <th> Definition</th>
+        </tr>
+        <tr>
+            <td> SBML</td>
+            <td><code>urn:sedml:symbol:time</code></td>
+            <td> Time in SBML is an intrinsic model variable that
+                is addressable in model equations via a csymbol
+                'time'.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 {% endblock %}

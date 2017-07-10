@@ -9,7 +9,7 @@
     <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
 
     <title>SED-ML editorial board</title>
-    <link rel="icon" href="./images/sedml.ico">
+    <link rel="icon" href="images/sedml.ico">
 
     <!-- css -->
     <!-- Bootstrap Core CSS -->
@@ -21,7 +21,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- <link rel="stylesheet" href="styles/sed-ml.css" type="text/css"/> -->
+
+    <link rel="stylesheet" href="css/sed-ml.css" type="text/css"/>
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -43,12 +44,12 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-left" href="index.html"><img src="images/logoSEDML_H75.png" alt="SED-ML logo" height="50"/>&nbsp;&nbsp;&nbsp;<span style="color: white; font-size: large">Simulation Experiment Description Markup Language</span></a>
+                <a class="navbar-left" href="index.html" style="background-color: white; text-decoration: none;"><img src="images/logoSEDML_H75.png" alt="SED-ML logo" height="50"/>&nbsp;&nbsp;&nbsp;
+                    <span class="sedml-heading">Simulation Experiment Description Markup Language</span></a>
             </div>
             <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
+            <ul class="nav navbar-right top-nav" style="background-color: white;">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question-circle"></i> Resources <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -74,7 +75,7 @@
             </ul>
 
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color: white;">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
                         <a href="index.html"><i class="fa fa-fw fa-home"></i> SED-ML</a>
@@ -123,7 +124,6 @@
             <a href="http://tinyurl.com/3mkoczr" title="SED-ML Tool Survey">survey</a>.
         </p>
 
-
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
           <!-- Wrapper for slides -->
@@ -144,11 +144,11 @@
                 <div class="item">
                     <table class="table" style="width:85%;">
                         <tr>
-                            <td><img class="d-block img-fluid" src="./images/showcase/CellDesigner.png" alt="CellDesigner"></td>
+                            <td><img class="d-block img-fluid" src="./images/showcase/tellurium.png" alt="tellurium"></td>
                             <td>
                                 <br /><br />
-                                <dt>CellDesigner</dt>
-<dd><a href="http://celldesigner.org">http://celldesigner.org</a></dd>                                <dd>CellDesigner is software for modeling and simulation of biochemical and gene regulatory networks, originally developed by the Systems Biology Institute in Japan. While CellDesigner itself is a sophisticated structured diagram editor, it enables users to directly integrate various tools, such as built-in SBML ODE Solver, COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on various platforms such as Windows, MacOS X and Linux, and is freely available from <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.</dd>
+                                <dt>tellurium</dt>
+<dd><a href="http://tellurium.analogmachine.org/">http://tellurium.analogmachine.org/</a></dd>                                <dd>Tellurium (te.) is a Python environment based on spyder2 IDE. It combines a number of existing libraries, including libSBML, libRoadRunner (including libStruct), libAntimony, and is extensible via telPlugins. tellurium supports SED-ML L1V1 and L1V2.</dd>
                             </td>
                         </tr>
                     </table>
@@ -170,11 +170,11 @@
                 <div class="item">
                     <table class="table" style="width:85%;">
                         <tr>
-                            <td><img class="d-block img-fluid" src="./images/showcase/SED-ED.png" alt="SED-ED"></td>
+                            <td><img class="d-block img-fluid" src="./images/showcase/CellDesigner.png" alt="CellDesigner"></td>
                             <td>
                                 <br /><br />
-                                <dt>SED-ED</dt>
-<dd><a href="http://jlibsedml.sourceforge.net/sed-ed/index.html">http://jlibsedml.sourceforge.net/sed-ed/index.html</a></dd>                                <dd>SED-ED is a visual editor for viewing, editing and validating SED-ML documents using a graphical workflow notation. SED-ED <ul> <li>previews model changes for any XML based model. </li> <li>generates XPath expressions for targetting model elements. </li> <li>displays and edits notes in an embedded browser. </li> <li>works with SEDX archives as well as plain SEDML files. </li> <li>retrieves models from Biomodels using Miriam URNs. </li> <li>provides standard undo/redo/copy/paste/align functionality for editing. </li> </ul> SED-ED is available either as a standalone application, an Eclipse plugin (update site http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin. If installed in the latter environment, SEDML files may also be simulated using a range of 3rd party tools such as Copasi,Dizzy,Fern or CVODE.</dd>
+                                <dt>CellDesigner</dt>
+<dd><a href="http://celldesigner.org">http://celldesigner.org</a></dd>                                <dd>CellDesigner is software for modeling and simulation of biochemical and gene regulatory networks, originally developed by the Systems Biology Institute in Japan. While CellDesigner itself is a sophisticated structured diagram editor, it enables users to directly integrate various tools, such as built-in SBML ODE Solver, COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on various platforms such as Windows, MacOS X and Linux, and is freely available from <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.</dd>
                             </td>
                         </tr>
                     </table>
@@ -196,15 +196,16 @@
                 <div class="item">
                     <table class="table" style="width:85%;">
                         <tr>
-                            <td><img class="d-block img-fluid" src="./images/showcase/Systems_Biology_Simulation_Core_Library.png" alt="Systems Biology Simulation Core Library"></td>
+                            <td><img class="d-block img-fluid" src="./images/showcase/SED-ED.png" alt="SED-ED"></td>
                             <td>
                                 <br /><br />
-                                <dt>Systems Biology Simulation Core Library</dt>
-<dd><a href="http://sourceforge.net/projects/simulation-core/">http://sourceforge.net/projects/simulation-core/</a></dd>                                <dd>The Systems Biology Simulation Core Library provides an efficient and exhaustive Java implementation of methods to interpret the content of models encoded in the Systems Biology Markup Language (SBML) and its numerical solution. This library is based on the JSBML project and can be used on every operating system for which a Java Virtual Machine is available. Please note that this project does not contain any user interface, neither a command-line interface, nor a graphical user interface. This project has been developed as a pure programming library. To support the MIASE effort, it understands SED-ML files. Its abstract type and interface hierarchy facilitates the implementation of further community standards, such as CellML.</dd>
+                                <dt>SED-ED</dt>
+<dd><a href="http://jlibsedml.sourceforge.net/sed-ed/index.html">http://jlibsedml.sourceforge.net/sed-ed/index.html</a></dd>                                <dd>SED-ED is a visual editor for viewing, editing and validating SED-ML documents using a graphical workflow notation. SED-ED previews model changes for any XML based model, generates XPath expressions for targetting model elements, displays and edits notes in an embedded browser, works with SEDX archives as well as plain SEDML files, retrieves models from Biomodels using Miriam URNs, provides standard undo/redo/copy/paste/align functionality for editing. SED-ED is available either as a standalone application, an Eclipse plugin (update site http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin.</dd>
                             </td>
                         </tr>
                     </table>
                 </div>
+
 
                 <div class="item">
                     <table class="table" style="width:85%;">
@@ -214,6 +215,21 @@
                                 <br /><br />
                                 <dt>Copasi2SedML</dt>
 <dd><a href="http://fbergmann.github.com/Copasi2SedML/">http://fbergmann.github.com/Copasi2SedML/</a></dd>                                <dd>Copasi2SBML contains a library and tools that allow to convert a COPASI file containing a time course task to SED-ML L1V1. This work is based on the COPASI C# bindings and libSedML..</dd>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <div class="item">
+                    <table class="table" style="width:85%;">
+                        <tr>
+                            <td><img class="d-block img-fluid" src="./images/showcase/Systems_Biology_Simulation_Core_Library.png" alt="Systems Biology Simulation Core Library"></td>
+                            <td>
+                                <br /><br />
+                                <dt>Systems Biology Simulation Core Library</dt>
+<dd><a href="http://sourceforge.net/projects/simulation-core/">http://sourceforge.net/projects/simulation-core/</a></dd>                                <dd>The Systems Biology Simulation Core Library provides an efficient and exhaustive Java implementation of methods to interpret the content of models encoded in the Systems Biology Markup Language (SBML) and its numerical solution. This library is based on the JSBML project and can be used on every operating system for which a Java Virtual Machine is available. Please note that this project does not contain any user interface, neither a command-line interface, nor a graphical user interface. This project has been developed as a pure programming library. To support the MIASE effort, it understands SED-ML files. Its abstract type and interface hierarchy facilitates the implementation of further community standards, such as CellML.</dd>
                             </td>
                         </tr>
                     </table>
@@ -248,10 +264,6 @@
                 </div>
 
 
-
-
-
-
           </div>
 
           <!-- Left and right controls -->
@@ -274,7 +286,7 @@
                 <th>link</th>
                 <th>language</th>
                 <th>description</th>
-                <th>image</th>
+                <th></th>
             </tr>
             <tbody>
             <tr>
@@ -308,6 +320,13 @@
                 <td>                    <img src="./images/showcase/jlibsedml.png" height="100">
                 </td>
             </tr>
+            <tr>
+                <td><b>phraSED-ML</b></td>
+                <td><a href="http://sourceforge.net/projects/jlibsedml/">http://sourceforge.net/projects/jlibsedml/</a></td>
+                <td>C++, Python (Swig)</td>
+                <td>A paraphrased, human-readable adaptation of SED-ML, phraSED-ML language allows modelers to use simple text commands to encode various elements of SED-ML (models, tasks, simulations, and results) in a format easy to read and modify. The library can translate this script to SED-ML for use in other softwares.</td>
+                <td>                </td>
+            </tr>
             </tbody>
         </table>
 
@@ -320,7 +339,7 @@
                 <th>icon</th>
                 <th>link</th>
                 <th>description</th>
-                <th>image</th>
+                <th></th>
             </tr>
             <tbody>
             <tr>
@@ -332,11 +351,11 @@
                 </td>
             </tr>
             <tr>
-                <td><b>CellDesigner</b></td>
+                <td><b>tellurium</b></td>
                 <td></td>
-                <td><a href="http://celldesigner.org">http://celldesigner.org</a></td>
-                <td>CellDesigner is software for modeling and simulation of biochemical and gene regulatory networks, originally developed by the Systems Biology Institute in Japan. While CellDesigner itself is a sophisticated structured diagram editor, it enables users to directly integrate various tools, such as built-in SBML ODE Solver, COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on various platforms such as Windows, MacOS X and Linux, and is freely available from <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.</td>
-                <td>                    <img src="./images/showcase/CellDesigner.png"  height="100">
+                <td><a href="http://tellurium.analogmachine.org/">http://tellurium.analogmachine.org/</a></td>
+                <td>Tellurium (te.) is a Python environment based on spyder2 IDE. It combines a number of existing libraries, including libSBML, libRoadRunner (including libStruct), libAntimony, and is extensible via telPlugins. tellurium supports SED-ML L1V1 and L1V2.</td>
+                <td>                    <img src="./images/showcase/tellurium.png"  height="100">
                 </td>
             </tr>
             <tr>
@@ -348,11 +367,11 @@
                 </td>
             </tr>
             <tr>
-                <td><b>SED-ED</b></td>
+                <td><b>CellDesigner</b></td>
                 <td></td>
-                <td><a href="http://jlibsedml.sourceforge.net/sed-ed/index.html">http://jlibsedml.sourceforge.net/sed-ed/index.html</a></td>
-                <td>SED-ED is a visual editor for viewing, editing and validating SED-ML documents using a graphical workflow notation. SED-ED <ul> <li>previews model changes for any XML based model. </li> <li>generates XPath expressions for targetting model elements. </li> <li>displays and edits notes in an embedded browser. </li> <li>works with SEDX archives as well as plain SEDML files. </li> <li>retrieves models from Biomodels using Miriam URNs. </li> <li>provides standard undo/redo/copy/paste/align functionality for editing. </li> </ul> SED-ED is available either as a standalone application, an Eclipse plugin (update site http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin. If installed in the latter environment, SEDML files may also be simulated using a range of 3rd party tools such as Copasi,Dizzy,Fern or CVODE.</td>
-                <td>                    <img src="./images/showcase/SED-ED.png"  height="100">
+                <td><a href="http://celldesigner.org">http://celldesigner.org</a></td>
+                <td>CellDesigner is software for modeling and simulation of biochemical and gene regulatory networks, originally developed by the Systems Biology Institute in Japan. While CellDesigner itself is a sophisticated structured diagram editor, it enables users to directly integrate various tools, such as built-in SBML ODE Solver, COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on various platforms such as Windows, MacOS X and Linux, and is freely available from <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.</td>
+                <td>                    <img src="./images/showcase/CellDesigner.png"  height="100">
                 </td>
             </tr>
             <tr>
@@ -364,12 +383,19 @@
                 </td>
             </tr>
             <tr>
-                <td><b>Systems Biology Simulation Core Library</b></td>
+                <td><b>SED-ED</b></td>
                 <td></td>
-                <td><a href="http://sourceforge.net/projects/simulation-core/">http://sourceforge.net/projects/simulation-core/</a></td>
-                <td>The Systems Biology Simulation Core Library provides an efficient and exhaustive Java implementation of methods to interpret the content of models encoded in the Systems Biology Markup Language (SBML) and its numerical solution. This library is based on the JSBML project and can be used on every operating system for which a Java Virtual Machine is available. Please note that this project does not contain any user interface, neither a command-line interface, nor a graphical user interface. This project has been developed as a pure programming library. To support the MIASE effort, it understands SED-ML files. Its abstract type and interface hierarchy facilitates the implementation of further community standards, such as CellML.</td>
-                <td>                    <img src="./images/showcase/Systems_Biology_Simulation_Core_Library.png"  height="100">
+                <td><a href="http://jlibsedml.sourceforge.net/sed-ed/index.html">http://jlibsedml.sourceforge.net/sed-ed/index.html</a></td>
+                <td>SED-ED is a visual editor for viewing, editing and validating SED-ML documents using a graphical workflow notation. SED-ED previews model changes for any XML based model, generates XPath expressions for targetting model elements, displays and edits notes in an embedded browser, works with SEDX archives as well as plain SEDML files, retrieves models from Biomodels using Miriam URNs, provides standard undo/redo/copy/paste/align functionality for editing. SED-ED is available either as a standalone application, an Eclipse plugin (update site http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin.</td>
+                <td>                    <img src="./images/showcase/SED-ED.png"  height="100">
                 </td>
+            </tr>
+            <tr>
+                <td><b>COPASI</b></td>
+                <td></td>
+                <td><a href="http://copasi.org/">http://copasi.org/</a></td>
+                <td>COPASI is a software application for simulation and analysis of biochemical networks and their dynamics. COPASI is a stand-alone program that supports models in the SBML standard and can simulate their behavior using ODEs or Gillespie`s stochastic simulation algorithm; arbitrary discrete events can be included in such simulations. COPASI supports impor and export of SED-ML files.</td>
+                <td>                </td>
             </tr>
             <tr>
                 <td><b>Copasi2SedML</b></td>
@@ -377,6 +403,28 @@
                 <td><a href="http://fbergmann.github.com/Copasi2SedML/">http://fbergmann.github.com/Copasi2SedML/</a></td>
                 <td>Copasi2SBML contains a library and tools that allow to convert a COPASI file containing a time course task to SED-ML L1V1. This work is based on the COPASI C# bindings and libSedML..</td>
                 <td>                    <img src="./images/showcase/Copasi2SedML.png"  height="100">
+                </td>
+            </tr>
+            <tr>
+                <td><b>iBioSim</b></td>
+                <td></td>
+                <td><a href="http://www.async.ece.utah.edu/ibiosim">http://www.async.ece.utah.edu/ibiosim</a></td>
+                <td>iBioSim has been developed for the modeling, analysis, and design of genetic circuits. iBioSim support models representing metabolic networks, cell-signaling pathways, and other biological and chemical systems. iBioSim supports importing and exporting models specified using the Systems Biology Markup Language (SBML). It can import all levels and versions of SBML and is able to export Level 3 Version 1. Simulations of SBML models based on SED-ML is supported.</td>
+                <td>                </td>
+            </tr>
+            <tr>
+                <td><b>bioUML</b></td>
+                <td></td>
+                <td><a href="http://wiki.biouml.org/index.php/Landing">http://wiki.biouml.org/index.php/Landing</a></td>
+                <td>BioUML - Biological Universal Modelling Language - is an integrated Java platform for biomedical research. It spans a comprehensive range of capabilities, including access to databases with experimental data, tools for formalized description of biological systems structure and functioning, as well as tools for their visualization, simulation, parameters fitting and analyses.</td>
+                <td>                </td>
+            </tr>
+            <tr>
+                <td><b>Systems Biology Simulation Core Library</b></td>
+                <td></td>
+                <td><a href="http://sourceforge.net/projects/simulation-core/">http://sourceforge.net/projects/simulation-core/</a></td>
+                <td>The Systems Biology Simulation Core Library provides an efficient and exhaustive Java implementation of methods to interpret the content of models encoded in the Systems Biology Markup Language (SBML) and its numerical solution. This library is based on the JSBML project and can be used on every operating system for which a Java Virtual Machine is available. Please note that this project does not contain any user interface, neither a command-line interface, nor a graphical user interface. This project has been developed as a pure programming library. To support the MIASE effort, it understands SED-ML files. Its abstract type and interface hierarchy facilitates the implementation of further community standards, such as CellML.</td>
+                <td>                    <img src="./images/showcase/Systems_Biology_Simulation_Core_Library.png"  height="100">
                 </td>
             </tr>
             <tr>
@@ -414,34 +462,6 @@
                 <td></td>
                 <td><a href="http://cellml-api.hg.sourceforge.net/hgweb/cellml-api/cellml-api/file/38e86c8b32e3/SProS">http://cellml-api.hg.sourceforge.net/hgweb/cellml-api/cellml-api/file/38e86c8b32e3/SProS</a></td>
                 <td>SED-ML Processing Service.</td>
-                <td>                </td>
-            </tr>
-            <tr>
-                <td><b>iBioSim</b></td>
-                <td></td>
-                <td></td>
-                <td>None</td>
-                <td>                </td>
-            </tr>
-            <tr>
-                <td><b>bioUML</b></td>
-                <td></td>
-                <td></td>
-                <td>None</td>
-                <td>                </td>
-            </tr>
-            <tr>
-                <td><b>tellurium</b></td>
-                <td></td>
-                <td></td>
-                <td>None</td>
-                <td>                </td>
-            </tr>
-            <tr>
-                <td><b>COPASI</b></td>
-                <td></td>
-                <td></td>
-                <td>None</td>
                 <td>                </td>
             </tr>
             </tbody>
