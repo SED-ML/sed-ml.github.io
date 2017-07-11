@@ -27,18 +27,13 @@ tools:
             to suite your needs.'
   features:
 
-- name:   'CellDesigner'
+- name:   'JWS Online'
   icon:
-  image:  'CellDesigner.png'
-  link:  'http://celldesigner.org'
-  access:
-  text:   'CellDesigner is software for modeling and simulation of biochemical
-          and gene regulatory networks, originally developed by the Systems Biology Institute in
-          Japan. While CellDesigner itself is a sophisticated structured diagram editor, it
-          enables users to directly integrate various tools, such as built-in SBML ODE Solver,
-          COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on
-          various platforms such as Windows, MacOS X and Linux, and is freely available from
-          <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.'
+  image:  'jws.png'
+  link:   'https://jjj.bio.vu.nl/'
+  text:   'WS Online is a Systems Biology tool for the construction, modification and simulation of kinetic models and for the storage of curated models.
+          It provides a selection of simulation experiments as SED-ML and Combine archives at <a href="https://jjj.bio.vu.nl/models/experiments/" target="_blank">
+          https://jjj.bio.vu.nl/models/experiments/</a>.'
   features:
 
 - name:   'SBW Simulation Tool'
@@ -66,6 +61,20 @@ tools:
             SED-ED is available either as a standalone application, an Eclipse plugin (update site
             http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin.'
   status: 'last commit: 2012-02-06'
+  features:
+
+- name:   'CellDesigner'
+  icon:
+  image:  'CellDesigner.png'
+  link:  'http://celldesigner.org'
+  access:
+  text:   'CellDesigner is software for modeling and simulation of biochemical
+          and gene regulatory networks, originally developed by the Systems Biology Institute in
+          Japan. While CellDesigner itself is a sophisticated structured diagram editor, it
+          enables users to directly integrate various tools, such as built-in SBML ODE Solver,
+          COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on
+          various platforms such as Windows, MacOS X and Linux, and is freely available from
+          <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.'
   features:
 
 - name:   'COPASI'
