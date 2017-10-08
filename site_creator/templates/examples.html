@@ -13,21 +13,32 @@
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header"><i class="fa fa-fw fa-line-chart"></i> SED-ML examples</h1>
-        <p>
-        <dt>SED-ML specification examples
-            (<a href="https://github.com/SED-ML/sed-ml/tree/master/examples">https://github.com/SED-ML/sed-ml/tree/master/examples</a>)</dt>
-        <dd>SED-ML examples listed in the specifications.</dd>
-        </p>
 
+        <h2>L1V3 specification examples</h2>
+        <table class="table table-responsive">
+            <tbody>
+            <tr>
+                <th> COMBINE Archive</th>
+            </tr>
+            {% for archive in ['L1V3_ikappab', 'L1V3_leloup-sbml', 'L1V3_lorenz-cellml', 'L1V3_lorenz-sbml', 'L1V3_oscli-nested-pulse', 'L1V3_parameter-scan-2d', 'L1V3_plotting-data-csv',
+               'L1V3_plotting-data-numl', 'L1V3_repeated-scan-oscli', 'L1V3_repeated-steady-scan-oscli', 'L1V3_repeated-stochastic-runs',
+               'L1V3_repressilator', 'L1V3_vanderpol-cellml', 'L1V3_vanderpol-sbml'] %}
+            <tr>
+                <td><a href="./examples/L1V3/{{ archive }}.omex"><i class="fa fa-fw fa-archive"></i>{{ archive }}.omex</a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        Download all L1V3 specification archives: <a href="./examples/L1V3/SED-ML_L1V3_examples.zip"><i class="fa fa-fw fa-download"></i> L1V3 examples</a>
+
+
+
+        <h2>Other examples (COMBINE archives)</h2>
         <p>
         <dt>SED-ML test suite
             (<a href="https://github.com/SED-ML/sedml-test-suite">https://github.com/SED-ML/sedml-test-suite</a>)</dt>
         <dd>SED-ML examples for testing the implementation.</dd>
-        </p>
-        <p>
-        <dt>SED-ML examples from libSEDML SourceForge page
-            (<a href="http://libsedml.svn.sourceforge.net/viewvc/libsedml/trunk/Samples/">http://libsedml.svn.sourceforge.net/viewvc/libsedml/trunk/Samples/</a>)</dt>
-        <dd>SED-ML library examples.</dd>
         </p>
         <p>
         <dt>JWS Online simulation database
@@ -35,24 +46,6 @@
         <dd>JWS Online SED-ML and Combine archives.</dd>
         </p>
 
-        <!--
-        TODO: list specification examples with combine archives and example output.
-
-        <h2>SED-ML L1V1</h2>
-        <table class="table-responsive">
-            <tr>
-                <td><pre><code>
-
-                </code>
-                </pre>
-                </td>
-                <td>
-                    <img src="./images/examples/examples_1.png"/>
-                </td>
-            </tr>
-
-        </table>
-        -->
     </div>
 </div>
 {% endblock %}
