@@ -119,17 +119,15 @@
             reproducibility of simulation experiments.
         </p>
         <p>
-            The current version is <a href="documents/sed-ml-L1V2.pdf" target="_blank"><b>SED-ML Level 1 Version
-            2</b></a> and covers
-            the description of time course simulation experiments as well as
-            repeated tasks and steady state experiments. For additional specification documents and proposals see the <a
-                href="specifications.html" title="Specifications">Specifications</a>
+            The current version is <a href="documents/sed-ml-L1V3.pdf" target="_blank"><b>SED-ML Level 1 Version
+            3</b></a>.
+            For additional specification documents and proposals see the <a href="specifications.html" title="Specifications">Specifications</a>
             page.
         </p>
-        <a href="documents/sed-ml-L1V2.pdf" target="_blank">
+        <a href="documents/sed-ml-L1V3.pdf" target="_blank">
             <span class="btn btn-default" style="font-weight: bold;">
                 <img alt="logo" src="images/logoSEDML_w90_t.png"/>
-                L1V2 (official specification document)
+                L1V3 (official specification document)
                 <img alt="pdf" src="images/pdf.png"/>
             </span>
         </a>
@@ -154,6 +152,7 @@
             SED-ML covers the description of the most frequent type of simulation experiments in the area,
             namely time course simulations. SED-ML documents specify
         <ul>
+            <li>which experimental data to use in an experiment,</li>
             <li>which models to use in an experiment,</li>
             <li>modifications to apply on the models before using them,</li>
             <li>which simulation procedures to run on each model,</li>
@@ -173,6 +172,11 @@
             </div>
             <div class="panel-body">
                 <div class="list-group">
+                    <a href="https://github.com/SED-ML/sed-ml/releases/tag/L1V3" class="list-group-item">
+                        <span class="badge">2017-10-09</span>
+                        <i class="fa fa-fw fa-github"></i> <b>Release of L1V3</b><br/>
+                        SED-ML Level 1 Version 3 has been released.
+                    </a>
                     <a href="https://github.com/sed-ml" class="list-group-item">
                         <span class="badge">2017-07-07</span>
                         <i class="fa fa-fw fa-github"></i> <b>Migration to github</b><br/>
@@ -209,12 +213,16 @@
     <div class="col-lg-12">
         <h2>Overview</h2>
         <p>
-            SED-ML is build of the following main objects: the <code>Model</code>,
+            SED-ML is build of the following main objects: the <code>DataDescription</code>, the <code>Model</code>,
             the <code>Simulation</code>, the <code>Task</code>, the <code>DataGenerator</code>, and
-            the <code>Output</code>. In SED-ML L1V3 the <code>DataDescription</code> is added.
+            the <code>Output</code>.
         </p>
-        <img src="images/sedml/main.png"/>
+        <img src="images/sedml/main.svg" width="600"/>
 
+        <h3>DataDescription</h3>
+        <p>The <code>DataDescription</code> class allows to specify datasets for a simulation experiment. Such data can be used
+        for instance for parametrization of model simulations or to plot data together with simulation results.
+        </p>
         <h3>Model</h3>
         <p>
             The <code>Model</code> class is used to reference the models
@@ -230,7 +238,7 @@
             provided.
         </p>
         <p>
-            The SED-ML <b>Change</b> class allows the application
+            The SED-ML <code>Change</code> class allows the application
             of changes to the referenced models, including changes on
             the XML attributes, e.g. changing the value of an
             observable, computing the change of a value using
@@ -242,7 +250,7 @@
 
         <h3>Simulation</h3>
         <p>
-            The <b>Simulation</b> class defines the simulation
+            The <code>Simulation</code> class defines the simulation
             settings and the steps taken during simulation. These
             include the particular type of simulation and the
             algorithm used for the execution of the simulation;
@@ -258,7 +266,7 @@
 
         <h3>Task</h3>
         <p>
-            SED-ML makes use of the notion of a <b>Task</b> class
+            SED-ML makes use of the notion of a <code>Task</code> class
             to combine a defined model (from the Model class) and a
             defined simulation setting (from the Simulation class). A
             task always holds one reference each. To refer to a
@@ -271,7 +279,7 @@
             The raw simulation result sometimes does not correspond
             to the desired output of the simulation, e.g. one might
             want to normalise a plot before output, or apply
-            post-processing like mean-value calculation. The <b>DataGenerator</b>
+            post-processing like mean-value calculation. The <code>DataGenerator</code>
             class allows for the encoding of such post-processings
             which need to be applied to the simulation result before
             output. To define data generators, any addressable
@@ -281,7 +289,7 @@
         </p>
         <h3>Output</h3>
         <p>
-            The <b>Output</b> class defines the output of the
+            The <code>Output</code> class defines the output of the
             simulation, in the sense that it specifies <em>what</em>
             shall be plotted in the output. To do so, an output type
             is defined, e.g. 2D-plot, 3D-plot or data table, and the
@@ -432,6 +440,36 @@
         </tr>
         </tbody>
     </table>
+
+    <h3 id="sedmlFormat">Data Format URNs</h3>
+    <p>To specify the format of a resource please use the according URN given.
+        The general scheme for a format URN in SED-ML is <code>urn:sedml:format:</code><i>format name</i>.
+    </p>
+    <table class="table table-responsive">
+        <tbody>
+        <tr>
+            <th> Data Format</th>
+            <th> URN</th>
+        </tr>
+        <tr>
+            <td> NuML (generic)</td>
+            <td><code>urn:sedml:format:numl</code></td>
+        </tr>
+        <tr>
+            <td> NuML Level 1 Version 1</td>
+            <td><code>urn:sedml:format:numl.level-1.version-1</code></td>
+        </tr>
+        <tr>
+            <td> CSV</td>
+            <td><code>urn:sedml:format:csv</code></td>
+        </tr>
+        <tr>
+            <td> TSV</td>
+            <td><code>urn:sedml:format:tsv</code></td>
+        </tr>
+        </tbody>
+    </table>
+
 </div>
 </div>
                 <!-- END CONTENT -->

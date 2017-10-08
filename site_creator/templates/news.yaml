@@ -1,6 +1,13 @@
 news:
 - show:  True
   icon:  'fa-github'
+  link:  'https://github.com/SED-ML/sed-ml/releases/tag/L1V3'
+  date:  '2017-10-09'
+  title: 'Release of L1V3'
+  text:  'SED-ML Level 1 Version 3 has been released.'
+
+- show:  True
+  icon:  'fa-github'
   link:  'https://github.com/sed-ml'
   date:  '2017-07-07'
   title: 'Migration to github'
