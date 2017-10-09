@@ -20,17 +20,18 @@ SITES = ['index.html',
          ]
 
 
-def read_yaml(name):
+def read_yaml(name, directory="./templates/db"):
     """ Read yaml data.
 
         'speakers' : ordered list of upcoming speakers (next to last)
         'talks' : ordered list of past talks (last to first)
         'alumnis': list of alumnis
 
-    :param path:
+    :param name: name of the yaml file, equal to content
+    :param directory: base directory for yaml
     :return:
     """
-    path = 'templates/{}.yaml'.format(name)
+    path = os.path.join(directory, '{}.yaml'.format(name))
     stram = open(path, "r")
     data = yaml.load(stram)
     return data[name]
@@ -42,6 +43,9 @@ NEWS = read_yaml("news")
 PRESENTATIONS = read_yaml("presentations")
 LIBRARIES = read_yaml("libraries")
 TOOLS = read_yaml("tools")
+LANGUAGES = read_yaml("languages")
+SYMBOLS = read_yaml("symbols")
+FORMATS = read_yaml("formats")
 
 
 def create_site(template="index.html", out_dir="../"):
@@ -71,7 +75,6 @@ def _create_html(html_template='report.html'):
                       lstrip_blocks=True)
     template = env.get_template(html_template)
 
-
     # Context
     c = {
         'data': 'data',
@@ -82,6 +85,9 @@ def _create_html(html_template='report.html'):
         'presentations': PRESENTATIONS,
         'libraries': LIBRARIES,
         'tools': TOOLS,
+        'languages': LANGUAGES,
+        'symbols': SYMBOLS,
+        'formats': FORMATS
     }
     return template.render(c)
 

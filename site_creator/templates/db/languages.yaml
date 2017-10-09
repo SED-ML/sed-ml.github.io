@@ -1,0 +1,68 @@
+languages:
+- language: 'CellML (generic)'
+  urn:      'urn:sedml:language:cellml'
+  url:
+
+- language: 'CellML 1.0'
+  urn:      'urn:sedml:language:cellml.1_0'
+  url:      'http://www.cellml.org/specifications/cellml_1.0'
+
+- language: 'CellML 1.1'
+  urn:      'urn:sedml:language:cellml.1_1'
+  url:
+
+- language: 'NeuroML (generic)'
+  urn:      'urn:sedml:language:neuroml'
+  url:
+
+- language: 'NeuroML Version 1.8.1 Level 1'
+  urn:      'urn:sedml:language:neuroml.version-1_8_1.level-1'
+  url:
+
+- language: 'NeuroML Version 1.8.1 Level 2'
+  urn:      'urn:sedml:language:neuroml.version-1_8_1.level-2'
+  url:
+
+- language: 'SBML (generic)'
+  urn:      'urn:sedml:language:sbml'
+  url:      ''
+
+- language: 'SBML Level 1 Version 1'
+  urn:      'urn:sedml:language:sbml.level-1.version-1'
+  url:      'http://sbml.org/Special/specifications/sbml-level-1/version-1/html/'
+
+- language: 'SBML Level 1 Version 2'
+  urn:      'urn:sedml:language:sbml.level-1.version-2'
+  url:      'http://sbml.org/Special/specifications/sbml-level-1/version-2/html/'
+
+- language: 'SBML Level 2 Version 1'
+  urn:      'urn:sedml:language:sbml.level-2.version-1'
+  url:      'http://www.sbml.org/specifications/sbml-level-2/version-1/html/'
+
+- language: 'SBML Level 2 Version 2'
+  urn:      'urn:sedml:language:sbml.level-2.version-2'
+  url:      'http://www.sbml.org/specifications/sbml-level-2/version-2/revision-1/sbml-level-2-version-2-rev1.pdf'
+
+- language: 'SBML Level 2 Version 3'
+  urn:      'urn:sedml:language:sbml.level-2.version-3'
+  url:      'http://www.sbml.org/specifications/sbml-level-2/version-3/release-1/sbml-level-2-version-3-rel-1.pdf'
+
+- language: 'SBML Level 2 Version 4'
+  urn:      'urn:sedml:language:sbml.level-2.version-4'
+  url:      'http://precedings.nature.com/documents/2715/version/1'
+
+- language: 'SBML Level 2 Version 5'
+  urn:      'urn:sedml:language:sbml.level-2.version-4'
+  url:      ''
+
+- language: 'SBML Level 3 Version 1'
+  urn:      'urn:sedml:language:sbml.level-3.version-1'
+  url:      'http://precedings.nature.com/documents/4123/version/1'
+
+- language: 'SBML Level 3 Version 2'
+  urn:      'urn:sedml:language:sbml.level-3.version-2'
+  url:      ''
+
+- language: 'VCML (generic)'
+  urn:      'urn:sedml:language:vcml'
+  url:

@@ -184,110 +184,42 @@
             name and version</i>.
     </p>
     <table class="table table-responsive">
-        <tbody>
+        <thead>
         <tr>
             <th> Language</th>
             <th> URN</th>
             <th> Specification URL</th>
         </tr>
+        </thead>
+        <tbody>
+        {% for entry in languages %}
         <tr>
-            <td> CellML (generic)</td>
-            <td><code>urn:sedml:language:cellml</code></td>
-            <td> none</td>
+            <td>{{ entry.language }}</td>
+            <td><code>{{ entry.urn }}</code></td>
+            <td>{% if entry.url %}<a href="{{ entry.url }}" target="_blank">{{ entry.url }}</a>{% endif %}</td>
         </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h3 id="sedmlFormat">Data Format URNs</h3>
+    <p>To specify the format of a resource please use the according URN given.
+        The general scheme for a format URN in SED-ML is <code>urn:sedml:format:</code><i>format name</i>.
+    </p>
+    <table class="table table-responsive">
+        <thead>
         <tr>
-            <td> CellML 1.0</td>
-            <td><code>urn:sedml:language:cellml.1_0</code></td>
-            <td> http://www.cellml.org/specifications/cellml_1.0</td>
+            <th> Data Format</th>
+            <th> URN</th>
         </tr>
+        </thead>
+        <tbody>
+        {% for entry in formats %}
         <tr>
-            <td> CellML 1.1</td>
-            <td><code>urn:sedml:language:cellml.1_1</code></td>
-            <td> http://www.cellml.org/specifications/cellml_1.1</td>
+            <td>{{ entry.format }}</td>
+            <td><code>{{ entry.urn }}</code></td>
         </tr>
-        <tr>
-            <td> NeuroML (generic)</td>
-            <td><code>urn:sedml:language:neuroml</code></td>
-            <td> none</td>
-        </tr>
-        <tr>
-            <td> NeuroML Version 1.8.1 Level 1</td>
-            <td><code>urn:sedml:language:neuroml.version-1_8_1.level-1</code>
-            </td>
-            <td> none</td>
-        </tr>
-        <tr>
-            <td> NeuroML Version 1.8.1 Level 2</td>
-            <td><code>urn:sedml:language:neuroml.version-1_8_1.level-2</code>
-            </td>
-            <td> none</td>
-        </tr>
-        <tr>
-            <td> SBML (generic)</td>
-            <td><code>urn:sedml:language:sbml</code></td>
-            <td> none</td>
-        </tr>
-        <tr>
-            <td> SBML Level 1 Version 1</td>
-            <td><code>urn:sedml:language:sbml.level-1.version-1</code>
-            </td>
-            <td>
-                http://sbml.org/Special/specifications/sbml-level-1/version-1/html/
-            </td>
-        </tr>
-        <tr>
-            <td> SBML Level 1 Version 2</td>
-            <td><code>urn:sedml:language:sbml.level-1.version-2</code>
-            </td>
-            <td>
-                http://sbml.org/Special/specifications/sbml-level-1/version-2/html/
-            </td>
-        </tr>
-        <tr>
-            <td> SBML Level 2 Version 1</td>
-            <td><code>urn:sedml:language:sbml.level-2.version-1</code>
-            </td>
-            <td>
-                http://www.sbml.org/specifications/sbml-level-2/version-1/html/
-            </td>
-        </tr>
-        <tr>
-            <td> SBML Level 2 Version 2</td>
-            <td><code>urn:sedml:language:sbml.level-2.version-2</code>
-            </td>
-            <td>
-                http://www.sbml.org/specifications/sbml-level-2/version-2/revision-1/sbml-level-2-version-2-rev1.pdf
-            </td>
-        </tr>
-        <tr>
-            <td> SBML Level 2 Version 3</td>
-            <td><code>urn:sedml:language:sbml.level-2.version-3</code>
-            </td>
-            <td>
-                http://www.sbml.org/specifications/sbml-level-2/version-3/release-1/sbml-level-2-version-3-rel-1.pdf
-            </td>
-        </tr>
-        <tr>
-            <td> SBML Level 2 Version 4</td>
-            <td><code>urn:sedml:language:sbml.level-2.version-4</code>
-            </td>
-            <td>
-                http://precedings.nature.com/documents/2715/version/1
-            </td>
-        </tr>
-        <tr>
-            <td> SBML Level 3 Version 1</td>
-            <td><code>urn:sedml:language:sbml.level-3.version-1</code>
-            </td>
-            <td>
-                http://precedings.nature.com/documents/4123/version/1
-            </td>
-        </tr>
-        <tr>
-            <td> VCML (generic)</td>
-            <td><code>urn:sedml:language:vcml</code></td>
-            <td> none</td>
-        </tr>
+        {% endfor %}
         </tbody>
     </table>
 
@@ -298,52 +230,23 @@
         URN in SED-ML is <code>urn:sedml:symbol:</code><i>symbolName</i>.
     </p>
     <table class="table table-responsive">
-        <tbody>
+        <thead>
         <tr>
             <th> Language</th>
             <th> URN</th>
             <th> Definition</th>
         </tr>
-        <tr>
-            <td> SBML</td>
-            <td><code>urn:sedml:symbol:time</code></td>
-            <td> Time in SBML is an intrinsic model variable that
-                is addressable in model equations via a csymbol
-                'time'.
-            </td>
-        </tr>
-        </tbody>
-    </table>
-
-    <h3 id="sedmlFormat">Data Format URNs</h3>
-    <p>To specify the format of a resource please use the according URN given.
-        The general scheme for a format URN in SED-ML is <code>urn:sedml:format:</code><i>format name</i>.
-    </p>
-    <table class="table table-responsive">
+        </thead>
         <tbody>
+        {% for entry in symbols %}
         <tr>
-            <th> Data Format</th>
-            <th> URN</th>
+            <td>{{ entry.language }}</td>
+            <td><code>{{ entry.urn }}</code></td>
+            <td>{{ entry.definition }}</td>
         </tr>
-        <tr>
-            <td> NuML (generic)</td>
-            <td><code>urn:sedml:format:numl</code></td>
-        </tr>
-        <tr>
-            <td> NuML Level 1 Version 1</td>
-            <td><code>urn:sedml:format:numl.level-1.version-1</code></td>
-        </tr>
-        <tr>
-            <td> CSV</td>
-            <td><code>urn:sedml:format:csv</code></td>
-        </tr>
-        <tr>
-            <td> TSV</td>
-            <td><code>urn:sedml:format:tsv</code></td>
-        </tr>
+        {% endfor %}
         </tbody>
     </table>
-
 </div>
 </div>
 {% endblock %}
