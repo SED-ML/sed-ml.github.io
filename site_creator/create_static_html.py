@@ -17,6 +17,7 @@ SITES = ['index.html',
          'publications.html',
          'showcase.html',
          'specifications.html',
+         'urns.html'
          ]
 
 
