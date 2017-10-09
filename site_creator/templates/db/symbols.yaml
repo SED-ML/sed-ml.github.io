@@ -1,0 +1,5 @@
+symbols:
+- language:      'SBML'
+  urn:         'urn:sedml:symbol:time'
+  definition:  "Time in SBML is an intrinsic model variable that is addressable in model equations via a csymbol 'time'."
+

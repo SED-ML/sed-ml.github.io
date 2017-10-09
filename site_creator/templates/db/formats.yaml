@@ -1,0 +1,16 @@
+formats:
+- format: 'NuML (generic)'
+  urn:    'urn:sedml:format:numl'
+  url:
+
+- format: 'NuML Level 1 Version 1'
+  urn:    'urn:sedml:format:numl.level-1.version-1'
+  url:
+
+- format: 'CSV'
+  urn:    'urn:sedml:format:csv'
+  url:
+
+- format: 'TSV'
+  urn:    'urn:sedml:format:tsv'
+  url:
