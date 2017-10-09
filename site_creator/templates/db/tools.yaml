@@ -14,8 +14,16 @@ tools:
   link:   'http://tellurium.analogmachine.org/'
   text:   'Tellurium (te.) is a Python environment based on spyder2 IDE. It combines a number of existing libraries,
           including libSBML, libRoadRunner (including libStruct), libAntimony, and is extensible via telPlugins.
-          tellurium supports SED-ML L1V1 and L1V2.'
+          tellurium supports SED-ML L1V1, L1V2 and L1V3'
   features:
+
+- name:   'OpenCOR'
+  icon:
+  image:  'OpenCOR.png'
+  link:   'http://www.opencor.ws/'
+  text:   'OpenCOR is an open source cross-platform modelling environment (and a replacement for COR)'
+  features:
+
 
 - name:   'SED-ML Script Editor'
   icon:
