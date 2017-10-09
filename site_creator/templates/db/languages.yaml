@@ -52,8 +52,8 @@ languages:
   url:      'http://precedings.nature.com/documents/2715/version/1'
 
 - language: 'SBML Level 2 Version 5'
-  urn:      'urn:sedml:language:sbml.level-2.version-4'
-  url:      ''
+  urn:      'urn:sedml:language:sbml.level-2.version-5'
+  url:      'http://co.mbine.org/specifications/sbml.level-2.version-5.release-1'
 
 - language: 'SBML Level 3 Version 1'
   urn:      'urn:sedml:language:sbml.level-3.version-1'
@@ -61,7 +61,7 @@ languages:
 
 - language: 'SBML Level 3 Version 2'
   urn:      'urn:sedml:language:sbml.level-3.version-2'
-  url:      ''
+  url:      'http://sbml.org/Special/specifications/sbml-level-3/version-2/core/release-1-rc2/sbml-level-3-version-2-core.pdf'
 
 - language: 'VCML (generic)'
   urn:      'urn:sedml:language:vcml'
