@@ -172,4 +172,19 @@
         </p>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>L1V3 UML diagrams</h2>
+        {% with width=600 %}
+        {% for uml in ['00_Legend', 'sedBase', 'variable', 'parameter', 'dataDescription', 'dataSource', 'slice',
+                        'model', 'change', 'simulation',
+                        'abstractTask', 'repeatedTask', 'range', 'dataGenerator', 'output'] %}
+        <h3>{{ uml }}</h3>
+        <img src="images/sedml/uml/{{ uml }}.svg""/>
+        {% endfor %}
+        {% endwith %}
+    </div>
+</div>
+
 {% endblock %}
