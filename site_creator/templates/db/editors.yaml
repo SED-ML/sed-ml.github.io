@@ -26,7 +26,7 @@ editors:
 
 - name:      'Matthias K&ouml;nig'
   active:    True
-  term:      'editor, 2017-2020'
+  term:      'editor, 2017-2019'
   image:     'koenig_bio.jpg'
   text:      'Matthias K&ouml;nig (PhD. in Biophysics) leads an independent <a
                         href="https://www.livermetabolism.com">junior research group</a>
@@ -51,7 +51,7 @@ editors:
 
 - name:      'Dagmar Waltemath'
   active:    True
-  term:      'editor, 2015-2020'
+  term:      'editor, 2017-2019'
   image:     'waltemath_bio.jpg'
   text:      '<a href="https://scholar.google.de/citations?user=wmBwmLIAAAAJ">Dagmar Waltemath</a> (Ph.D. in Computer Science) works on strategies for
                     data and model management in computational biology. She has been
