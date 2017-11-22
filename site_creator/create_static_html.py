@@ -10,6 +10,7 @@ import yaml
 
 # template location
 TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+# FIXME: autodetect all html files
 SITES = ['index.html',
          'about.html',
          'contact.html',
@@ -17,7 +18,8 @@ SITES = ['index.html',
          'publications.html',
          'showcase.html',
          'specifications.html',
-         'urns.html'
+         'urns.html',
+         'notes.html'
          ]
 
 

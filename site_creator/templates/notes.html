@@ -1,0 +1,196 @@
+{% extends "base_template.html" %}
+{% block title %}SED-ML editorial board{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><i class="fa fa-fw fa-book"></i> Editor notes</h1>
+        <h2>SED-ML Editors Meeting, 13 Oct 2017</h2>
+        <p>
+            Milan, Italy, Fri, 13. Oct 2017 at 15:00 CEST (COMBINE 2017) <br/>
+            <b>Attendees</b>: Matthias König, David Nickerson, Lucian Smith, Dagmar Waltemath
+        </p>
+        <h3>Topics</h3>
+        <ol>
+            <!-- 1 -->
+            <li>
+                <p>
+                    Summary of progress at COMBINE 2017: The editors reported on the progress made at the COMBINE
+                    meeting, summarising the issues and discussion points which are also listed in the meeting notes
+                    from the COMBINE 2017 Breakout Sessions.<br/>
+                    <b class="label label-default">Decision</b>: The editors will update the L1V3 specification and send
+                    an errata to sed-ml-discuss
+                    (Clarification of the meaning of NA (not available) values; All elements should be derived from
+                    SED-Base; Clarification of the meaning of the attributes numberOfPoints, therefore creation of a new
+                    attribute numberOfSteps and deprecation of the attribute numberOfPoints)
+                    The editors further agreed on including a number of suggestions for the L1V4.
+                </p>
+            </li>
+            <!-- 2 -->
+            <li>
+                <p>
+                    The editors further agreed on including a number of suggestions for the L1V4 specifications, as
+                    discussed at the COMBINE meeting:<br/>
+                <ol>
+                    <li type="a">
+                        Make @id optional on SED-Base and elements that require @id specify that in their
+                        UML/schema.<br/>
+                        <b class="label label-default">Vote</b>: <b class="label label-success">YES</b>
+                    </li>
+                </ol>
+                </p>
+            </li>
+            <!-- 3 -->
+            <li>
+                <p>
+                    The editors postponed other decisions, when they saw need for further discussion in the wider
+                    community, or for further implementation support for testing:
+                <ol>
+                    <li type="a">
+                        Need to be able to iterate over data sources, but need further testing of the proposal via
+                        implementation to make sure it works (this would be in L1V4) - postponed
+                    </li>
+                    <li type="a">
+                        Extend Slice in DataDescription to include a start and end index to enable subsampling data -
+                        postponed
+                    </li>
+                    <li type="a">
+                        Need a way to address data in “complex resources” - discussion whether the suggestion of adding
+                        a Resource class is ready to vote or not, move toward using URIs to address into archives, etc.
+                        - Decision: involve sed-ml-discuss
+                    </li>
+                    <li type="a">
+                        Specifying output file names - The editors remembered from previous meetings that this is not a
+                        popular addition, rather out of scope for SED-ML, but topic for a workflow definition. @id on
+                        Outputs could be used to define an output location. Decision: This suggestion is currently not
+                        ready for addition to L1V4<br/>
+                        <b class="label label-default">Decision</b>: should be brought up on sed-ml-discuss by the
+                        interested parties.
+                    </li>
+                    <li type="a">
+                        DimensionDescription should be extended to support various formats (currently CSV and NuML)<br/>
+                        <b class="label label-default">Vote</b>: Add identifiers for excel and hdf5 and put on the list
+                        on SED-ML website: <b class="label label-success">YES</b>
+                    </li>
+                    <li type="a">
+                        Design plotting styles that are defined and can be “reused” (line styles, colours, symbols, etc)
+                        - This was discussed among the editors, but no clear task to vote on this.
+                    </li>
+                    <li type="a">
+                        Revision of output definitions - This was discussed among the editors, but needs to be discussed
+                        further with the community and a specific proposal needs to be designed & tried out in
+                        implementations
+                    </li>
+                    <li type="a">
+                        Deprecate log-attribute on curves: the result of the breakout sessions at COMBINE was that a new
+                        scale attribute should serve as an enumeration of possible values (log, log10, log2…)
+                    </li>
+                    <li type="a">
+                        Report on the discussion on the addition of a “figure” output type, allows subplots, etc.<br/>
+                        <b class="label label-default">Conclusion</b>:
+                        This needs further discussion on sed-ml-discuss.
+                    </li>
+                    <li type="a">
+                        Agreement amongst editors and during COMBINE breakout that NonUniformTimeCourse and
+                        Interpolation are needed<br/>
+                        <b class="label label-default">Conclusion</b>: Proposal needs fleshing out and discussing on
+                        sed-ml-discuss.
+                    </li>
+                </ol>
+                </p>
+            </li>
+            <!-- 4 -->
+            <li>
+                <p>
+                    At COMBINE, SED-ML Logical models have been discussed. Lucian Smith offered to add example models to
+                    the existing test suite
+
+                </p>
+            </li>
+            <!-- 5 -->
+            <li>
+                <p>
+                    The editors mention that many more issues have been raised on github (<a
+                        href="https://github.com/SED-ML/sed-ml/issues" target="_blank">https://github.com/SED-ML/sed-ml/issues</a>),
+                    but these need to go through sed-ml-discuss before the editors can make decisions.
+                </p>
+            </li>
+            <!-- 6 -->
+            <li>
+                <p>
+                <ol>
+                    <li type="a">
+                        The editors talked about the existing, sparse list of SED-ML presentations on sed-ml.org, which
+                        is not (yet) a helpful resource for people interested in SED-ML<br/>
+                        <b class="label label-default">Decision</b>: Extend list at least with all presentations that
+                        the editors are aware of.
+                    </li>
+                    <li type="a">
+                        The editors further discussed about adding the dates of latest releases on the <a
+                            href="https://sed-ml.github.io/specifications.html" target="_blank">page listing SED-ML
+                        specifications</a><br/>
+                        <b class="label label-default">Decision</b>: Dates for stable releases yes, but not dates for
+                        drafts.
+                    </li>
+                    <li type="a">
+                        The editors decided to promote the <a href="https://github.com/SED-ML/sed-ml/releases/tag/L1V3"
+                                                              target="_blank">release of L1V3</a> (during COMBINE) on
+                        twitter through the COMBINE Coordination account.
+                    </li>
+                    <li type="a">
+                        The editors furthermore plan to provide a longer news item for sed-ml.org
+                    </li>
+                    <li type="a">
+                        The editors discussed about publishing L1V3 in the special issue on standards that appears
+                        annually in the Journal of Integrative Bioinformatics - Decision: The editors aim for publishing
+                        L1V3 in that journal and will prepare the manuscript as soon as the call is out, presumably be
+                        the end of 2018.
+                    </li>
+                    <li type="a">
+                        Matthias König reported on plans of extending the <a
+                            href="http://www.ebi.ac.uk/biomodels-main/modelmonth" target="_blank"> model of the
+                        month</a> provided by BioModels. He would prepare COMBINE archives (including SED-ML files)
+                        whenever possible and provide links to tools that can process the archives<br/>
+                        <b class="label label-default">Conclusion</b>: The editors agree that this would be beneficial
+                        for the community.
+                    </li>
+                </ol>
+                </p>
+            </li>
+            <!-- 7 -->
+            <li>
+                <p>Further topics
+                <ol>
+                    <li type="a">
+                        Publication of editor’s meeting notes: The editors discussed publishing their meeting notes on
+                        sed-ml.org, following the example of the SBGN Editors group - Decision: From now onwards,
+                        meeting notes will be published on the <a href="https://sed-ml.github.io/about.html"
+                                                                  target="_blank">About page</a>.
+                    </li>
+                    <li type="a">
+                        Development of L2: The editors came to the conclusion that L1 gets more and more complex, and
+                        some of the older classes from L1V1/2 may not be needed anymore - Conclusion: The editors
+                        propose to stick to L1 for now to gain some more experience with the extensions currently being
+                        discussed. The plan is then to design a new structure in L2, that may hopefully be more simple…
+                        together with the community, using one of the following COMBINE meetings as a kick-off.
+
+                    </li>
+                    <li type="a">
+                        Editors election: Two editors will be substituted by the end of the year, and elections need to
+                        be organised. The editors leaving the board this year will be responsible to organise the
+                        election.
+                    </li>
+                    <li type="a">
+                        COMBINE Coord: The editors discussed who should represent the SED-ML editorial board in the
+                        COMBINE Coordination board, and several editors volunteered - Decision: The editors will consult
+                        the COMBINE Coordination Board to seek advice on how to proceed.
+                    </li>
+                </ol>
+
+                </p>
+            </li>
+            The next editor’s meeting is scheduled for November 2017.
+    </div>
+</div>
+
+{% endblock %}

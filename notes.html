@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="sed-ml.org">
+    <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
+
+    <title>SED-ML editorial board</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- css -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" href="css/sed-ml.css" type="text/css"/>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="_report/js/bootstrap-3.3.7.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="index.html" style="background-color: white; text-decoration: none;"><img src="images/logoSEDML_H75.png" alt="SED-ML logo" height="50"/>&nbsp;&nbsp;&nbsp;
+                    <span class="sedml-heading">Simulation Experiment Description Markup Language</span></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav" style="background-color: white;">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question-circle"></i> Resources <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> SED-ML discuss</a>
+                        </li>
+                        <li>
+                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Mail to editors</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-github"></i> github/SED-ML</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Issue tracker</a>
+                        </li>
+                        <li class="divider"></li>
+                         <li>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-editors" target="_blank"><i class="fa fa-fw fa-wrench"></i> SED-ML editors group</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color: white;">
+                <ul class="nav navbar-nav side-nav">
+
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-home"></i> SED-ML</a>
+                    </li>
+                    <!--
+                    <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-home"></i> SED-ML></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index.html#languages"><i class="fa fa-fw fa-group"></i> Language URNS</a>
+                        </li>
+                        <li>
+                            <a href="index.html#formats"><i class="fa fa-fw fa-group"></i> Format URNS</a>
+                        </li>
+                        <li>
+                            <a href="index.html#symbols"><i class="fa fa-fw fa-group"></i> Symbols</a>
+                        </li>
+                    </ul>
+                    -->
+                    </li>
+                    <li>
+                        <a href="specifications.html"><i class="fa fa-fw fa-file-code-o"></i> Specification</a>
+                    </li>
+                    <li>
+                        <a href="urns.html"><i class="fa fa-fw fa-paper-plane-o"></i> URNs</a>
+                    </li>
+                    <li>
+                        <a href="examples.html"><i class="fa fa-fw fa-line-chart"></i> Examples</a>
+                    </li>
+                    <li>
+                        <a href="showcase.html"><i class="fa fa-fw fa-wrench"></i> Tools & Libraries</a>
+                    </li>
+                    <li>
+                        <a href="publications.html"><i class="fa fa-fw fa-file-text"></i> Publications</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-fw fa-group"></i> Editors</a>
+                    </li>
+                    <li>
+                        <a href="notes.html"><i class="fa fa-fw fa-book"></i> Editor Notes</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                <!-- CONTENT -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><i class="fa fa-fw fa-book"></i> Editor notes</h1>
+        <h2>SED-ML Editors Meeting, 13 Oct 2017</h2>
+        <p>
+            Milan, Italy, Fri, 13. Oct 2017 at 15:00 CEST (COMBINE 2017) <br/>
+            <b>Attendees</b>: Matthias König, David Nickerson, Lucian Smith, Dagmar Waltemath
+        </p>
+        <h3>Topics</h3>
+        <ol>
+            <!-- 1 -->
+            <li>
+                <p>
+                    Summary of progress at COMBINE 2017: The editors reported on the progress made at the COMBINE
+                    meeting, summarising the issues and discussion points which are also listed in the meeting notes
+                    from the COMBINE 2017 Breakout Sessions.<br/>
+                    <b class="label label-default">Decision</b>: The editors will update the L1V3 specification and send
+                    an errata to sed-ml-discuss
+                    (Clarification of the meaning of NA (not available) values; All elements should be derived from
+                    SED-Base; Clarification of the meaning of the attributes numberOfPoints, therefore creation of a new
+                    attribute numberOfSteps and deprecation of the attribute numberOfPoints)
+                    The editors further agreed on including a number of suggestions for the L1V4.
+                </p>
+            </li>
+            <!-- 2 -->
+            <li>
+                <p>
+                    The editors further agreed on including a number of suggestions for the L1V4 specifications, as
+                    discussed at the COMBINE meeting:<br/>
+                <ol>
+                    <li type="a">
+                        Make @id optional on SED-Base and elements that require @id specify that in their
+                        UML/schema.<br/>
+                        <b class="label label-default">Vote</b>: <b class="label label-success">YES</b>
+                    </li>
+                </ol>
+                </p>
+            </li>
+            <!-- 3 -->
+            <li>
+                <p>
+                    The editors postponed other decisions, when they saw need for further discussion in the wider
+                    community, or for further implementation support for testing:
+                <ol>
+                    <li type="a">
+                        Need to be able to iterate over data sources, but need further testing of the proposal via
+                        implementation to make sure it works (this would be in L1V4) - postponed
+                    </li>
+                    <li type="a">
+                        Extend Slice in DataDescription to include a start and end index to enable subsampling data -
+                        postponed
+                    </li>
+                    <li type="a">
+                        Need a way to address data in “complex resources” - discussion whether the suggestion of adding
+                        a Resource class is ready to vote or not, move toward using URIs to address into archives, etc.
+                        - Decision: involve sed-ml-discuss
+                    </li>
+                    <li type="a">
+                        Specifying output file names - The editors remembered from previous meetings that this is not a
+                        popular addition, rather out of scope for SED-ML, but topic for a workflow definition. @id on
+                        Outputs could be used to define an output location. Decision: This suggestion is currently not
+                        ready for addition to L1V4<br/>
+                        <b class="label label-default">Decision</b>: should be brought up on sed-ml-discuss by the
+                        interested parties.
+                    </li>
+                    <li type="a">
+                        DimensionDescription should be extended to support various formats (currently CSV and NuML)<br/>
+                        <b class="label label-default">Vote</b>: Add identifiers for excel and hdf5 and put on the list
+                        on SED-ML website: <b class="label label-success">YES</b>
+                    </li>
+                    <li type="a">
+                        Design plotting styles that are defined and can be “reused” (line styles, colours, symbols, etc)
+                        - This was discussed among the editors, but no clear task to vote on this.
+                    </li>
+                    <li type="a">
+                        Revision of output definitions - This was discussed among the editors, but needs to be discussed
+                        further with the community and a specific proposal needs to be designed & tried out in
+                        implementations
+                    </li>
+                    <li type="a">
+                        Deprecate log-attribute on curves: the result of the breakout sessions at COMBINE was that a new
+                        scale attribute should serve as an enumeration of possible values (log, log10, log2…)
+                    </li>
+                    <li type="a">
+                        Report on the discussion on the addition of a “figure” output type, allows subplots, etc.<br/>
+                        <b class="label label-default">Conclusion</b>:
+                        This needs further discussion on sed-ml-discuss.
+                    </li>
+                    <li type="a">
+                        Agreement amongst editors and during COMBINE breakout that NonUniformTimeCourse and
+                        Interpolation are needed<br/>
+                        <b class="label label-default">Conclusion</b>: Proposal needs fleshing out and discussing on
+                        sed-ml-discuss.
+                    </li>
+                </ol>
+                </p>
+            </li>
+            <!-- 4 -->
+            <li>
+                <p>
+                    At COMBINE, SED-ML Logical models have been discussed. Lucian Smith offered to add example models to
+                    the existing test suite
+
+                </p>
+            </li>
+            <!-- 5 -->
+            <li>
+                <p>
+                    The editors mention that many more issues have been raised on github (<a
+                        href="https://github.com/SED-ML/sed-ml/issues" target="_blank">https://github.com/SED-ML/sed-ml/issues</a>),
+                    but these need to go through sed-ml-discuss before the editors can make decisions.
+                </p>
+            </li>
+            <!-- 6 -->
+            <li>
+                <p>
+                <ol>
+                    <li type="a">
+                        The editors talked about the existing, sparse list of SED-ML presentations on sed-ml.org, which
+                        is not (yet) a helpful resource for people interested in SED-ML<br/>
+                        <b class="label label-default">Decision</b>: Extend list at least with all presentations that
+                        the editors are aware of.
+                    </li>
+                    <li type="a">
+                        The editors further discussed about adding the dates of latest releases on the <a
+                            href="https://sed-ml.github.io/specifications.html" target="_blank">page listing SED-ML
+                        specifications</a><br/>
+                        <b class="label label-default">Decision</b>: Dates for stable releases yes, but not dates for
+                        drafts.
+                    </li>
+                    <li type="a">
+                        The editors decided to promote the <a href="https://github.com/SED-ML/sed-ml/releases/tag/L1V3"
+                                                              target="_blank">release of L1V3</a> (during COMBINE) on
+                        twitter through the COMBINE Coordination account.
+                    </li>
+                    <li type="a">
+                        The editors furthermore plan to provide a longer news item for sed-ml.org
+                    </li>
+                    <li type="a">
+                        The editors discussed about publishing L1V3 in the special issue on standards that appears
+                        annually in the Journal of Integrative Bioinformatics - Decision: The editors aim for publishing
+                        L1V3 in that journal and will prepare the manuscript as soon as the call is out, presumably be
+                        the end of 2018.
+                    </li>
+                    <li type="a">
+                        Matthias König reported on plans of extending the <a
+                            href="http://www.ebi.ac.uk/biomodels-main/modelmonth" target="_blank"> model of the
+                        month</a> provided by BioModels. He would prepare COMBINE archives (including SED-ML files)
+                        whenever possible and provide links to tools that can process the archives<br/>
+                        <b class="label label-default">Conclusion</b>: The editors agree that this would be beneficial
+                        for the community.
+                    </li>
+                </ol>
+                </p>
+            </li>
+            <!-- 7 -->
+            <li>
+                <p>Further topics
+                <ol>
+                    <li type="a">
+                        Publication of editor’s meeting notes: The editors discussed publishing their meeting notes on
+                        sed-ml.org, following the example of the SBGN Editors group - Decision: From now onwards,
+                        meeting notes will be published on the <a href="https://sed-ml.github.io/about.html"
+                                                                  target="_blank">About page</a>.
+                    </li>
+                    <li type="a">
+                        Development of L2: The editors came to the conclusion that L1 gets more and more complex, and
+                        some of the older classes from L1V1/2 may not be needed anymore - Conclusion: The editors
+                        propose to stick to L1 for now to gain some more experience with the extensions currently being
+                        discussed. The plan is then to design a new structure in L2, that may hopefully be more simple…
+                        together with the community, using one of the following COMBINE meetings as a kick-off.
+
+                    </li>
+                    <li type="a">
+                        Editors election: Two editors will be substituted by the end of the year, and elections need to
+                        be organised. The editors leaving the board this year will be responsible to organise the
+                        election.
+                    </li>
+                    <li type="a">
+                        COMBINE Coord: The editors discussed who should represent the SED-ML editorial board in the
+                        COMBINE Coordination board, and several editors volunteered - Decision: The editors will consult
+                        the COMBINE Coordination Board to seek advice on how to proceed.
+                    </li>
+                </ol>
+
+                </p>
+            </li>
+            The next editor’s meeting is scheduled for November 2017.
+    </div>
+</div>
+
+                <!-- END CONTENT -->
+
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr/>
+                        <p>&copy; 2017 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
+                    </div>
+                </div>
+                <!-- END FOOTER -->
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
+
