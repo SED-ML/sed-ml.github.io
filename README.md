@@ -18,6 +18,16 @@ mkvirtualenv sedml-site
 ```
 
 ### Update content
+Updates should be performed in a separate branch and merged via a pull request to `master` branch. I.e. after cloning the repository via
+```
+git clone https://github.com/SED-ML/sed-ml.github.io.git
+cd sed-ml.github.io
+```
+checkout a branch via
+```
+git checkout -b feature-xyz
+```
+
 To update the web pages change the information in the respective templates in
 ```
 ./templates/
@@ -27,3 +37,4 @@ and update the static HTML via
 (sedml-site) cd site_creator
 (sedml-site) ./create_static_html.py
 ```    
+Commit your changes, push the branch to github and open a pull request against master.
