@@ -25,5 +25,5 @@ To update the web pages change the information in the respective templates in
 and update the static HTML via
 ```
 (sedml-site) cd site_creator
-(sedml-site) python ./create_static_html.py
+(sedml-site) ./create_static_html.py
 ```    

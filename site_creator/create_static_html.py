@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 Static site creator for sed-ml.org
 """
