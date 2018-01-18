@@ -1,18 +1,4 @@
 editors:
-- name:      'David Nickerson'
-  active:    True
-  term:      'editor, 2015-2017'
-  image:     'nickerson_bio.jpg'
-  text:      '<a href="https://about.me/david.nickerson/">David Nickerson</a> (PhD in Bioengineering)
-                    is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz"
-                                                          class="external text"
-                                                          title="http://www.abi.auckland.ac.nz/">Auckland
-                    Bioengineering Institute</a> where he leads the Auckland Kidney
-                    Physiome project. David is also involved in many aspects of the CellML project as well
-                    as various cardiac modeling projects.
-                    He also develops several CellML-related software tools and is the current CellML
-                    delegate to the COMBINE coordination group.'
-
 - name:      'Lucian Smith'
   active:    True
   term:      'editor, 2016-2018'
@@ -27,27 +13,19 @@ editors:
 - name:      'Matthias K&ouml;nig'
   active:    True
   term:      'editor, 2017-2019'
-  image:     'koenig_bio.jpg'
-  text:      'Matthias K&ouml;nig (PhD. in Biophysics) leads an independent <a
-                        href="https://www.livermetabolism.com">junior research group</a>
-                    for computational modeling of the liver within the German LiSyM consortium.
-                    He is lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a>
-                     and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a> and co-developer
-                     of the SBML simulation software <a href="https://github.com/sys-bio/roadrunner">roadrunner</a>
-                     and <a href="https://github.com/sys-bio/tellurium">tellurium</a>.'
-
-- name:      'Brett Olivier'
-  active:    True
-  term:      'editor, 2015-2017'
-  image:     'brett_bio.jpg'
-  text:      'Brett G. Olivier (Ph.D. in Biochemistry) is a Researcher in the Systems Bioinformatics
-                    group at the <a href="http://www.ibi.vu.nl/sysbio/doku.php/group/start">VU University
-                    Amsterdam </a>. His interests range from fundamental theoretical research (metabolic
-                    regulation analysis, control analysis, constraint based modelling) to software design
-                    and development (<a href="http://cbmpy.sourceforge.net">CBMPy</a>,
-                    <a href="http://pysces.sourceforge.net">PySCeS</a>,
-                    <a href="http://jjj.biochem.sun.ac.za">JWS Online</a>) and the development and
-                    implementation of open modelling standards.'
+  image:     'koenig_bio.png'
+  text:      '<a href="https://livermetabolism.com">Matthias König</a> (PhD. in Biophysics) leads an
+                junior research group for Systems Biology and Systems Medicine of the liver at the
+                <a href="https://www.hu-berlin.de">Humboldt University Berlin</a>.
+                His research areas include computational modeling, data science,
+                development of bioinformatics methods and machine learning based on biological, medical and clinical
+                data. He has been actively involved in the development of SBML, SED-ML
+                and software supporting these standards: Lead-developer of
+                <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a> and
+                <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>;
+                co-developer of the SBML simulation software
+                <a href="http://libroadrunner.org/">libroadrunner</a> and
+                <a href="http://tellurium.analogmachine.org/">tellurium</a>.'
 
 - name:      'Dagmar Waltemath'
   active:    True
@@ -58,8 +36,52 @@ editors:
                     actively involved in the development of SED-ML, SBML, and the COMBINE
                     Archive format. She is the COMBINE coordinator for SED-ML.'
 
+- name:      'Herbert Sauro'
+  active:    True
+  term:      'editor, 2018-2020'
+  image:     'sauro_bio.png'
+  text:      '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is an Associate Professor in the
+                University of Washington, Department of Bioengineering. Herbert has been involved in standards and
+                software development in systems biology for a long time and was one of the founding members of the original SBML team.
+                The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students,
+                supports the current SED-ML and COMBINE standards.'
+
+- name:      'Alan Garny'
+  active:    True
+  term:      'editor, 2018-2020'
+  image:     'garny_bio.jpg'
+  text:      '<a href="https://scholar.google.de/citations?user=qKuU2aMAAAAJ&hl=en">Alan Garny</a> (DPhil in Computational Physiology) is the project manager and lead developer of <a href="http://www.opencor.ws/">OpenCOR</a>,
+                a CellML-based modelling environment that relies on COMBINE standards (incl. SED-ML). He is also involved in the
+                <a href="https://www.cellml.org/">CellML</a> project, of which he is currently an editor, and in cardiac electrophysiological modelling.'
 
 #########################################################################
+
+- name:      'David Nickerson'
+  active:    False
+  term:      'editor, 2015-2017'
+  image:     'nickerson_bio.jpg'
+  text:      '<a href="https://about.me/david.nickerson/">David Nickerson</a> (PhD in Bioengineering)
+                    is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz"
+                                                          class="external text"
+                                                          title="http://www.abi.auckland.ac.nz/">Auckland
+                    Bioengineering Institute</a> where he leads the Auckland Kidney
+                    Physiome project. David is also involved in many aspects of the CellML project as well
+                    as various cardiac modeling projects.
+                    He also develops several CellML-related software tools and is the current CellML
+                    delegate to the COMBINE coordination group.'
+
+- name:      'Brett Olivier'
+  active:    False
+  term:      'editor, 2015-2017'
+  image:     'brett_bio.jpg'
+  text:      'Brett G. Olivier (Ph.D. in Biochemistry) is a Researcher in the Systems Bioinformatics
+                    group at the <a href="http://www.ibi.vu.nl/sysbio/doku.php/group/start">VU University
+                    Amsterdam </a>. His interests range from fundamental theoretical research (metabolic
+                    regulation analysis, control analysis, constraint based modelling) to software design
+                    and development (<a href="http://cbmpy.sourceforge.net">CBMPy</a>,
+                    <a href="http://pysces.sourceforge.net">PySCeS</a>,
+                    <a href="http://jjj.biochem.sun.ac.za">JWS Online</a>) and the development and
+                    implementation of open modelling standards.'
 
 - name:      'Ion Moraru'
   active:    False

@@ -1,5 +1,12 @@
 news:
 - show:  True
+  icon:  'fa-user'
+  link:  'about.html'
+  date:  '2018-01-16'
+  title: 'Herbert Sauro and Alan Garny elected as SED-ML editors'
+  text:  'Herbert Sauro and Alan Garny have been elected to replace David Nickerson and Brett Olivier.'
+
+- show:  True
   icon:  'fa-github'
   link:  'https://github.com/SED-ML/sed-ml/releases/tag/L1V3'
   date:  '2017-10-09'
