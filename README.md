@@ -13,7 +13,7 @@ To be able to run the site creator you should create a python virtual environmen
 the necessary dependencies.
 ```
 cd site_creator
-mkvirtualenv sedml-site
+mkvirtualenv sedml-site --python=python3
 (sedml-site) pip install -r requirements.txt
 ```
 
