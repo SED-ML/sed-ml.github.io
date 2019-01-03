@@ -31,10 +31,8 @@ editors:
   active:    True
   term:      'editor, 2017-2019'
   image:     'waltemath_bio.jpg'
-  text:      '<a href="https://scholar.google.de/citations?user=wmBwmLIAAAAJ">Dagmar Waltemath</a> (Ph.D. in Computer Science) works on strategies for
-                    data and model management in computational biology. She has been
-                    actively involved in the development of SED-ML, SBML, and the COMBINE
-                    Archive format. She is the COMBINE coordinator for SED-ML.'
+  text:      '<a href="https://scholar.google.de/citations?user=wmBwmLIAAAAJ">Dagmar Waltemath</a> (Ph.D. in Computer Science) is a professor in medical informatics at the University Medicine Greifswald. Dagmar works on strategies for biomedical research data management and develops concepts for the integration of that data with computational models describing biology and disease. She has been actively involved in the development of SED-ML, SBML, and the COMBINE Archive format.'
+
 
 - name:      'Herbert Sauro'
   active:    True
@@ -43,8 +41,7 @@ editors:
   text:      '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is an Associate Professor in the
                 University of Washington, Department of Bioengineering. Herbert has been involved in standards and
                 software development in systems biology for a long time and was one of the founding members of the original SBML team.
-                The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students,
-                supports the current SED-ML and COMBINE standards.'
+                The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
 
 - name:      'Alan Garny'
   active:    True

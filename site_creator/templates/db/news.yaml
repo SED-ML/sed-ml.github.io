@@ -1,5 +1,13 @@
 news:
 - show:  True
+  date:  '2019-01-03'
+  icon:  'fa-group'
+  link:  'http://co.mbine.org/events/HARMONY_2019'
+  title: 'HARMONY 2019 in Pasadena, CA, USA'
+  text:  'Come along and join members of the SED-ML community and others from throughout the COMBINE network at
+          HARMONY 2019 held March 25-29 in Pasadena, CA, USA.'
+
+- show:  True
   icon:  'fa-user'
   link:  'about.html'
   date:  '2018-01-16'
@@ -27,7 +35,7 @@ news:
   title: 'Matthias K&ouml;nig and Dagmar Waltemath elected as SED-ML editors'
   text:  'Matthias K&oumlnig and Dagmar Waltemath have been elected to replace Ion Moraru and Sven Sahle.'
 
-- show:  True
+- show:  False
   date:  '2017-06-26'
   icon:  'fa-group'
   link:  'http://co.mbine.org/events/HARMONY_2017'
@@ -35,14 +43,14 @@ news:
   text:  'Come along and join members of the SED-ML community and others from throughout the COMBINE network at
           HARMONY 2017 held June 26-30 in Seattle, WA, USA.'
 
-- show:  True
+- show:  False
   icon:  'fa-user'
   link:  'about.html'
   date:  '2016-01-01'
   title: 'Lucian Smith elected as SED-ML editor'
   text:  'Lucian Smith has been elected to replace Jonathan Cooper on the SED-ML editorial board.'
 
-- show:  True
+- show:  False
   icon:  'fa-group'
   link:  'http://co.mbine.org/events/HARMONY_2016'
   date:  '2016-06-07'
