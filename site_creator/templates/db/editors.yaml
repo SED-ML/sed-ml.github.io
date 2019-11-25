@@ -1,15 +1,4 @@
 editors:
-- name:      'Lucian Smith'
-  active:    True
-  term:      'editor, 2016-2018'
-  image:     'lucian_bio.jpg'
-  text:      'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for both the
-                    University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and for
-                    Caltech with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a>. He is the
-                    co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and, more
-                    recently, of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML
-                    editor, working extensively with the SBML Hierarchical Model Composition specification.'
-
 - name:      'Matthias K&ouml;nig'
   active:    True
   term:      'editor, 2017-2019'
@@ -33,12 +22,11 @@ editors:
   image:     'waltemath_bio.jpg'
   text:      '<a href="https://scholar.google.de/citations?user=wmBwmLIAAAAJ">Dagmar Waltemath</a> (Ph.D. in Computer Science) is a professor in medical informatics at the University Medicine Greifswald. Dagmar works on strategies for biomedical research data management and develops concepts for the integration of that data with computational models describing biology and disease. She has been actively involved in the development of SED-ML, SBML, and the COMBINE Archive format.'
 
-
 - name:      'Herbert Sauro'
   active:    True
   term:      'editor, 2018-2020'
   image:     'sauro_bio.png'
-  text:      '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is an Associate Professor in the
+  text:      '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is a Professor in the
                 University of Washington, Department of Bioengineering. Herbert has been involved in standards and
                 software development in systems biology for a long time and was one of the founding members of the original SBML team.
                 The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
@@ -51,7 +39,31 @@ editors:
                 a CellML-based modelling environment that relies on COMBINE standards (incl. SED-ML). He is also involved in the
                 <a href="https://www.cellml.org/">CellML</a> project, of which he is currently an editor, and in cardiac electrophysiological modelling.'
 
+- name:      'David Nickerson'
+  active:    True
+  term:      'editor, 2019-2021'
+  image:     'nickerson_bio.jpg'
+  text:      '<a href="https://unidirectory.auckland.ac.nz/profile/dnic019">David Nickerson</a> (PhD in Bioengineering)
+                    is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz"
+                                                          class="external text"
+                                                          title="http://www.abi.auckland.ac.nz/">Auckland
+                    Bioengineering Institute</a> where he leads the Auckland Physiome Group, working on several projects addressing
+                    reproducibility, discoverability, and reusability in computational physiology. David is also involved in many 
+                    aspects of the CellML project as well as various cardiac modeling projects. He also develops several 
+                    CellML-related software tools and is the current CellML delegate to the COMBINE coordination group.'
+
 #########################################################################
+
+- name:      'Lucian Smith'
+  active:    False
+  term:      'editor, 2016-2018'
+  image:     'lucian_bio.jpg'
+  text:      'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for both the
+                    University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and for
+                    Caltech with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a>. He is the
+                    co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and, more
+                    recently, of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML
+                    editor, working extensively with the SBML Hierarchical Model Composition specification.'
 
 - name:      'David Nickerson'
   active:    False
