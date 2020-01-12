@@ -1,4 +1,19 @@
 presentations:
+- author: 'Martin Peters, Jacky Snoep, Dagmar Waltemath'
+  date:   '2016'
+  title:  'SED-ML support in JWS Online - Using SED-ML and COMBINE archives to reproduce simulation results'
+  file:   'JWS_Peters2016.pdf'
+
+- author: 'David Nickerson'
+  date:   '2014'
+  title:  'Introduction to SED-ML'
+  file:   'SED-ML_Nickerson2014.pdf'
+
+- author: 'Frank Bergmann, Dagmar Waltemath'
+  date:   '2010'
+  title:  'The Simulation Experiment Description Language (SED-ML)'
+  file:   'SED-ML_Bergmann2010b.pdf'
+
 - author: 'Frank Bergmann'
   date:   '2010'
   title:  'SED-ML'

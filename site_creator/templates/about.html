@@ -23,7 +23,7 @@
         <div class="thumbnail" style="border: 0;">
             <img src="images/people/{{ e.image }}" alt="{{ e.name }}" class="img-rounded" style="height: 200px;">
             <div class="caption">
-                <p style="font-weight: bold">{{ e.name }} ({{ e.term }})</p>
+                <p style="font-weight: bold">{{ e.name }} ({% for term in e.terms %}{{ term }}{{ "; " if not loop.last }}{% endfor %})</p>
                 <p>{{ e.text }}</p>
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="thumbnail" style="border: 0;">
             <img src="images/people/{{ e.image }}" alt="{{ e.name }}" class="img-rounded" style="height: 200px;">
             <div class="caption">
-                <p style="font-weight: bold">{{ e.name }} ({{ e.term }})</p>
+                <p style="font-weight: bold">{{ e.name }} ({% for term in e.terms %}{{ term }}{{ "; " if not loop.last }}{% endfor %})</p>
                 <p>{{ e.text }}</p>
             </div>
         </div>
@@ -78,7 +78,7 @@
                          style="height: 80px;"/>
                 </td>
                 <td>
-                    <dt>{{ e.name }} ({{ e.term }})</dt>
+                    <dt>{{ e.name }} ({% for term in e.terms %}{{ term }}{{ "; " if not loop.last }}{% endfor %})</dt>
                     <dd>{{ e.text }}</dd>
                 </td>
             </tr>

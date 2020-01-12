@@ -1,4 +1,12 @@
 publications:
+- id:       'Bergmann2018'
+  year:     '2018'
+  authors:  'Bergmann FT, Cooper J, K&ouml;nig M, Moraru I, Nickerson D, Le Nov&egrave;re N, Olivier BG, Sahle S, Smith L, Waltemath D'
+  title:    'Simulation Experiment Description Markup Language (SED-ML) Level 1 Version 3 (L1V3)'
+  journal:  'Integr Bioinform. 2018;15(1):20170086. Published 2018 Mar 19. doi:10.1515/jib-2017-0086'
+  pmid:     '29550789'
+  link:     'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6167040/'
+
 - id:       'Bergmann2017'
   year:     '2017'
   authors:  'Bergmann FT, Nickerson D, Waltemath D, Scharm M.'
@@ -33,7 +41,7 @@ publications:
 
 - id:       'Bergmann2015'
   year:     '2015'
-  authors:  'Bergmann FT, Cooper J, Le Novère N, Nickerson D, Waltemath D.'
+  authors:  'Bergmann FT, Cooper J, Le Nov&egrave;re N, Nickerson D, Waltemath D.'
   title:    'Simulation Experiment Description Markup Language (SED-ML) Level 1 Version 2.'
   journal:  'J Integr Bioinform. 2015 Sep 4;12(2):262. doi: 10.2390/biecoll-jib-2015-262.'
   pmid:     '26528560'
@@ -57,7 +65,7 @@ publications:
 
 - id:       'Waltemath2011'
   year:     '2011'
-  authors:  'Waltemath D, Adams R, Bergmann FT, Hucka M, Kolpakov F, Miller AK, Moraru II, Nickerson D, Sahle S, Snoep JL, Le Novère N.'
+  authors:  'Waltemath D, Adams R, Bergmann FT, Hucka M, Kolpakov F, Miller AK, Moraru II, Nickerson D, Sahle S, Snoep JL, Le Nov&egrave;re N.'
   title:    'Reproducible computational biology experiments with SED-ML--the Simulation Experiment Description Markup Language.'
   journal:  'BMC Syst Biol. 2011 Dec 15;5:198. doi: 10.1186/1752-0509-5-198.'
   pmid:     '22172142'
@@ -65,7 +73,7 @@ publications:
 
 - id:       'Waltemath2011b'
   year:     '2011'
-  authors:  'Waltemath D, Bergmann FT, Adams R, LeNovère N'
+  authors:  'Waltemath D, Bergmann FT, Adams R, LeNov&egrave;re N'
   title:    'Simulation Experiment Description Markup Language (SED-ML) : Level 1 Version 1'
   journal:  'Nature Precedings. doi:10.1038/npre.2011.5846.1.'
   pmid:
@@ -75,15 +83,23 @@ publications:
   year:     '2011'
   authors:  'Waltemath D, Adams R, Beard DA, Bergmann FT, Bhalla US, Britten R, Chelliah V, Cooling MT, Cooper J,
              Crampin EJ, Garny A, Hoops S, Hucka M, Hunter P, Klipp E, Laibe C, Miller AK, Moraru I, Nickerson D,
-             Nielsen P, Nikolski M, Sahle S, Sauro HM, Schmidt H, Snoep JL, Tolle D, Wolkenhauer O, Le Novère N.'
+             Nielsen P, Nikolski M, Sahle S, Sauro HM, Schmidt H, Snoep JL, Tolle D, Wolkenhauer O, Le Nov&egrave;re N.'
   title:    'Minimum Information About a Simulation Experiment (MIASE).'
   journal:  'PLoS Comput Biol. 2011 Apr;7(4):e1001122. doi: 10.1371/journal.pcbi.1001122. Epub 2011 Apr 28.'
   pmid:     '21552546'
   link:     'http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001122'
 
+- id:       'Bergmann2010'
+  year:     '2010'
+  authors:  'Bergmann FT.'
+  title:    'A simple nested simulation for SED-ML.'
+  journal:  'Nature Precedings (2010): 1-1.'
+  pmid:
+  link:     'https://www.nature.com/articles/npre.2010.4257.1'
+
 - id:       'Koehn2008'
   year:     '2008'
-  authors:  'Dagmar Köhn, Nicolas Le Novère'
+  authors:  'Dagmar K&ouml;hn, Nicolas Le Nov&egrave;re'
   title:    'SED-ML – An XML Format for the Implementation of the MIASE Guidelines.'
   journal:  'Lecture Notes in Computer Science, Computational Methods in Systems Biology 2008'
   pmid:
