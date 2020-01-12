@@ -1,11 +1,17 @@
 news:
 - show:  True
-  date:  '2019-01-03'
+  date:  '2020-03-09'
   icon:  'fa-group'
-  link:  'http://co.mbine.org/events/HARMONY_2019'
-  title: 'HARMONY 2019 in Pasadena, CA, USA'
-  text:  'Come along and join members of the SED-ML community and others from throughout the COMBINE network at
-          HARMONY 2019 held March 25-29 in Pasadena, CA, USA.'
+  link:  'http://co.mbine.org/events/HARMONY_2020'
+  title: 'HARMONY 2020, Cambridge UK, March 09 -13'
+  text:  'HARMONY2020 will take place on March 09 -13, 2020, in Cambridge, UK, at the campus of the European Bioinformatics Institute, European Molecular Biology Laboratory (EMBL-EBI).'
+
+- show:  True
+  icon:  'fa-user'
+  link:  'about.html'
+  date:  '2020-01-01'
+  title: 'Matthias K&ouml;nig and Frank Bergmann elected as SED-ML editors'
+  text:  'Frank Bergmann has been elected to replace Dagmar Waltemath; Matthias K&ouml;nig serves a second term.'
 
 - show:  True
   icon:  'fa-user'
@@ -21,14 +27,14 @@ news:
   title: 'Release of L1V3'
   text:  'SED-ML Level 1 Version 3 has been released.'
 
-- show:  True
+- show:  False
   icon:  'fa-github'
   link:  'https://github.com/sed-ml'
   date:  '2017-07-07'
   title: 'Migration to github'
   text:  'All SED-ML repositories have been migrated to github.'
 
-- show:  True
+- show:  False
   icon:  'fa-user'
   link:  'about.html'
   date:  '2017-06-26'
