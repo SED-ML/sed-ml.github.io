@@ -16,7 +16,7 @@ editors:
   - '2020-2022'
   - '2011-2014'
   image: 'bergmann_bio.jpg'
-  text: 'Frank T. Bergmann (Ph.D. in Computational and Systems Biology) is a researcher at the <a href="http://caltech.edu" class="external text">California Institute of Technology</a> where his primary interest is in standardization efforts around <a href="http://sbml.org" class="external text">SBML</a>. He is also the lead developer of the <a href="http://sys-bio.org" class="external text">Systems Biology Workbench</a> along with the <a href="http://libsedml.sf.net" class="external text">LibSEDML library</a>.'
+  text: '<a href="https://www.cos.uni-heidelberg.de/index.php/f.bergmann?l=_e">Frank T. Bergmann</a> (PhD. in Computational and Systems Biology) is a researcher at the University of Heidelberg where he is one of the core developers of <a href="https://copasi.org">COPASI</a>, a simulation and modeling environment supporting the COMBINE standards. He also maintains several <a href="https://github.com/fbergmann">open source projects</a>, supporting the use of the COMBINE standards.'
 
 - name: 'Herbert Sauro'
   active: True
