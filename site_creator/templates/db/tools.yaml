@@ -2,7 +2,7 @@ tools:
 - name:   'SED-ML Web Tools'
   icon:
   image:  'SED-ML_Web_Tools.png'
-  link:   'http://sysbioapps.dyndns.org/SED-ML_Web_Tools'
+  link:   'http://sysbioapps.spdns.org/SED-ML_Web_Tools'
   text:   'The SED-ML Web Tools is an online application providing support to
             edit, simulate and validate SED-ML files online. It supports SBML as well as CellML
             models.'
