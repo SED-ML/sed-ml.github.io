@@ -37,8 +37,9 @@ def read_yaml(name, directory="./templates/db"):
     """
     path = os.path.join(directory, '{}.yaml'.format(name))
     stram = open(path, "r")
-    data = yaml.load(stram, Loader=yaml.FullLoader)
+    data = yaml.load(stram)
     return data[name]
+
 
 PUBLICATIONS = read_yaml("publications")
 EDITORS = read_yaml("editors")
