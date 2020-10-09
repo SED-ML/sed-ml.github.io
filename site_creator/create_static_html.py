@@ -1,30 +1,29 @@
-#!/usr/bin/python
 """
 Static site creator for sed-ml.org
 """
-from __future__ import print_function, absolute_import
+from pathlib import Path
 import codecs
 import os
-import warnings
 from jinja2 import Environment, FileSystemLoader
 import yaml
 
-# template location
-TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+TEMPLATE_DIR = Path(__file__).parent / 'templates'
+
 # FIXME: autodetect all html files
-SITES = ['index.html',
-         'about.html',
-         'contact.html',
-         'examples.html',
-         'publications.html',
-         'showcase.html',
-         'specifications.html',
-         'urns.html',
-         'notes.html'
-         ]
+SITES = [
+    'index.html',
+    'about.html',
+    'contact.html',
+    'examples.html',
+    'publications.html',
+    'showcase.html',
+    'specifications.html',
+    'urns.html',
+    'notes.html'
+]
 
 
-def read_yaml(name, directory="./templates/db"):
+def read_yaml(name: str, directory="./templates/db"):
     """ Read yaml data.
 
         'speakers' : ordered list of upcoming speakers (next to last)

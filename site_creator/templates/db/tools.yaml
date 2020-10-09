@@ -104,6 +104,32 @@ tools:
            This work is based on the COPASI C# bindings and libSedML..'
   features:
 
+- name:   'sbmlsim'
+  icon:
+  image:
+  link:   'https://github.com/matthiaskoenig/sbmlsim'
+  text:   'sbmlsim is a collection of python utilities to simulate to simplify
+           simulations with SBML models implemented on top of roadrunner.
+           Features include among others simulation experiments, simulation reports
+          parameter fitting.'
+  features:
+
+
+- name:   'Systems Biology Simulation Core Library'
+  icon:
+  image:  'Systems_Biology_Simulation_Core_Library.png'
+  link:   'https://github.com/draeger-lab/SBSCL'
+  text:   'The Systems Biology Simulation Core Library provides an efficient
+            and exhaustive Java implementation of methods to interpret the content of models encoded
+            in the Systems Biology Markup Language (SBML) and its numerical solution. This library
+            is based on the JSBML project and can be used on every operating system for which a Java
+            Virtual Machine is available. Please note that this project does not contain any user
+            interface, neither a command-line interface, nor a graphical user interface. This
+            project has been developed as a pure programming library. To support the MIASE effort,
+            it understands SED-ML files. Its abstract type and interface hierarchy facilitates the
+            implementation of further community standards, such as CellML.'
+  features:
+
 - name:   'iBioSim'
   icon:
   image:
@@ -123,21 +149,6 @@ tools:
            their visualization, simulation, parameters fitting and analyses.'
   features:
 
-- name:   'Systems Biology Simulation Core Library'
-  icon:
-  image:  'Systems_Biology_Simulation_Core_Library.png'
-  link:   'http://sourceforge.net/projects/simulation-core/'
-  text:   'The Systems Biology Simulation Core Library provides an efficient
-            and exhaustive Java implementation of methods to interpret the content of models encoded
-            in the Systems Biology Markup Language (SBML) and its numerical solution. This library
-            is based on the JSBML project and can be used on every operating system for which a Java
-            Virtual Machine is available. Please note that this project does not contain any user
-            interface, neither a command-line interface, nor a graphical user interface. This
-            project has been developed as a pure programming library. To support the MIASE effort,
-            it understands SED-ML files. Its abstract type and interface hierarchy facilitates the
-            implementation of further community standards, such as CellML.'
-  features:
-
 - name:   'SBML Testsuite'
   icon:
   image:  'SBML_Testsuite.png'
@@ -152,31 +163,4 @@ tools:
   image:
   link:   'https://github.com/SED-ML/sedml-test-suite'
   text:   'A test suite for SED-ML, modeled after the SBML test suite.'
-  features:
-
-- name:   'SED-ML Online Validator'
-  icon:
-  image:
-  link:   'http://www.sbsi.ed.ac.uk/html/sedml/index.html'
-  text:   'SED-ML Validator.'
-  features:
-
-- name:   'Repose'
-  icon:
-  image:  'Repose.png'
-  link:   'http://sed.project.cwi.nl'
-  text:   'Repose is a web-based repository that lets modellers develop,
-            curate, and archive simulation-experiment descriptions written in XML, e.g. SBML, or in
-            imperative programming languages, e.g. C++. Repose encourages modellers to annotate
-            their simulation-experiments with text and images, experimental data and domain
-            meta-information. These informal annotations aid organisation and classification of the
-            simulation-experiments, and complement SED-ML formal precision to produce
-            simulation-experiments that can be understood by both men and machines.'
-  features:
-
-- name:   'SED-ML Processing Service'
-  icon:
-  image:
-  link:   'http://cellml-api.hg.sourceforge.net/hgweb/cellml-api/cellml-api/file/38e86c8b32e3/SProS'
-  text:   'SED-ML Processing Service.'
   features:
