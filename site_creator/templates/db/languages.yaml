@@ -66,3 +66,7 @@ languages:
 - language: 'VCML (generic)'
   urn:      'urn:sedml:language:vcml'
   url:
+
+- language: 'BNGL (generic)'
+  urn:      'urn:sedml:language:bngl'
+  url:      'https://bionetgen.org'
