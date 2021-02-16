@@ -1,5 +1,17 @@
 news:
 - show:  True
+  icon:  'fa-user'
+  link:  'about.html'
+  date:  '2021-02-10'
+  title: 'Jonathan Karr and Tomas Helikar elected as SED-ML editors'
+  text:  'Jonathan Karr and Tomas Helikar replace Herbert Sauro and Alan Garny.'
+- show:  True
+  date:  '2020-03-09'
+  icon:  'fa-group'
+  link:  'http://co.mbine.org/events/HARMONY_2021'
+  title: 'HARMONY 2021, Online (virtual) meeting, March 22-26'
+  text:  'HARMONY2021 will take place on March 22-26, 2021, as an online hackathon.'
+- show:  False
   date:  '2020-03-09'
   icon:  'fa-group'
   link:  'http://co.mbine.org/events/HARMONY_2020'
