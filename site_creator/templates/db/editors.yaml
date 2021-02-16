@@ -46,14 +46,14 @@ editors:
 # Former editors
 # -----------------------------------------------------------------------------
 - name: 'Alan Garny'
-  active: True
+  active: False
   terms:
   - '2018-2020'
   image: 'garny_bio.jpg'
   text: '<a href="https://scholar.google.de/citations?user=qKuU2aMAAAAJ&hl=en">Alan Garny</a> (DPhil in Computational Physiology) is the project manager and lead developer of <a href="http://www.opencor.ws/">OpenCOR</a>, a CellML-based modelling environment that relies on COMBINE standards (incl. SED-ML). He is also involved in the <a href="https://www.cellml.org/">CellML</a> project, of which he is currently an editor, and in cardiac electrophysiological modelling.'
 
 - name: 'Herbert Sauro'
-  active: True
+  active: False
   terms:
   - '2018-2020'
   image: 'sauro_bio.png'
