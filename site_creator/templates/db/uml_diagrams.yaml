@@ -1,0 +1,55 @@
+uml_diagrams:
+- filename: 'sedml/uml/00_Legend.svg'
+  title:    'Legend'  
+  width:    '800px'
+- filename: 'sedml/uml/sedBase.svg'
+  title:    'Base class (<code>SedBase</code>)'  
+  width:    '400px'
+
+- filename: 'sedml/uml/abstractTask.svg'
+  title:    'Tasks (<code>AbstractTask</code>, <code>Task</code>, <code>RepeatedTask</code>)'
+  width:    '400px'
+- filename: 'sedml/uml/repeatedTask.svg'
+  title:    'Repeated tasks (<code>RepeatedTask</code>, <code>Range</code>, <code>SetValue</code>)'
+  width:    '600px'
+- filename: 'sedml/uml/range.svg'
+  title:    'Ranges of a repeated task (<code>Range</code>, <code>FunctionalRange</code>, <code>UniformRange</code>, <code>VectorRange</code>)'
+  width:    '800px'
+
+- filename: 'sedml/uml/model.svg'
+  title:    'Model and changes to models (<code>Model</code>, <code>Change</code>)'
+  width:    '500px'
+- filename: 'sedml/uml/change.svg'
+  title:    'Model change (<code>Change</code>, <code>ChangeAttribute</code>, <code>ComputeChange</code>, <code>AddXML</code>, <code>RemoveXML</code>, <code>ChangeXML</code>)'
+  width:    '600px'
+
+- filename: 'sedml/uml/simulation.svg'
+  title:    'Simulation, algorithm, and changes to algorithm parameters (<code>Simulation</code>, <code>OneStep</code>, <code>SteadyState</code>, <code>UniformTimeCourse</code>, <code>Algorithm</code>, <code>AlgorithmParameter</code>)'
+  width:    '600px'
+
+- filename: 'sedml/uml/output.svg'
+  title:    'Reports and plots (<code>Output</code>, <code>Report</code>, <code>Plot2D</code>, <code>Plot3D</code>, <code>DataSet</code>, <code>Curve</code>, <code>Surface</code>)'
+  width:    '600px'
+
+- filename: 'sedml/uml/dataGenerator.svg'
+  title:    'Recording simulation outputs for reports and plots (<code>DataGenerator</code>, <code>Variable</code>, <code>Parameter</code>)'
+  width:    '400px'
+
+- filename: 'sedml/uml/dataDescription.svg'
+  title:    'Input data (<code>DataDescription</code>, <code>DimensionDescription</code>, <code>DataSource</code>, <code>Slice</code>)'
+  width:    '800px'
+- filename: 'sedml/uml/dataSource.svg'
+  title:    'Sources of input data (<code>DataSource</code>)'
+  width:    '600px'
+  show:     False
+- filename: 'sedml/uml/slice.svg'
+  title:    'Slices of input data (<code>Slice</code>)'
+  width:    '300px'
+  show:     False
+
+- filename: 'sedml/uml/variable.svg'
+  title:    'Model and simulation variables for calculating model changes and recording simulation outputs (<code>Variable</code>)'  
+  width:    '300px'
+- filename: 'sedml/uml/parameter.svg'
+  title:    'Parameters of mathematical expressions for calculating model changes and recording simulation outputs (<code>Parameter</code>)'  
+  width:    '200px'
