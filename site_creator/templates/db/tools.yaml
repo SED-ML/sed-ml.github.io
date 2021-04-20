@@ -1,65 +1,232 @@
 tools:
-- name:   'SED-ML Web Tools'
+- name:       'BioSimulators'
   icon:
-  image:  'SED-ML_Web_Tools.png'
-  link:   'http://sysbioapps.spdns.org/SED-ML_Web_Tools'
-  text:   'The SED-ML Web Tools is an online application providing support to
-            edit, simulate and validate SED-ML files online. It supports SBML as well as CellML
-            models.'
+  image:
+  link:       'https://biosimulators.org'
+  text:       'Registry of simulation tools with information about the model formats, simulation formats, modeling frameworks,
+               and simulation algorithms that they support. Many simulation tools are available as Docker images with standardized
+               entrypoints for executing SED-ML files in COMBINE/OMEX archives.'
   features:
+  sedMLVersions:
+  - Any
+  modelLanguages:
+  - Any
 
-- name:   'tellurium'
+- name:       'BioSimulators test suite'
   icon:
-  image:  'tellurium.png'
-  link:   'http://tellurium.analogmachine.org/'
-  text:   'Tellurium (te.) is a Python environment based on spyder2 IDE. It combines a number of existing libraries,
-          including libSBML, libRoadRunner (including libStruct), libAntimony, and is extensible via telPlugins.
-          tellurium supports SED-ML L1V1, L1V2 and L1V3'
+  image:
+  link:       'https://github.com/biosimulators/Biosimulators_test_suite/'
+  text:       'Tool for checking that simulation tools execute SED-ML files and COMBINE archives consistently with the specifications of these formats.'
   features:
+  sedMLVersions:
+  - L1V3
+  modelLanguages:
+  - SBML
+  - SBML-fbc
+  - SBML-qual
+  - XML-based
+  - Any
 
-- name:   'OpenCOR'
+- name:       'BioSimulators utils'
   icon:
-  image:  'OpenCOR.png'
-  link:   'http://www.opencor.ws/'
-  text:   'OpenCOR is an open source cross-platform modelling environment (and a replacement for COR)'
+  image:
+  link:       'https://github.com/biosimulators/Biosimulators_utils/'
+  text:       'Command-line application for validating and executing SED-ML documents inside COMBINE/OMEX 
+               archives with <a href="https://biosimulators.org">BioSimulators</a>-compliant simulation tool.
+               Also provides a high-level Python library for reading, writing, validating and executing SED-ML
+               documents, including documents inside COMBINE/OMEX archives.'
   features:
+  sedMLVersions:
+  - L1V3
+  modelLanguages:
+  - SBML
+  - SBML-fbc
+  - SBML-qual
+  - XML-based
+  - Any
 
-
-- name:   'SED-ML Script Editor'
+- name:   'BioUML'
   icon:
-  image:  'SED-ML_Script_Editor.png'
-  link:   'http://libsedml.sourceforge.net/libSedML/SedMLScript.html'
-  text:   'The SED-ML Script Editor allows to construct SED-ML documents using
-            a simplified script language. Starting out by directly importing SBML or CellML models
-            an initial script is generated that can be simulated. From there it is easy to modify it
-            to suite your needs.'
+  image:
+  link:   'http://wiki.biouml.org/index.php/Landing'
+  text:   'Integrated Java platform for biomedical research.
+           It spans a comprehensive range of capabilities, including access to databases with experimental data,
+           tools for formalized description of biological systems structure and functioning, as well as tools for
+           their visualization, simulation, parameters fitting and analyses.'
   features:
+  sedMLVersions: []
+  modelLanguages:
+  - SBML
+  show: False
+
+- name:   'CellDesigner'
+  icon:
+  image:  'CellDesigner.png'
+  link:  'http://celldesigner.org'
+  access:
+  text:   'Software for modeling and simulation of biochemical
+          and gene regulatory networks, originally developed by the Systems Biology Institute in
+          Japan. While CellDesigner itself is a sophisticated structured diagram editor, it
+          enables users to directly integrate various tools, such as built-in SBML ODE Solver,
+          COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on
+          various platforms such as Windows, MacOS X and Linux, and is freely available from
+          <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.'
+  features:
+  sedMLVersions: []
+  modelLanguages:
+  - SBML
+  show: False
+
+- name:   'COPASI'
+  icon:
+  image:
+  link:   'http://copasi.org/'
+  text:   'Software application for simulation and analysis of biochemical networks and their dynamics.
+          COPASI is a stand-alone program that supports models in the SBML standard and can
+          simulate their behavior using ODEs or Gillespie`s stochastic simulation algorithm; arbitrary discrete events can be included in such simulations.
+          COPASI supports impor and export of SED-ML files.'
+  features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  - L1V3
+  - L1V4
+  modelLanguages:
+  - SBML
+
+- name:   'Copasi2SedML'
+  icon:
+  image:  'Copasi2SedML.png'
+  link:   'http://fbergmann.github.com/Copasi2SedML/'
+  text:   'Library and tools that allow to convert a
+           COPASI file containing a time course task to SED-ML L1V1.
+           This work is based on the COPASI C# bindings and libSedML..'
+  features:
+  sedMLVersions:
+  - L1V1
+  modelLanguages:
+  - CopasiML
+
+- name:   'iBioSim'
+  icon:
+  image:
+  link:   'http://www.async.ece.utah.edu/ibiosim'
+  text:   'Tool for the modeling, analysis, and design of genetic circuits. iBioSim support models representing metabolic networks,
+          cell-signaling pathways, and other biological and chemical systems. iBioSim supports importing and exporting models specified using the
+          Systems Biology Markup Language (SBML). It can import all levels and versions of SBML and is able to export Level 3 Version 1.
+          Simulations of SBML models based on SED-ML is supported.'
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  modelLanguages:
+  - SBML
 
 - name:   'JWS Online'
   icon:
   image:  'jws.png'
   link:   'https://jjj.bio.vu.nl/'
-  text:   'WS Online is a Systems Biology tool for the construction, modification and simulation of kinetic models and for the storage of curated models.
-          It provides a selection of simulation experiments as SED-ML and Combine archives at <a href="https://jjj.bio.vu.nl/models/experiments/" target="_blank">
-          https://jjj.bio.vu.nl/models/experiments/</a>.'
+  text:   'Tool for the construction, modification and simulation of kinetic models and for the storage of curated models.
+          It provides a selection of simulation experiments as SED-ML and COMBINE archives.'
   features:
+  sedMLVersions:
+  - L1V3
+  modelLanguages:
+  - SBML
+
+- name:   'OpenCOR'
+  icon:
+  image:  'OpenCOR.png'
+  link:   'http://www.opencor.ws/'
+  text:   'Open source cross-platform modelling environment. OpenCOR is a replacement for COR.'
+  features:
+  sedMLVersions: []
+  modelLanguages:
+  - CellML
+
+- name:       'runBioSimulations'
+  icon:
+  image:
+  link:       'https://run.biosimulations.org/'
+  text:       'Web application and REST API for executing SED-ML documents in COMBINE/OMEX archives and visualizing their results.
+               runBioSimulations can execute simulations using all of the standardized simulation tools in the BioSimulators registry.
+               Together, these tools support simulations for multiple model formats, modeling frameworks, and over 40 simulation
+               algorithms.'
+  features:
+  sedMLVersions:
+  - L1V3
+  modelLanguages:
+  - SBML
+  - SBML-fbc
+  - SBML-qual
+  - XML-based
+  - Any
+
+
+- name:   'SBML Testsuite'
+  icon:
+  image:  'SBML_Testsuite.png'
+  link:   'http://sbml.org/Software/SBML_Test_Suite'
+  text:   'Conformance testing system for SBML. It
+            allows developers and users to test the degree and correctness of SBML support provided
+            in an SBML-compatible software package. All tests are available also as SED-ML files.'
+  features:
+  sedMLVersions:
+  - L1V3
+  modelLanguages:
+  - SBML
+
+- name:   'sbmlsim'
+  icon:
+  image:
+  link:   'https://github.com/matthiaskoenig/sbmlsim'
+  text:   'Collection of Python utilities to simulate to simplify
+           simulations with SBML models implemented on top of roadrunner.
+           Features include among others simulation experiments, simulation reports
+          parameter fitting.'
+  features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  - L1V3
+  - L1V4
+  modelLanguages:
+  - SBML
+
+- name:   'Systems Biology Simulation Core Library (SBSCL)'
+  icon:
+  image:  'Systems_Biology_Simulation_Core_Library.png'
+  link:   'https://github.com/draeger-lab/SBSCL'
+  text:   'Efficient
+            and exhaustive Java library of methods to interpret the content of models encoded
+            in the Systems Biology Markup Language (SBML) and its numerical solution. SBSCL is based
+            on JSBML. SBSCL can also read SED-ML files.'
+  features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  modelLanguages:
+  - SBML
 
 - name:   'SBW Simulation Tool'
   icon:
   image:  'SBW_Simulation_Tool.png'
   link:   'https://sourceforge.net/p/sbwsimtool/wiki/Home/'
-  text:   'This project hosts the Simulation Tool, an extensible, interactive
+  text:   'Extensible, interactive
             environment for carrying out simulation experiments of SBML models. This project can use
             RoadRunner or SBW enabled simulators to carry out simulations.The simulation tool
-            directly supports SED-ML L1V1, and allows you to execute the simulations directly, with
+            allows you to execute the simulations directly, with
             support for remote models (even in BioModels.net) and the SED-ML archive.'
   features:
+  sedMLVersions:
+  - L1V1
+  modelLanguages:
+  - SBML
 
 - name:   'SED-ED'
   icon:
   image:  'SED-ED.png'
   link:   'http://jlibsedml.sourceforge.net/sed-ed/index.html'
-  text:   'SED-ED is a visual editor for viewing, editing and validating SED-ML documents
+  text:   'Visual editor for viewing, editing and validating SED-ML documents
             using a graphical workflow notation. SED-ED previews model changes for any XML based model,
             generates XPath expressions for targetting model elements,
             displays and edits notes in an embedded browser,
@@ -70,97 +237,74 @@ tools:
             http://www.sbsi.ed.ac.uk/update) or an SBSIVisual plugin.'
   status: 'last commit: 2012-02-06'
   features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  modelLanguages:
+  - XML-based
 
-- name:   'CellDesigner'
+- name:   'SED-ML Script Editor'
   icon:
-  image:  'CellDesigner.png'
-  link:  'http://celldesigner.org'
-  access:
-  text:   'CellDesigner is software for modeling and simulation of biochemical
-          and gene regulatory networks, originally developed by the Systems Biology Institute in
-          Japan. While CellDesigner itself is a sophisticated structured diagram editor, it
-          enables users to directly integrate various tools, such as built-in SBML ODE Solver,
-          COPASI, SBMLSimulator and SBW-powered simulation/analysis modules. CellDesigner runs on
-          various platforms such as Windows, MacOS X and Linux, and is freely available from
-          <a href="http://celldesigner.org/" target="_blank">http://celldesigner.org/</a>.'
+  image:  'SED-ML_Script_Editor.png'
+  link:   'http://libsedml.sourceforge.net/libSedML/SedMLScript.html'
+  text:   'Allows to construct SED-ML documents using
+            a simplified script language. Starting out by directly importing SBML or CellML models
+            an initial script is generated that can be simulated. From there it is easy to modify it
+            to suite your needs.'
   features:
-
-- name:   'COPASI'
-  icon:
-  image:
-  link:   'http://copasi.org/'
-  text:   'COPASI is a software application for simulation and analysis of biochemical networks and their dynamics.
-          COPASI is a stand-alone program that supports models in the SBML standard and can
-          simulate their behavior using ODEs or Gillespie`s stochastic simulation algorithm; arbitrary discrete events can be included in such simulations.
-          COPASI supports impor and export of SED-ML files.'
-  features:
-
-- name:   'Copasi2SedML'
-  icon:
-  image:  'Copasi2SedML.png'
-  link:   'http://fbergmann.github.com/Copasi2SedML/'
-  text:   'Copasi2SBML contains a library and tools that allow to convert a
-           COPASI file containing a time course task to SED-ML L1V1.
-           This work is based on the COPASI C# bindings and libSedML..'
-  features:
-
-- name:   'sbmlsim'
-  icon:
-  image:
-  link:   'https://github.com/matthiaskoenig/sbmlsim'
-  text:   'sbmlsim is a collection of python utilities to simulate to simplify
-           simulations with SBML models implemented on top of roadrunner.
-           Features include among others simulation experiments, simulation reports
-          parameter fitting.'
-  features:
-
-
-- name:   'Systems Biology Simulation Core Library'
-  icon:
-  image:  'Systems_Biology_Simulation_Core_Library.png'
-  link:   'https://github.com/draeger-lab/SBSCL'
-  text:   'The Systems Biology Simulation Core Library provides an efficient
-            and exhaustive Java implementation of methods to interpret the content of models encoded
-            in the Systems Biology Markup Language (SBML) and its numerical solution. This library
-            is based on the JSBML project and can be used on every operating system for which a Java
-            Virtual Machine is available. Please note that this project does not contain any user
-            interface, neither a command-line interface, nor a graphical user interface. This
-            project has been developed as a pure programming library. To support the MIASE effort,
-            it understands SED-ML files. Its abstract type and interface hierarchy facilitates the
-            implementation of further community standards, such as CellML.'
-  features:
-
-- name:   'iBioSim'
-  icon:
-  image:
-  link:   'http://www.async.ece.utah.edu/ibiosim'
-  text:   'iBioSim has been developed for the modeling, analysis, and design of genetic circuits. iBioSim support models representing metabolic networks,
-          cell-signaling pathways, and other biological and chemical systems. iBioSim supports importing and exporting models specified using the
-          Systems Biology Markup Language (SBML). It can import all levels and versions of SBML and is able to export Level 3 Version 1.
-          Simulations of SBML models based on SED-ML is supported.'
-
-- name:   'bioUML'
-  icon:
-  image:
-  link:   'http://wiki.biouml.org/index.php/Landing'
-  text:   'BioUML - Biological Universal Modelling Language - is an integrated Java platform for biomedical research.
-           It spans a comprehensive range of capabilities, including access to databases with experimental data,
-           tools for formalized description of biological systems structure and functioning, as well as tools for
-           their visualization, simulation, parameters fitting and analyses.'
-  features:
-
-- name:   'SBML Testsuite'
-  icon:
-  image:  'SBML_Testsuite.png'
-  link:   'http://sbml.org/Software/SBML_Test_Suite'
-  text:   'The SBML Test Suite is a conformance testing system for SBML. It
-            allows developers and users to test the degree and correctness of SBML support provided
-            in an SBML-compatible software package. All tests are available also as SED-ML files.'
-  features:
+  sedMLVersions:
+  - L1V1
+  modelLanguages:
+  - CelLML
+  - SBML
 
 - name:   'SED-ML Testsuite'
   icon:
   image:
   link:   'https://github.com/SED-ML/sedml-test-suite'
-  text:   'A test suite for SED-ML, modeled after the SBML test suite.'
+  text:   'Test suite for SED-ML.'
   features:
+  sedMLVersions: []
+  modelLanguages: []
+  show: False
+
+- name:   'SED-ML Web Tools'
+  icon:
+  image:  'SED-ML_Web_Tools.png'
+  link:   'http://sysbioapps.spdns.org/SED-ML_Web_Tools'
+  text:   'Online application providing support to
+            edit, simulate and validate SED-ML files online.'
+  features:
+  sedMLVersions:
+  - L1V1
+  modelLanguages:
+  - CelLML
+  - SBML
+
+- name:   'tellurium'
+  icon:
+  image:  'tellurium.png'
+  link:   'http://tellurium.analogmachine.org/'
+  text:   'Python environment based on spyder2 IDE. It combines a number of existing libraries,
+          including libSBML, libRoadRunner (including libStruct), libAntimony, and is extensible via telPlugins.'
+  features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  - L1V3
+  - L1V4
+  modelLanguages:
+  - SBML
+
+- name:   'VCell'
+  icon:
+  image:
+  link:   'https://vcell.org/'
+  text:   'Comprehensive platform for modeling cell biological systems that is built on a central database and disseminated as a web application.'
+  features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  - L1V3
+  modelLanguages:
+  - SBML

@@ -1,5 +1,39 @@
 libraries:
 
+- name:       'BioSimulators utils'
+  link:       'https://github.com/biosimulators/Biosimulators_utils/'
+  language:   'Python'
+  image:
+  text:       'High-level library for reading, writing, validating and executing SED-ML documents,
+               including documents inside COMBINE/OMEX archives. Also provides a command-line application
+               for validating and executing SED-ML documents inside COMBINE/OMEX archives with
+               <a href="https://biosimulators.org">BioSimulators</a>-compliant simulation tool.'
+  features:
+  sedMLVersions:
+  - L1V3
+
+- name:       'clibsedml'
+  link: 'http://sourceforge.net/projects/clibsedml/'
+  language:   'C'
+  image:      'clibsedml.png'
+  text:       'Portable C library for SED-ML.'
+  features:
+  sedMLVersions:
+  - L1V1
+
+- name:       'jlibsedml'
+  link: 'http://sourceforge.net/projects/jlibsedml/'
+  language:   'Java'
+  image:      'jlibsedml.png'
+  text:       'An extensible open source Java library to create, manipulate,
+              validate and store SED-ML files. jlibsedml also provides XPath support and an execution
+              framework for running simulations and post-processing the results - clients provide the
+              simulation implementation.'
+  features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+
 - name:       'libSEDML'
   link: 'https://github.com/fbergmann/libSEDML'
   language:   'C++, C# (Swig), Java (Swig), Perl (Swig), Python (Swig), R (Swig), Ruby (Swig)'
@@ -7,15 +41,13 @@ libraries:
   text:       'C++ library for reading and writing SED-ML. Swig languange bindings for C#, Java, Python,
               R and Ruby.'
   features:
+  sedMLVersions:
+  - L1V1
+  - L1V2
+  - L1V3
+  - L1V4
 
-- name:       'clibsedml'
-  link: 'http://sourceforge.net/projects/clibsedml/'
-  language:   'C'
-  image:      'clibsedml.png'
-  text:       'clibsedml is aimed at being a portable C library for SED-ML.'
-  features:
-
-- name:       'libSedML'
+- name:       'libSedML (old version)'
   link:       'http://libsedml.sf.net'
   language:   '.NET library'
   image:      'libSedML.png'
@@ -29,19 +61,11 @@ libraries:
                         al., 2006). A third library, libSedMLScript, provides a script based language for
                         defining SED-ML experiments.'
   features:
-
-- name:       'jlibsedml'
-  link: 'http://sourceforge.net/projects/jlibsedml/'
-  language:   'Java'
-  image:      'jlibsedml.png'
-  text:       'An extensible open source Java library to create, manipulate,
-              validate and store SED-ML files. jlibsedml also provides XPath support and an execution
-              framework for running simulations and post-processing the results - clients provide the
-              simulation implementation.'
-  features:
+  sedMLVersions:
+  - L1V1
 
 - name:       'phraSED-ML'
-  link:       'http://sourceforge.net/projects/jlibsedml/'
+  link:       'http://phrasedml.sourceforge.net/'
   language:   'C++, Python (Swig)'
   image:
   text:       'A paraphrased, human-readable adaptation of SED-ML, phraSED-ML language allows modelers to use
@@ -49,4 +73,4 @@ libraries:
                (models, tasks, simulations, and results) in a format easy to read and modify.
                The library can translate this script to SED-ML for use in other softwares.'
   features:
-
+  sedMLVersions: []
