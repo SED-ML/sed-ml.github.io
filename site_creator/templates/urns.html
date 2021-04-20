@@ -18,7 +18,7 @@
         <tr>
             <th> Language</th>
             <th> URN</th>
-            <th> Specification URL</th>
+            <th> Specification</th>
         </tr>
         </thead>
         <tbody>
@@ -41,6 +41,7 @@
         <tr>
             <th> Data Format</th>
             <th> URN</th>
+            <th> More information</th>
         </tr>
         </thead>
         <tbody>
@@ -48,6 +49,7 @@
         <tr>
             <td>{{ entry.format }}</td>
             <td><code>{{ entry.urn }}</code></td>
+            <td>{% if entry.url %}<a href="{{ entry.url }}" target="_blank">{{ entry.url }}</a>{% endif %}</td>
         </tr>
         {% endfor %}
         </tbody>
