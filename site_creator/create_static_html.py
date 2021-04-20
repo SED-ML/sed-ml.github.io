@@ -51,6 +51,7 @@ LANGUAGES = read_yaml("languages")
 SYMBOLS = read_yaml("symbols")
 FORMATS = read_yaml("formats")
 UML_DIAGRAMS = read_yaml("uml_diagrams")
+EXAMPLES = read_yaml("examples")
 
 
 def create_site(template="index.html", out_dir="../"):
@@ -94,6 +95,7 @@ def _create_html(html_template='report.html'):
         'symbols': SYMBOLS,
         'formats': FORMATS,
         'uml_diagrams': UML_DIAGRAMS,
+        'examples': EXAMPLES,
     }
     return template.render(c)
 

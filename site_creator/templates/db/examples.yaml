@@ -1,0 +1,60 @@
+examples:
+- filename: 'L1V3/L1V3_ikappab.omex'
+  name:     'iKappaB model'
+  features:
+  - Time course simulation
+- filename: 'L1V3/L1V3_leloup-sbml.omex'
+  name:     'Leloup model of circadian oscillations'
+  features:
+  - Time course simulation
+- filename: 'L1V3/L1V3_lorenz-cellml.omex'
+  name:     'Lorentz model (CellML)'
+  features:
+  - CellML
+- filename: 'L1V3/L1V3_lorenz-sbml.omex'
+  name:     'Lorentz model (SBML)'
+  features:
+  - SBML
+- filename: 'L1V3/L1V3_oscli-nested-pulse.omex'
+  name:     'Oscillatory model'
+  features:
+  - Time course simulation
+- filename: 'L1V3/L1V3_parameter-scan-2d.omex'
+  name:     'Parameter scan'
+  features:
+  - Repeated task
+- filename: 'L1V3/L1V3_plotting-data-csv.omex'
+  name:     'Plotting (CSV data)'
+  features:
+  - Data descriptions
+  - Plotting
+- filename: 'L1V3/L1V3_plotting-data-numl.omex'
+  name:     'Plotting (NuML data)'
+  features:
+  - Data descriptions
+  - Plotting
+- filename: 'L1V3/L1V3_repeated-stochastic-runs.omex'
+  name:     'Repeated stochastic runs'
+  features:
+  - Repeated task
+- filename: 'L1V3/L1V3_repressilator.omex'
+  name:     'Represillator'
+  features:
+  - Time course simulation
+- filename: 'L1V3/L1V3_repeated-steady-scan-oscli.omex'
+  name:     'Steady-state scan'
+  features:
+  - Steady-state simulation
+  - Repeated task
+- filename: 'L1V3/L1V3_repeated-scan-oscli.omex'
+  name:     'Time course scan'  
+  features:
+  - Repeated task
+- filename: 'L1V3/L1V3_vanderpol-cellml.omex'
+  name:     'Vanderpol model (CellML)'
+  features:
+  - SBML
+- filename: 'L1V3/L1V3_vanderpol-sbml.omex'
+  name:     'Vanderpol model (SBML)'
+  features:
+  - CellML
