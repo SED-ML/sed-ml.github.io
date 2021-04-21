@@ -8,8 +8,10 @@
 
 from biosimulators_utils.combine.io import CombineArchiveReader
 from biosimulators_utils.combine.validation import validate
+from biosimulators_utils.simulator.exec import exec_sedml_docs_in_archive_with_containerized_simulator
 from biosimulators_utils.utils.core import flatten_nested_list_of_strings
 import glob
+import json
 import math
 import os
 import shutil
@@ -28,22 +30,48 @@ class ExamplesTestCase(unittest.TestCase):
         shutil.rmtree(self.temp_dirname)
 
     def test(self):
-        example_filenames = glob.glob(os.path.join(self.EXAMPLES_DIR, '**', '*.omex'), recursive=True)
-        example_filenames.sort()
+        all_example_filenames = [os.path.relpath(filename, self.EXAMPLES_DIR)
+                                 for filename in glob.glob(os.path.join(self.EXAMPLES_DIR, '**', '*.omex'), recursive=True)]
+        with open(os.path.join(self.EXAMPLES_DIR, 'simulator-compatibility.json'), 'r') as file:
+            examples = json.load(file)
+
+        example_filenames = [example['filename'] for example in examples]
+        missing_example_filenames = set(all_example_filenames).difference(set(example_filenames))
+        if missing_example_filenames:
+            raise ValueError('The following examples should be added to `examples/simulator-compatibility.json`:\n  {}'.format(
+                '\n  '.join(sorted(missing_example_filenames))))
 
         failed_examples = []
         warned_examples = []
-        print('Validating {} examples ...'.format(len(example_filenames)))
-        for i_example, example_filename in enumerate(example_filenames):
-            print('  {} {} ...'.format(i_example + 1, example_filename))
+        print('Validating {} examples ...'.format(len(examples)))
+        for i_example, example in enumerate(examples):
+            example_name = example['filename']
+            print('  {} {} ...'.format(i_example + 1, example_name))
+            example_filename = os.path.join(self.EXAMPLES_DIR, example_name)
 
+            # Validate archive
             errors, warns = self.validate_archive(example_filename)
             if errors:
-                example_name = os.path.relpath(example_filename, self.EXAMPLES_DIR)
                 failed_examples.append({"name": example_name, "messages": errors})
             if warns:
-                example_name = os.path.relpath(example_filename, self.EXAMPLES_DIR)
                 warned_examples.append({"name": example_name, "messages": warns})
+
+            # Execute archive
+            simulation_checked = False
+            for simulator in example['simulators']:
+                if 'notImplemented' not in simulator and 'failure' not in simulator:
+                    simulation_checked = True
+                    temp_dirname = os.path.join(self.temp_dirname, example_name + '-output')
+                    os.makedirs(temp_dirname)
+                    try:
+                        exec_sedml_docs_in_archive_with_containerized_simulator(
+                            example_filename, temp_dirname, 'ghcr.io/biosimulators/' + simulator['id'] + ':latest')
+                    except RuntimeError as exception:
+                        failed_examples.append({"name": example_name, "messages": [[str(exception)]]})
+                    shutil.rmtree(temp_dirname)
+
+            if simulation_checked:
+                warned_examples.append({"name": example_name, "messages": [['No simulator is available to test its execution.']]})
 
         if warned_examples:
             msg = 'The following examples may be invalid:\n  {}\n\n  {}'.format(
