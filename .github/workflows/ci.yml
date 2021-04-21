@@ -73,6 +73,7 @@ jobs:
         run: |
           git config --global user.email "bot@sed-ml.org"
           git config --global user.name "SED-ML Bot"
+          git config pull.rebase false
 
       - name: Compile website
         working-directory: site_creator
@@ -81,6 +82,10 @@ jobs:
       - id: commit-compiled-website
         name: Commit changes to the compiled web pages
         run: |
+          git stash
+          git pull
+          set +e
+          git stash pop
           git add *.html
           git commit -m "Updated compiled files for website"
           if [[ $? = 0 ]]; then
@@ -98,6 +103,10 @@ jobs:
         name: Commit changes to the bundled examples
         working-directory: examples/L1V3
         run: |
+          git stash
+          git pull
+          set +e
+          git stash pop
           git add SED-ML_L1V3_examples.zip
           git commit -m "Updated bundle of example files"
           if [[ $? = 0 ]]; then
