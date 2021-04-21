@@ -21,6 +21,7 @@
             <tr>
                 <td>
                     <div><a href="./examples/{{ example.filename }}"><i class="fa fa-fw fa-archive"></i>{{ example.name }}</a></div>
+
                     {% if example.features %}
                     <div>
                         Features:
@@ -31,6 +32,7 @@
                         </ul>
                     </div>
                     {% endif %}
+
                     {% if example.experimentalFeatures %}
                     <div>
                         Experimental features:
@@ -41,6 +43,7 @@
                         </ul>
                     </div>
                     {% endif %}
+
                     {% if example.modelLanguages %}
                     <div>
                         Model language(s):
@@ -49,6 +52,24 @@
                             <li>{{ language }}</li>
                             {% endfor %}
                         </ul>
+                    </div>
+                    {% endif %}
+
+                    {% if example.source and example.source.citation %}
+                    <div>
+                        Source: {{ example.source.citation }}
+                     </div>
+                    {% endif %}
+
+                    {% if example.source and example.source.doi %}
+                    <div>
+                        DOI: <a href="https://doi.org/{{ example.source.doi }}">{{ example.source.doi }}</a>
+                    </div>
+                    {% endif %}
+
+                    {% if example.source and example.source.biomodelsId %}
+                    <div>
+                        BioModels: <a href="https://www.ebi.ac.uk/biomodels/{{ example.source.biomodelsId }}">{{ example.source.biomodelsId }}</a>
                     </div>
                     {% endif %}
                 </td>
