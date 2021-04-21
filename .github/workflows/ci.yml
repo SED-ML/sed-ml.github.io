@@ -114,11 +114,10 @@ jobs:
           else
             examplesBundleChanged=0
           fi
-          echo $examplesBundleChanged
           echo "::set-output name=examplesBundleChanged::$examplesBundleChanged"
 
       - name: Push the changes to the compiled website
-        if: steps.commit-compiled-website.compiledWebsiteChanged == '1' || steps.commit-bundled-examples.examplesBundleChanged == '1'
+        if: steps.commit-compiled-website.outputs.compiledWebsiteChanged == '1' || steps.commit-bundled-examples.outputs.examplesBundleChanged == '1'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
