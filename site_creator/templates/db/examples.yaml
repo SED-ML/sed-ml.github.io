@@ -3,58 +3,118 @@ examples:
   name:     'iKappaB model'
   features:
   - Time course simulation
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_leloup-sbml.omex'
   name:     'Leloup model of circadian oscillations'
   features:
   - Time course simulation
+  - Model resolution by URI fragments
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_lorenz-cellml.omex'
   name:     'Lorentz model (CellML)'
   features:
+  - Aggregate functions
+  experimentalFeatures: []
+  modelLanguages:
   - CellML
+
 - filename: 'L1V3/L1V3_lorenz-sbml.omex'
   name:     'Lorentz model (SBML)'
   features:
+  - Algorithm parameters
+  - Aggregate functions
+  experimentalFeatures: []
+  modelLanguages:
   - SBML
+
 - filename: 'L1V3/L1V3_oscli-nested-pulse.omex'
   name:     'Oscillatory model'
   features:
-  - Time course simulation
+  - One step simulation
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_parameter-scan-2d.omex'
   name:     'Parameter scan'
   features:
+  - Steady-state simulation
   - Repeated task
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_plotting-data-csv.omex'
   name:     'Plotting (CSV data)'
   features:
   - Data descriptions
   - Plotting
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_plotting-data-numl.omex'
   name:     'Plotting (NuML data)'
   features:
   - Data descriptions
   - Plotting
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_repeated-stochastic-runs.omex'
   name:     'Repeated stochastic runs'
   features:
   - Repeated task
+  experimentalFeatures:
+  - Plots of results of repeated tasks
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_repressilator.omex'
   name:     'Represillator'
   features:
+  - Model resolution by URI fragments
   - Time course simulation
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_repeated-steady-scan-oscli.omex'
   name:     'Steady-state scan'
   features:
   - Steady-state simulation
   - Repeated task
+  experimentalFeatures:
+  - Plots of results of repeated tasks
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_repeated-scan-oscli.omex'
   name:     'Time course scan'  
   features:
   - Repeated task
+  experimentalFeatures: []
+  modelLanguages:
+  - SBML
+
 - filename: 'L1V3/L1V3_vanderpol-cellml.omex'
   name:     'Vanderpol model (CellML)'
-  features:
-  - SBML
+  features: []
+  experimentalFeatures:
+  - Plots of results of repeated tasks
+  modelLanguages:
+  - CellML
+
 - filename: 'L1V3/L1V3_vanderpol-sbml.omex'
   name:     'Vanderpol model (SBML)'
-  features:
-  - CellML
+  experimentalFeatures:
+  - Plots of results of repeated tasks
+  modelLanguages:
+  - SBML

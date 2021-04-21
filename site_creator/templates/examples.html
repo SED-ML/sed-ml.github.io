@@ -21,6 +21,7 @@
             <tr>
                 <td>
                     <div><a href="./examples/{{ example.filename }}"><i class="fa fa-fw fa-archive"></i>{{ example.name }}</a></div>
+                    {% if example.features %}
                     <div>
                         Features:
                         <ul class="comma-separated-list">
@@ -29,6 +30,27 @@
                             {% endfor %}
                         </ul>
                     </div>
+                    {% endif %}
+                    {% if example.experimentalFeatures %}
+                    <div>
+                        Experimental features:
+                        <ul class="comma-separated-list">
+                            {% for feature in example.experimentalFeatures %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% if example.modelLanguages %}
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            {% for language in example.modelLanguages %}
+                            <li>{{ language }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
                 </td>
             </tr>
             {% endfor %}
