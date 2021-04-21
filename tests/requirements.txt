@@ -1,0 +1,2 @@
+biosimulators-utils[sbml] >= 0.1.54
+pytest
