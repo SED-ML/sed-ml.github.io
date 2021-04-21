@@ -114,6 +114,7 @@ jobs:
           else
             examplesBundleChanged=0
           fi
+          echo $examplesBundleChanged
           echo "::set-output name=examplesBundleChanged::$examplesBundleChanged"
 
       - name: Push the changes to the compiled website
