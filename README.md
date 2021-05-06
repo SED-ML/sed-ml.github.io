@@ -7,26 +7,29 @@ This repository contains the SED-ML website:
 The website is created via a static site creator written in Python.
 
 ### Setup
-To be able to run the site creator, you need to install Python 3  and the necessary dependencies for the site creator.
+To run the site creator, install Python 3 and the necessary dependencies for the site creator.
 ```
 cd site_creator
 pip install -r requirements.txt
 ```
 
 ### Update content
-Updates should be performed in a separate branch and merged via a pull request to `master` branch. I.e. after cloning the repository via
+Updates should be performed in a separate branch and merged via a pull request to `master` branch. 
+
+First, cloning the repository via
 ```
 git clone https://github.com/SED-ML/sed-ml.github.io.git
 cd sed-ml.github.io
 ```
-checkout a branch for the fix or feature via
+
+Second, checkout a branch for the fix or new feature via
 ```
 git checkout -b <name>
 ```
 
-To update the web pages change the information in the respective templates and data files in
+Third, to update the web pages, change the information in their respective templates and data files in
 ```
-./templates/
+./site_creator/templates/
 ```
 
 ## Compile the static website
@@ -43,8 +46,8 @@ python create_static_html.py
    - Validate the example COMBINE archives.
    - Bundle the example COMBINE archives into a zip archive.
    - Compile the static HTML files.
-   - Commit and push the the static HTML files and bundled examples to the repository.
+   - Commit and push the static HTML files and bundled examples to the repository.
 4. Open a pull request to merge your branch into `master` .
 5. Assign review of the pull request to another SED-ML editor.
 6. Another editor will review and merge the pull request.
-7. The update site will be deployed once its merged into the `master` branch.
+7. The updated site will be deployed once its merged into the `master` branch.
