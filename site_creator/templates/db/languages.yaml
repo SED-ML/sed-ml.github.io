@@ -1,7 +1,11 @@
 languages:
+- language: 'BNGL (generic)'
+  urn:      'urn:sedml:language:bngl'
+  url:      'https://bionetgen.org'
+
 - language: 'CellML (generic)'
   urn:      'urn:sedml:language:cellml'
-  url:
+  url:      'http://www.cellml.org/specifications/'
 
 - language: 'CellML 1.0'
   urn:      'urn:sedml:language:cellml.1_0'
@@ -9,23 +13,35 @@ languages:
 
 - language: 'CellML 1.1'
   urn:      'urn:sedml:language:cellml.1_1'
-  url:
+  url:      'https://www.cellml.org/specifications/cellml_1.1'
+
+- language: 'CellML 2.0'
+  urn:      'urn:sedml:language:cellml.2_0'
+  url:      'https://www.cellml.org/specifications/cellml_2.0'
 
 - language: 'NeuroML (generic)'
   urn:      'urn:sedml:language:neuroml'
-  url:
+  url:      'https://docs.neuroml.org/Userdocs/Specification.html'
 
 - language: 'NeuroML Version 1.8.1 Level 1'
   urn:      'urn:sedml:language:neuroml.version-1_8_1.level-1'
-  url:
+  url:      'https://docs.neuroml.org/Userdocs/NeuroMLv1.html'
 
 - language: 'NeuroML Version 1.8.1 Level 2'
   urn:      'urn:sedml:language:neuroml.version-1_8_1.level-2'
-  url:
+  url:      'https://docs.neuroml.org/Userdocs/NeuroMLv1.html'
+
+- language: 'NeuroML Version 1.8.1 Level 3'
+  urn:      'urn:sedml:language:neuroml.version-1_8_1.level-3'
+  url:      'https://docs.neuroml.org/Userdocs/NeuroMLv1.html'
+
+- language: 'NeuroML Version 2.1'
+  urn:      'urn:sedml:language:neuroml.version-2_1'
+  url:      'https://docs.neuroml.org/Userdocs/NeuroMLv2.html'
 
 - language: 'SBML (generic)'
   urn:      'urn:sedml:language:sbml'
-  url:      ''
+  url:      'http://sbml.org/Special/specifications/'
 
 - language: 'SBML Level 1 Version 1'
   urn:      'urn:sedml:language:sbml.level-1.version-1'
@@ -65,8 +81,4 @@ languages:
 
 - language: 'VCML (generic)'
   urn:      'urn:sedml:language:vcml'
-  url:
-
-- language: 'BNGL (generic)'
-  urn:      'urn:sedml:language:bngl'
-  url:      'https://bionetgen.org'
+  url:      'https://vcell.org'    

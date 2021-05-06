@@ -1,20 +1,16 @@
 # SED-ML Website 
-This repository contains the SED-ML webpage.
-
-This website is hosted at:  
-https://sed-ml.github.io/  
-http://www.sed-ml.org/
+This repository contains the SED-ML website:
+- http://www.sed-ml.org/
+- https://sed-ml.github.io/
 
 ## Static Site Creator
-The webpage is created via a static site creator written in python.
+The website is created via a static site creator written in Python.
 
 ### Setup
-To be able to run the site creator you should create a python virtual environment with python 3 
-and install the necessary dependencies.
+To be able to run the site creator, you need to install Python 3  and the necessary dependencies for the site creator.
 ```
 cd site_creator
-mkvirtualenv sedml-site --python=python3
-(sedml-site) pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Update content
@@ -28,13 +24,27 @@ checkout a branch for the fix or feature via
 git checkout -b <name>
 ```
 
-To update the web pages change the information in the respective templates in
+To update the web pages change the information in the respective templates and data files in
 ```
 ./templates/
 ```
-and update the static HTML via
+
+## Compile the static website
+Run
 ```
-(sedml-site) cd site_creator
-(sedml-site) python3 create_static_html.py
-```    
-Commit your changes, push the branch to github and open a pull request against master.
+cd site_creator
+python create_static_html.py
+```   
+
+## Deploying updates
+1. Commit your changes to the templates and data files (`git commit ...`). It is not necessary to commit the static generated HTML files.
+2. Push these changes (to a branch other than `master`) (`git push`).
+3. A GitHub action will perform a few automated actions:
+   - Validate the example COMBINE archives.
+   - Bundle the example COMBINE archives into a zip archive.
+   - Compile the static HTML files.
+   - Commit and push the the static HTML files and bundled examples to the repository.
+4. Open a pull request to merge your branch into `master` .
+5. Assign review of the pull request to another SED-ML editor.
+6. Another editor will review and merge the pull request.
+7. The update site will be deployed once its merged into the `master` branch.

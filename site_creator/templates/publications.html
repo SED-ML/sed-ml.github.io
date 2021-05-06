@@ -1,5 +1,5 @@
 {% extends "base_template.html" %}
-{% block title %}SED-ML publications{% endblock %}
+{% block title %}SED-ML | Publications{% endblock %}
 
 {% block content %}
 <div class="row">
@@ -8,7 +8,7 @@
         <h2>How to cite?</h2>
         <ul>
             {% for p in publications %}
-            {% if p.id == 'Waltemath2011' %}
+            {% if p.howToCite %}
             <li>
                 <dl>
                     <dt>
@@ -64,7 +64,7 @@
         {% endif %}
 
 
-        <h2>SED-ML publications</h2>
+        <h2>Publications that report contributions to SED-ML ecosystem</h2>
         <ul>
             {% for p in publications %}
             <li>
@@ -78,12 +78,19 @@
                     <dd>
                         <div class="pubjournal"><em>{{ p.journal }}</em></div>
                     </dd>
+                    <!--
                     <dd>
                         <a href="{{ p.link }}">{{ p.link }}</a>
                     </dd>
+                    -->
+                    {% if p.doi %}
+                    <dd>
+                        DOI: <a href="https://doi.org/{{ p.doi }}">{{ p.doi }}</a>
+                    </dd>
+                    {% endif %}
                     {% if p.pmid %}
                     <dd>
-                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/{{ p.pmid }}">PMID:{{ p.pmid }}</a>
+                        PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/{{ p.pmid }}">{{ p.pmid }}</a>
                     </dd>
                     {% endif %}
                 </dl>

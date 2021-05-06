@@ -52,23 +52,20 @@
             <ul class="nav navbar-right top-nav" style="background-color: white;">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question-circle"></i> Resources <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="min-width: 230px;">
                         <li>
-                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> SED-ML discuss</a>
-                        </li>
-                        <li>
-                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Mail to editors</a>
+                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-code"></i> Source repository</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-github"></i> github/SED-ML</a>
+                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Proposal and Issue tracker</a>
                         </li>
                         <li>
-                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Issue tracker</a>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> Discussion forum</a>
                         </li>
-                        <li class="divider"></li>
+                        <li class="divider"></li>                        
                          <li>
-                            <a href="https://groups.google.com/forum/#!forum/sed-ml-editors" target="_blank"><i class="fa fa-fw fa-wrench"></i> SED-ML editors group</a>
+                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Email editors</a>
                         </li>
                     </ul>
                 </li>
@@ -95,8 +92,8 @@
                             <a href="index.html#symbols"><i class="fa fa-fw fa-group"></i> Symbols</a>
                         </li>
                     </ul>
-                    -->
                     </li>
+                    -->
                     <li>
                         <a href="specifications.html"><i class="fa fa-fw fa-file-code-o"></i> Specification</a>
                     </li>
@@ -118,9 +115,11 @@
                     <li>
                         <a href="about.html"><i class="fa fa-fw fa-group"></i> Editors</a>
                     </li>
+                    <!--
                     <li>
                         <a href="notes.html"><i class="fa fa-fw fa-book"></i> Editor Notes</a>
                     </li>
+                    -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -174,6 +173,7 @@
         <p>
             SED-ML covers the description of the most frequent type of simulation experiments in the area,
             namely time course simulations. SED-ML documents specify
+        </p>
         <ul>
             <li>which experimental data to use in an experiment,</li>
             <li>which models to use in an experiment,</li>
@@ -182,6 +182,7 @@
             <li>what analysis results to output,</li>
             <li>and how the results should be presented.</li>
         </ul>
+        <p>
         These descriptions are independent of the underlying model implementation.
         SED-ML is a software-independent format for encoding the description of simulation experiments;
         it is not specific to particular simulation tools.
@@ -320,36 +321,32 @@
 <div class="row">
     <div class="col-lg-12">
         <h2>L1V3 UML diagrams</h2>
-        <h3>00_Legend</h3>
-        <img src="images/sedml/uml/00_Legend.svg""/>
-        <h3>sedBase</h3>
-        <img src="images/sedml/uml/sedBase.svg""/>
-        <h3>variable</h3>
-        <img src="images/sedml/uml/variable.svg""/>
-        <h3>parameter</h3>
-        <img src="images/sedml/uml/parameter.svg""/>
-        <h3>dataDescription</h3>
-        <img src="images/sedml/uml/dataDescription.svg""/>
-        <h3>dataSource</h3>
-        <img src="images/sedml/uml/dataSource.svg""/>
-        <h3>slice</h3>
-        <img src="images/sedml/uml/slice.svg""/>
-        <h3>model</h3>
-        <img src="images/sedml/uml/model.svg""/>
-        <h3>change</h3>
-        <img src="images/sedml/uml/change.svg""/>
-        <h3>simulation</h3>
-        <img src="images/sedml/uml/simulation.svg""/>
-        <h3>abstractTask</h3>
-        <img src="images/sedml/uml/abstractTask.svg""/>
-        <h3>repeatedTask</h3>
-        <img src="images/sedml/uml/repeatedTask.svg""/>
-        <h3>range</h3>
-        <img src="images/sedml/uml/range.svg""/>
-        <h3>dataGenerator</h3>
-        <img src="images/sedml/uml/dataGenerator.svg""/>
-        <h3>output</h3>
-        <img src="images/sedml/uml/output.svg""/>
+        <h3>Legend</h3>
+        <img src="images/sedml/uml/00_Legend.svg" style="width: 800px;"/>
+        <h3>Base class (<code>SedBase</code>)</h3>
+        <img src="images/sedml/uml/sedBase.svg" style="width: 400px;"/>
+        <h3>Tasks (<code>AbstractTask</code>, <code>Task</code>, <code>RepeatedTask</code>)</h3>
+        <img src="images/sedml/uml/abstractTask.svg" style="width: 400px;"/>
+        <h3>Repeated tasks (<code>RepeatedTask</code>, <code>Range</code>, <code>SetValue</code>)</h3>
+        <img src="images/sedml/uml/repeatedTask.svg" style="width: 600px;"/>
+        <h3>Ranges of a repeated task (<code>Range</code>, <code>FunctionalRange</code>, <code>UniformRange</code>, <code>VectorRange</code>)</h3>
+        <img src="images/sedml/uml/range.svg" style="width: 800px;"/>
+        <h3>Model and changes to models (<code>Model</code>, <code>Change</code>)</h3>
+        <img src="images/sedml/uml/model.svg" style="width: 500px;"/>
+        <h3>Model change (<code>Change</code>, <code>ChangeAttribute</code>, <code>ComputeChange</code>, <code>AddXML</code>, <code>RemoveXML</code>, <code>ChangeXML</code>)</h3>
+        <img src="images/sedml/uml/change.svg" style="width: 600px;"/>
+        <h3>Simulation, algorithm, and changes to algorithm parameters (<code>Simulation</code>, <code>OneStep</code>, <code>SteadyState</code>, <code>UniformTimeCourse</code>, <code>Algorithm</code>, <code>AlgorithmParameter</code>)</h3>
+        <img src="images/sedml/uml/simulation.svg" style="width: 600px;"/>
+        <h3>Reports and plots (<code>Output</code>, <code>Report</code>, <code>Plot2D</code>, <code>Plot3D</code>, <code>DataSet</code>, <code>Curve</code>, <code>Surface</code>)</h3>
+        <img src="images/sedml/uml/output.svg" style="width: 600px;"/>
+        <h3>Recording simulation outputs for reports and plots (<code>DataGenerator</code>, <code>Variable</code>, <code>Parameter</code>)</h3>
+        <img src="images/sedml/uml/dataGenerator.svg" style="width: 400px;"/>
+        <h3>Input data (<code>DataDescription</code>, <code>DimensionDescription</code>, <code>DataSource</code>, <code>Slice</code>)</h3>
+        <img src="images/sedml/uml/dataDescription.svg" style="width: 800px;"/>
+        <h3>Model and simulation variables for calculating model changes and recording simulation outputs (<code>Variable</code>)</h3>
+        <img src="images/sedml/uml/variable.svg" style="width: 300px;"/>
+        <h3>Parameters of mathematical expressions for calculating model changes and recording simulation outputs (<code>Parameter</code>)</h3>
+        <img src="images/sedml/uml/parameter.svg" style="width: 200px;"/>
     </div>
 </div>
 
@@ -359,7 +356,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <hr/>
-                        <p>&copy; 2017-2020 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
+                        <p>&copy; 2017-2021 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
                     </div>
                 </div>
                 <!-- END FOOTER -->

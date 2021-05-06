@@ -1,0 +1,124 @@
+name: Continuous integration and deployment
+
+on:
+  push:
+
+jobs:
+  testExamples:
+    name: Test example SED-ML files (in COMBINE archives)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Setup pip cache
+        uses: actions/cache@v2
+        with:
+          path: /opt/hostedtoolcache/Python
+          key: ${{ runner.os }}-pip-${{ hashFiles('site_creator/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install pip and setuptools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+
+      - name: Install requirements
+        run: python -m pip install -r tests/requirements.txt
+
+      - name: Test examples
+        run: python -m pytest tests/
+
+  compileStaticWebsite:
+    name: Compile static website
+    needs: testExamples
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Setup pip cache
+        uses: actions/cache@v2
+        with:
+          path: /opt/hostedtoolcache/Python
+          key: ${{ runner.os }}-pip-${{ hashFiles('site_creator/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install pip and setuptools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+
+      - name: Install requirements
+        working-directory: site_creator
+        run: python -m pip install -r requirements.txt
+
+      - name: Setup Git
+        run: |
+          git config --global user.email "bot@sed-ml.org"
+          git config --global user.name "SED-ML Bot"
+          git config pull.rebase false
+
+      - name: Compile website
+        working-directory: site_creator
+        run: python create_static_html.py
+
+      - id: commit-compiled-website
+        name: Commit changes to the compiled web pages
+        run: |
+          git stash
+          git pull
+          set +e
+          git stash pop
+          git add *.html
+          git commit -m "Updated compiled files for website"
+          if [[ $? = 0 ]]; then
+            compiledWebsiteChanged=1
+          else
+            compiledWebsiteChanged=0
+          fi
+          echo "::set-output name=compiledWebsiteChanged::$compiledWebsiteChanged"
+
+      - name: Bundle examples
+        working-directory: examples/L1V3
+        run: zip SED-ML_L1V3_examples.zip *.omex
+
+      - id: commit-bundled-examples
+        name: Commit changes to the bundled examples
+        working-directory: examples/L1V3
+        run: |
+          git stash
+          git pull
+          set +e
+          git stash pop
+          git add SED-ML_L1V3_examples.zip
+          git commit -m "Updated bundle of example files"
+          if [[ $? = 0 ]]; then
+            examplesBundleChanged=1
+          else
+            examplesBundleChanged=0
+          fi
+          echo "::set-output name=examplesBundleChanged::$examplesBundleChanged"
+
+      - name: Push the changes to the compiled website
+        if: steps.commit-compiled-website.outputs.compiledWebsiteChanged == '1' || steps.commit-bundled-examples.outputs.examplesBundleChanged == '1'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

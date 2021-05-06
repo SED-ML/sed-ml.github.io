@@ -1,5 +1,5 @@
 {% extends "base_template.html" %}
-{% block title %}SED-ML editorial board{% endblock %}
+{% block title %}SED-ML | Editorial board{% endblock %}
 
 {% block content %}
 <div class="row">
@@ -73,9 +73,9 @@
             {% for e in editors %}
             {% if not e.active %}
             <tr>
-                <td>
+                <td style="vertical-align: middle;">
                     <img src="images/people/{{ e.image }}" alt="{{ e.name }}" class="img-rounded"
-                         style="height: 80px;"/>
+                         style="width: 60px;"/>
                 </td>
                 <td>
                     <dt>{{ e.name }} ({% for term in e.terms %}{{ term }}{{ "; " if not loop.last }}{% endfor %})</dt>

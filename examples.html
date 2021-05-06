@@ -8,7 +8,7 @@
     <meta name="author" content="sed-ml.org">
     <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
 
-    <title>SED-ML examples</title>
+    <title>SED-ML | Examples</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <!-- css -->
@@ -52,23 +52,20 @@
             <ul class="nav navbar-right top-nav" style="background-color: white;">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question-circle"></i> Resources <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="min-width: 230px;">
                         <li>
-                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> SED-ML discuss</a>
-                        </li>
-                        <li>
-                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Mail to editors</a>
+                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-code"></i> Source repository</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-github"></i> github/SED-ML</a>
+                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Proposal and Issue tracker</a>
                         </li>
                         <li>
-                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Issue tracker</a>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> Discussion forum</a>
                         </li>
-                        <li class="divider"></li>
+                        <li class="divider"></li>                        
                          <li>
-                            <a href="https://groups.google.com/forum/#!forum/sed-ml-editors" target="_blank"><i class="fa fa-fw fa-wrench"></i> SED-ML editors group</a>
+                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Email editors</a>
                         </li>
                     </ul>
                 </li>
@@ -95,8 +92,8 @@
                             <a href="index.html#symbols"><i class="fa fa-fw fa-group"></i> Symbols</a>
                         </li>
                     </ul>
-                    -->
                     </li>
+                    -->
                     <li>
                         <a href="specifications.html"><i class="fa fa-fw fa-file-code-o"></i> Specification</a>
                     </li>
@@ -118,9 +115,11 @@
                     <li>
                         <a href="about.html"><i class="fa fa-fw fa-group"></i> Editors</a>
                     </li>
+                    <!--
                     <li>
                         <a href="notes.html"><i class="fa fa-fw fa-book"></i> Editor Notes</a>
                     </li>
+                    -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -142,73 +141,401 @@
     <div class="col-lg-12">
         <h1 class="page-header"><i class="fa fa-fw fa-line-chart"></i> SED-ML examples</h1>
 
-        <h2>L1V3 specification examples</h2>
+        <h2>L1V3 examples (in COMBINE archives)</h2>
         <table class="table table-responsive">
             <tbody>
             <tr>
-                <th> COMBINE Archive</th>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_ikappab.omex"><i class="fa fa-fw fa-archive"></i>iKappaB model</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Time course simulation</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Source: Hoffmann A, Levchenko A, Scott ML, Baltimore D (2002). The IkappaB-NF-kappaB signaling module: temporal control and selective gene activation. <i>Science</i> 11, 298: 1241-1245.
+                     </div>
+
+                    <div>
+                        DOI: <a href="https://doi.org/10.1126/science.1071914">10.1126/science.1071914</a>
+                    </div>
+
+                    <div>
+                        BioModels: <a href="https://www.ebi.ac.uk/biomodels/BIOMD0000000140">BIOMD0000000140</a>
+                    </div>
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_ikappab.omex"><i class="fa fa-fw fa-archive"></i>L1V3_ikappab.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_leloup-sbml.omex"><i class="fa fa-fw fa-archive"></i>Leloup model of circadian oscillations</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Time course simulation</li>
+                            <li>Model resolution by URI fragments</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Source: Leloup JC, Goldbeter A (1999). Chaos and birhythmicity in a model for circadian oscillations of the PER and TIM proteins in drosophila. <i>Journal of Theoretical Biology</i> 6, 198: 445-459.
+                     </div>
+
+                    <div>
+                        DOI: <a href="https://doi.org/10.1006/jtbi.1999.0924">10.1006/jtbi.1999.0924</a>
+                    </div>
+
+                    <div>
+                        BioModels: <a href="https://www.ebi.ac.uk/biomodels/BIOMD0000000021">BIOMD0000000021</a>
+                    </div>
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_leloup-sbml.omex"><i class="fa fa-fw fa-archive"></i>L1V3_leloup-sbml.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_lorenz-cellml.omex"><i class="fa fa-fw fa-archive"></i>Lorentz model (CellML)</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Aggregate functions</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>CellML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_lorenz-cellml.omex"><i class="fa fa-fw fa-archive"></i>L1V3_lorenz-cellml.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_lorenz-sbml.omex"><i class="fa fa-fw fa-archive"></i>Lorentz model (SBML)</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Algorithm parameters</li>
+                            <li>Aggregate functions</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_lorenz-sbml.omex"><i class="fa fa-fw fa-archive"></i>L1V3_lorenz-sbml.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_oscli-nested-pulse.omex"><i class="fa fa-fw fa-archive"></i>Oscillatory model</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>One step simulation</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_oscli-nested-pulse.omex"><i class="fa fa-fw fa-archive"></i>L1V3_oscli-nested-pulse.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_parameter-scan-2d.omex"><i class="fa fa-fw fa-archive"></i>Parameter scan</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Steady-state simulation</li>
+                            <li>Repeated task</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_parameter-scan-2d.omex"><i class="fa fa-fw fa-archive"></i>L1V3_parameter-scan-2d.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_plotting-data-csv.omex"><i class="fa fa-fw fa-archive"></i>Plotting (CSV data)</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Data descriptions</li>
+                            <li>Plotting</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_plotting-data-csv.omex"><i class="fa fa-fw fa-archive"></i>L1V3_plotting-data-csv.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_plotting-data-numl.omex"><i class="fa fa-fw fa-archive"></i>Plotting (NuML data)</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Data descriptions</li>
+                            <li>Plotting</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_plotting-data-numl.omex"><i class="fa fa-fw fa-archive"></i>L1V3_plotting-data-numl.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_repeated-stochastic-runs.omex"><i class="fa fa-fw fa-archive"></i>Repeated stochastic runs</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Repeated task</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Experimental features:
+                        <ul class="comma-separated-list">
+                            <li>Plots of results of repeated tasks</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_repeated-scan-oscli.omex"><i class="fa fa-fw fa-archive"></i>L1V3_repeated-scan-oscli.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_repressilator.omex"><i class="fa fa-fw fa-archive"></i>Represillator</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Model resolution by URI fragments</li>
+                            <li>Time course simulation</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Source: Elowitz MB, Leibler S (2000). A synthetic oscillatory network of transcriptional regulators. <i>Nature</i> 403, 6767: 335-338.
+                     </div>
+
+                    <div>
+                        DOI: <a href="https://doi.org/10.1038/35002125">10.1038/35002125</a>
+                    </div>
+
+                    <div>
+                        BioModels: <a href="https://www.ebi.ac.uk/biomodels/BIOMD0000000012">BIOMD0000000012</a>
+                    </div>
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_repeated-steady-scan-oscli.omex"><i class="fa fa-fw fa-archive"></i>L1V3_repeated-steady-scan-oscli.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_repeated-steady-scan-oscli.omex"><i class="fa fa-fw fa-archive"></i>Steady-state scan</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Steady-state simulation</li>
+                            <li>Repeated task</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Experimental features:
+                        <ul class="comma-separated-list">
+                            <li>Plots of results of repeated tasks</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_repeated-stochastic-runs.omex"><i class="fa fa-fw fa-archive"></i>L1V3_repeated-stochastic-runs.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_repeated-scan-oscli.omex"><i class="fa fa-fw fa-archive"></i>Time course scan</a></div>
+
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            <li>Repeated task</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_repressilator.omex"><i class="fa fa-fw fa-archive"></i>L1V3_repressilator.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_vanderpol-cellml.omex"><i class="fa fa-fw fa-archive"></i>Van der Pol oscillator (CellML)</a></div>
+
+
+                    <div>
+                        Experimental features:
+                        <ul class="comma-separated-list">
+                            <li>Plots of results of repeated tasks</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>CellML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             <tr>
-                <td><a href="./examples/L1V3/L1V3_vanderpol-cellml.omex"><i class="fa fa-fw fa-archive"></i>L1V3_vanderpol-cellml.omex</a></td>
-            </tr>
-            <tr>
-                <td><a href="./examples/L1V3/L1V3_vanderpol-sbml.omex"><i class="fa fa-fw fa-archive"></i>L1V3_vanderpol-sbml.omex</a></td>
+                <td>
+                    <div><a href="./examples/L1V3/L1V3_vanderpol-sbml.omex"><i class="fa fa-fw fa-archive"></i>Van der Pol oscillator (SBML)</a></div>
+
+
+                    <div>
+                        Experimental features:
+                        <ul class="comma-separated-list">
+                            <li>Plots of results of repeated tasks</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            <li>SBML</li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
             </tr>
             </tbody>
         </table>
 
-        Download all L1V3 specification archives: <a href="./examples/L1V3/SED-ML_L1V3_examples.zip"><i class="fa fa-fw fa-download"></i> L1V3 examples</a>
+        <a href="./examples/L1V3/SED-ML_L1V3_examples.zip"><i class="fa fa-fw fa-download"></i> Download all of the examples as a .zip file.</a>
 
-
-
-        <h2>Other examples (COMBINE archives)</h2>
+        <h2>Additional examples</h2>
         <p>
-        <dt>SED-ML test suite
-            (<a href="https://github.com/SED-ML/sedml-test-suite">https://github.com/SED-ML/sedml-test-suite</a>)</dt>
-        <dd>SED-ML examples for testing the implementation.</dd>
+            <dt><a href="https://jjj.bio.vu.nl/models/experiments/">BioModels database</a></dt>
+            <dd>Database of models which includes SED-ML files for many entries. Entries with SED-ML files can also be obtained as COMBINE archives.</dd>
         </p>
         <p>
-        <dt>JWS Online simulation database
-            (<a href="https://jjj.bio.vu.nl/models/experiments/">https://jjj.bio.vu.nl/models/experiments/</a>)</dt>
-        <dd>JWS Online SED-ML and Combine archives.</dd>
+            <dt><a href="https://jjj.bio.vu.nl/models/experiments/">BioSimulators test suite</a></dt>
+            <dd>Test suite for checking that simulation tools execute SED-ML files and COMBINE archives consistently with the specifications of these formats. The test suite uses a collection of curated COMBINE archives, each of which includes SED-ML files. These examples involve multiple model languages, including BNGL, SBML, SBML-fbc, and SBML-qual. To test simulation tools that involve a broad range of model languages, modeling frameworks, and simulation algorithms, the test suite can generate synthetic COMBINE archives and SED-ML files that are appropriate for testing a particular simulation tool (i.e., SED-ML files that involve model formats and simulation algorithms that the simulator can execute). The test suite can also save these synthetic archives to files for further inspection.</dd>
         </p>
-
+        <p>
+            <dt><a href="https://jjj.bio.vu.nl/models/experiments/">JWS Online simulation database</a></dt>
+            <dd>Database of simulation experiments which can be exported to SED-ML files and COMBINE archives.</dd>
+        </p>
+        <!--
+        <p>
+            <dt><a href="https://github.com/SED-ML/sedml-test-suite">SED-ML test suite</a></dt>
+            <dd>Examples for testing the execution of SED-ML files.</dd>
+        </p>
+        -->
     </div>
 </div>
                 <!-- END CONTENT -->
@@ -217,7 +544,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <hr/>
-                        <p>&copy; 2017-2020 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
+                        <p>&copy; 2017-2021 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
                     </div>
                 </div>
                 <!-- END FOOTER -->

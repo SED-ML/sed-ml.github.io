@@ -1,83 +1,113 @@
 publications:
+- id:       'Shaikh2021'
+  year:     '2021'
+  authors:  'Shaikh B, Marupilla G, Blinov ML, Moraru II, Karr JR'
+  title:    'RunBioSimulations: an extensible web application that simulates a wide range of computational modeling frameworks, algorithms, and formats'
+  journal:  'bioRxiv. 2021.03.05.433787v1.'
+  pmid:     
+  doi:      '10.1101/2021.03.05.433787'
+  link:     'https://www.biorxiv.org/content/10.1101/2021.03.05.433787v1'
+  howToCite: False
+
 - id:       'Bergmann2018'
   year:     '2018'
   authors:  'Bergmann FT, Cooper J, K&ouml;nig M, Moraru I, Nickerson D, Le Nov&egrave;re N, Olivier BG, Sahle S, Smith L, Waltemath D'
   title:    'Simulation Experiment Description Markup Language (SED-ML) Level 1 Version 3 (L1V3)'
-  journal:  'Integr Bioinform. 2018;15(1):20170086. Published 2018 Mar 19. doi:10.1515/jib-2017-0086'
+  journal:  'Integr Bioinform. 2018;15(1):20170086.'
   pmid:     '29550789'
+  doi:      '10.1515/jib-2017-0086'
   link:     'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6167040/'
+  howToCite: False
 
 - id:       'Bergmann2017'
   year:     '2017'
   authors:  'Bergmann FT, Nickerson D, Waltemath D, Scharm M.'
   title:    'SED-ML web tools: generate, modify and export standard-compliant simulation studies.'
-  journal:  'Bioinformatics. 2017 Apr 15;33(8):1253-1254. doi: 10.1093/bioinformatics/btw812.'
+  journal:  'Bioinformatics. 2017 Apr 15;33(8):1253-1254.'
   pmid:     '28049131'
+  doi:       '10.1093/bioinformatics/btw812'
   link:     'https://academic.oup.com/bioinformatics/article-abstract/33/8/1253/2881437/'
+  howToCite: False
 
 - id:       'Scharm2017'
   year:     '2017'
   authors:  'Scharm M, Waltemath D.'
   title:    'A fully featured COMBINE archive of a simulation study on syncytial mitotic cycles in Drosophila embryos'
-  journal:  'F1000Research 2016, 5:2421 (doi: 10.12688/f1000research.9379.1)'
+  journal:  'F1000Research 2016, 5:2421'
   pmid:
+  doi:      '10.12688/f1000research.9379.1'
   link:     'https://f1000research.com/articles/5-2421/v1'
+  howToCite: False
 
 - id:       'Choi2017'
   year:     '2017'
   authors:  'Choi K, Smith LP, Medley JK, Sauro HM.'
   title:    'phraSED-ML: A paraphrased, human-readable adaptation of SED-ML.'
-  journal:  'J Bioinform Comput Biol. 2016 Dec;14(6):1650035. doi: 10.1142/S0219720016500359. Epub 2016 Sep 30.'
+  journal:  'J Bioinform Comput Biol. 2016 Dec;14(6):1650035.'
   pmid:     '27774871'
+  doi:      '10.1142/S0219720016500359'
   link:     'http://www.worldscinet.com/doi/abs/10.1142/S0219720016500359?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed'
+  howToCite: False
 
 - id:       'Henkel2015'
   year:     '2015'
   authors:  'Henkel R, Wolkenhauer O, Waltemath D'
   title:    'Combining computational models, semantic annotations and simulation experiments in a graph database.'
-  journal:  'Database (Oxford). 2015 Mar 8;2015. pii: bau130. doi: 10.1093/database/bau130. Print 2015.'
+  journal:  'Database (Oxford). 2015 Mar 8;2015. pii: bau130.'
   pmid:     '25754863'
+  doi:      '10.1093/database/bau130'
   link:     'https://academic.oup.com/database/article-lookup/doi/10.1093/database/bau130'
+  howToCite: False
 
 - id:       'Bergmann2015'
   year:     '2015'
   authors:  'Bergmann FT, Cooper J, Le Nov&egrave;re N, Nickerson D, Waltemath D.'
   title:    'Simulation Experiment Description Markup Language (SED-ML) Level 1 Version 2.'
-  journal:  'J Integr Bioinform. 2015 Sep 4;12(2):262. doi: 10.2390/biecoll-jib-2015-262.'
+  journal:  'J Integr Bioinform. 2015 Sep 4;12(2):262.'
   pmid:     '26528560'
+  doi:      '10.2390/biecoll-jib-2015-262'
   link:     'https://www.degruyter.com/view/j/jib.2015.12.issue-2/biecoll-jib-2015-262/biecoll-jib-2015-262.xml'
+  howToCite: False
 
 - id:       'Adams2012'
   year:     '2015'
   authors:  'Adams RR.'
   title:    'SED-ED, a workflow editor for computational biology experiments written in SED-ML.'
-  journal:  'Bioinformatics. 2012 Apr 15;28(8):1180-1. doi: 10.1093/bioinformatics/bts101. Epub 2012 Feb 25.'
+  journal:  'Bioinformatics. 2012 Apr 15;28(8):1180-1.'
   pmid:     '22368254'
+  doi:      '10.1093/bioinformatics/bts101'
   link:     'https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/bts101'
+  howToCite: False
 
 - id:       'Miller2012'
   year:     '2012'
   authors:  'Miller AK, Britten RD, Nielsen PM.'
   title:    'Declarative representation of uncertainty in mathematical models.'
-  journal:  'PLoS One. 2012;7(7):e39721. doi: 10.1371/journal.pone.0039721. Epub 2012 Jul 3.'
+  journal:  'PLoS One. 2012;7(7):e39721.'
   pmid:     '22802941'
+  doi:      '10.1371/journal.pone.0039721'
   link:     'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0039721'
+  howToCite: False
 
 - id:       'Waltemath2011'
   year:     '2011'
   authors:  'Waltemath D, Adams R, Bergmann FT, Hucka M, Kolpakov F, Miller AK, Moraru II, Nickerson D, Sahle S, Snoep JL, Le Nov&egrave;re N.'
   title:    'Reproducible computational biology experiments with SED-ML--the Simulation Experiment Description Markup Language.'
-  journal:  'BMC Syst Biol. 2011 Dec 15;5:198. doi: 10.1186/1752-0509-5-198.'
+  journal:  'BMC Syst Biol. 2011 Dec 15;5:198.'
   pmid:     '22172142'
+  doi:      '10.1186/1752-0509-5-198'
   link:     'https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-5-198'
+  howToCite: True
 
 - id:       'Waltemath2011b'
   year:     '2011'
   authors:  'Waltemath D, Bergmann FT, Adams R, LeNov&egrave;re N'
   title:    'Simulation Experiment Description Markup Language (SED-ML) : Level 1 Version 1'
-  journal:  'Nature Precedings. doi:10.1038/npre.2011.5846.1.'
+  journal:  'Nature Precedings.'
   pmid:
+  doi:      '10.1038/npre.2011.5846.1'
   link:     'http://precedings.nature.com/documents/5846/version/1'
+  howToCite: False
 
 - id:       'Waltemath2011c'
   year:     '2011'
@@ -85,9 +115,11 @@ publications:
              Crampin EJ, Garny A, Hoops S, Hucka M, Hunter P, Klipp E, Laibe C, Miller AK, Moraru I, Nickerson D,
              Nielsen P, Nikolski M, Sahle S, Sauro HM, Schmidt H, Snoep JL, Tolle D, Wolkenhauer O, Le Nov&egrave;re N.'
   title:    'Minimum Information About a Simulation Experiment (MIASE).'
-  journal:  'PLoS Comput Biol. 2011 Apr;7(4):e1001122. doi: 10.1371/journal.pcbi.1001122. Epub 2011 Apr 28.'
+  journal:  'PLoS Comput Biol. 2011 Apr;7(4):e1001122.'
   pmid:     '21552546'
+  doi:      '10.1371/journal.pcbi.1001122'
   link:     'http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001122'
+  howToCite: False
 
 - id:       'Bergmann2010'
   year:     '2010'
@@ -95,7 +127,9 @@ publications:
   title:    'A simple nested simulation for SED-ML.'
   journal:  'Nature Precedings (2010): 1-1.'
   pmid:
+  doi:      '10.1038/npre.2010.4257.1'
   link:     'https://www.nature.com/articles/npre.2010.4257.1'
+  howToCite: False
 
 - id:       'Koehn2008'
   year:     '2008'
@@ -103,5 +137,6 @@ publications:
   title:    'SED-ML – An XML Format for the Implementation of the MIASE Guidelines.'
   journal:  'Lecture Notes in Computer Science, Computational Methods in Systems Biology 2008'
   pmid:
+  doi:      '10.1007/978-3-540-88562-7_15'
   link:     'https://link.springer.com/chapter/10.1007%2F978-3-540-88562-7_15'
-
+  howToCite: False

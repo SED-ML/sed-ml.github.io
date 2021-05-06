@@ -1,5 +1,5 @@
 {% extends "base_template.html" %}
-{% block title %}SED-ML editorial board{% endblock %}
+{% block title %}SED-ML | Software tools and libraries{% endblock %}
 
 {% block content %}
 <!-- Page Heading -->
@@ -63,18 +63,24 @@
         <table class="table table-responsive">
             <thead></thead>
             <tr>
-                <th>name</th>
-                <th>link</th>
-                <th>language</th>
-                <th>description</th>
-                <th></th>
+                <th>Name</th>
+                <th>Languages</th>
+                <th>SED-ML Versions</th>
+                <th>Description</th>
+                <th>Screenshot</th>
             </tr>
             <tbody>
             {% for lib in libraries %}
             <tr>
-                <td><b>{{ lib.name }}</b></td>
-                <td><a href="{{ lib.link }}">{{ lib.link }}</a></td>
+                <td><a href="{{ lib.link }}"><b>{{ lib.name }}</b></a></td>
                 <td>{{ lib.language }}</td>
+                <td>
+                    <ul class="comma-separated-list">
+                        {% for version in lib.sedMLVersions %}
+                        <li>{{ version }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
                 <td>{{ lib.text }}</td>
                 <td>{% if lib.image %}
                     <img src="./images/showcase/{{ lib.image }}" height="100">
@@ -90,24 +96,40 @@
                 <table class="table table-responsive">
             <thead></thead>
             <tr>
-                <th>name</th>
-                <th>icon</th>
-                <th>link</th>
-                <th>description</th>
-                <th></th>
+                <th>Name</th>
+                <!--<th>icon</th>-->
+                <th>Model Languages</th>
+                <th>SED-ML Versions</th>
+                <th>Description</th>
+                <th>Screenshot</th>
             </tr>
             <tbody>
             {% for tool in tools %}
+            {% if tool.show != False %}
             <tr>
-                <td><b>{{ tool.name }}</b></td>
-                <td>{% if tool.icon %}{{ tool.icon}}{% endif %}</td>
-                <td>{% if tool.link %}<a href="{{ tool.link }}">{{ tool.link }}</a>{% endif %}</td>
+                <td><a href="{{ tool.link }}"><b>{{ tool.name }}</b></a></td>
+                <!--<td>{% if tool.icon %}{{ tool.icon}}{% endif %}</td>-->
+                <td>
+                    <ul class="comma-separated-list">
+                        {% for language in tool.modelLanguages %}
+                        <li>{{ language }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul class="comma-separated-list">
+                        {% for version in tool.sedMLVersions %}
+                        <li>{{ version }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
                 <td>{{ tool.text }}</td>
                 <td>{% if tool.image %}
                     <img src="./images/showcase/{{ tool.image }}"  height="100">
                     {% endif %}
                 </td>
             </tr>
+            {% endif %}
             {% endfor %}
             </tbody>
         </table>

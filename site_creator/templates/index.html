@@ -46,6 +46,7 @@
         <p>
             SED-ML covers the description of the most frequent type of simulation experiments in the area,
             namely time course simulations. SED-ML documents specify
+        </p>
         <ul>
             <li>which experimental data to use in an experiment,</li>
             <li>which models to use in an experiment,</li>
@@ -54,6 +55,7 @@
             <li>what analysis results to output,</li>
             <li>and how the results should be presented.</li>
         </ul>
+        <p>
         These descriptions are independent of the underlying model implementation.
         SED-ML is a software-independent format for encoding the description of simulation experiments;
         it is not specific to particular simulation tools.
@@ -176,14 +178,12 @@
 <div class="row">
     <div class="col-lg-12">
         <h2>L1V3 UML diagrams</h2>
-        {% with width=600 %}
-        {% for uml in ['00_Legend', 'sedBase', 'variable', 'parameter', 'dataDescription', 'dataSource', 'slice',
-                        'model', 'change', 'simulation',
-                        'abstractTask', 'repeatedTask', 'range', 'dataGenerator', 'output'] %}
-        <h3>{{ uml }}</h3>
-        <img src="images/sedml/uml/{{ uml }}.svg""/>
+        {% for uml in uml_diagrams %}
+        {% if uml.show != False %}
+        <h3>{{ uml.title }}</h3>
+        <img src="images/{{ uml.filename }}" style="width: {{ uml.width }};"/>
+        {% endif %}
         {% endfor %}
-        {% endwith %}
     </div>
 </div>
 

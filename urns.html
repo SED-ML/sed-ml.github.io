@@ -8,7 +8,7 @@
     <meta name="author" content="sed-ml.org">
     <meta name="description" content="Simulation Experiment Description Language (SED-ML)">
 
-    <title>SED-ML URNs</title>
+    <title>SED-ML | URNs for model languages, data description formats, and symbols</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <!-- css -->
@@ -52,23 +52,20 @@
             <ul class="nav navbar-right top-nav" style="background-color: white;">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question-circle"></i> Resources <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="min-width: 230px;">
                         <li>
-                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> SED-ML discuss</a>
-                        </li>
-                        <li>
-                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Mail to editors</a>
+                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-code"></i> Source repository</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="https://github.com/SED-ML/" target="_blank"><i class="fa fa-fw fa-github"></i> github/SED-ML</a>
+                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Proposal and Issue tracker</a>
                         </li>
                         <li>
-                            <a href="https://github.com/SED-ML/sed-ml/issues" target="_blank"><i class="fa fa-fw fa-fire"></i>Issue tracker</a>
+                            <a href="https://groups.google.com/forum/#!forum/sed-ml-discuss" target="_blank"><i class="fa fa-fw fa-group"></i> Discussion forum</a>
                         </li>
-                        <li class="divider"></li>
+                        <li class="divider"></li>                        
                          <li>
-                            <a href="https://groups.google.com/forum/#!forum/sed-ml-editors" target="_blank"><i class="fa fa-fw fa-wrench"></i> SED-ML editors group</a>
+                            <a href="mailto:sed-ml-editors@googlegroups.com"><i class="fa fa-fw fa-envelope"></i> Email editors</a>
                         </li>
                     </ul>
                 </li>
@@ -95,8 +92,8 @@
                             <a href="index.html#symbols"><i class="fa fa-fw fa-group"></i> Symbols</a>
                         </li>
                     </ul>
-                    -->
                     </li>
+                    -->
                     <li>
                         <a href="specifications.html"><i class="fa fa-fw fa-file-code-o"></i> Specification</a>
                     </li>
@@ -118,9 +115,11 @@
                     <li>
                         <a href="about.html"><i class="fa fa-fw fa-group"></i> Editors</a>
                     </li>
+                    <!--
                     <li>
                         <a href="notes.html"><i class="fa fa-fw fa-book"></i> Editor Notes</a>
                     </li>
+                    -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -138,22 +137,27 @@
         The following languages have to our knowledge so far
         been used with SED-ML. To specify the language of a model
         in the Model class, please use the according URN given.
-        The general scheme for a language URN in SED-ML is <code>urn:sedml:language:</code><i>language
-            name and version</i>.
+        The general scheme for a language URN in SED-ML is <code>urn:sedml:language:<i>{ language
+            name and version }</i></code>.
     </p>
     <table class="table table-responsive">
         <thead>
         <tr>
             <th> Language</th>
             <th> URN</th>
-            <th> Specification URL</th>
+            <th> Specification</th>
         </tr>
         </thead>
         <tbody>
         <tr>
+            <td>BNGL (generic)</td>
+            <td><code>urn:sedml:language:bngl</code></td>
+            <td><a href="https://bionetgen.org" target="_blank">https://bionetgen.org</a></td>
+        </tr>
+        <tr>
             <td>CellML (generic)</td>
             <td><code>urn:sedml:language:cellml</code></td>
-            <td></td>
+            <td><a href="http://www.cellml.org/specifications/" target="_blank">http://www.cellml.org/specifications/</a></td>
         </tr>
         <tr>
             <td>CellML 1.0</td>
@@ -163,27 +167,42 @@
         <tr>
             <td>CellML 1.1</td>
             <td><code>urn:sedml:language:cellml.1_1</code></td>
-            <td></td>
+            <td><a href="https://www.cellml.org/specifications/cellml_1.1" target="_blank">https://www.cellml.org/specifications/cellml_1.1</a></td>
+        </tr>
+        <tr>
+            <td>CellML 2.0</td>
+            <td><code>urn:sedml:language:cellml.2_0</code></td>
+            <td><a href="https://www.cellml.org/specifications/cellml_2.0" target="_blank">https://www.cellml.org/specifications/cellml_2.0</a></td>
         </tr>
         <tr>
             <td>NeuroML (generic)</td>
             <td><code>urn:sedml:language:neuroml</code></td>
-            <td></td>
+            <td><a href="https://docs.neuroml.org/Userdocs/Specification.html" target="_blank">https://docs.neuroml.org/Userdocs/Specification.html</a></td>
         </tr>
         <tr>
             <td>NeuroML Version 1.8.1 Level 1</td>
             <td><code>urn:sedml:language:neuroml.version-1_8_1.level-1</code></td>
-            <td></td>
+            <td><a href="https://docs.neuroml.org/Userdocs/NeuroMLv1.html" target="_blank">https://docs.neuroml.org/Userdocs/NeuroMLv1.html</a></td>
         </tr>
         <tr>
             <td>NeuroML Version 1.8.1 Level 2</td>
             <td><code>urn:sedml:language:neuroml.version-1_8_1.level-2</code></td>
-            <td></td>
+            <td><a href="https://docs.neuroml.org/Userdocs/NeuroMLv1.html" target="_blank">https://docs.neuroml.org/Userdocs/NeuroMLv1.html</a></td>
+        </tr>
+        <tr>
+            <td>NeuroML Version 1.8.1 Level 3</td>
+            <td><code>urn:sedml:language:neuroml.version-1_8_1.level-3</code></td>
+            <td><a href="https://docs.neuroml.org/Userdocs/NeuroMLv1.html" target="_blank">https://docs.neuroml.org/Userdocs/NeuroMLv1.html</a></td>
+        </tr>
+        <tr>
+            <td>NeuroML Version 2.1</td>
+            <td><code>urn:sedml:language:neuroml.version-2_1</code></td>
+            <td><a href="https://docs.neuroml.org/Userdocs/NeuroMLv2.html" target="_blank">https://docs.neuroml.org/Userdocs/NeuroMLv2.html</a></td>
         </tr>
         <tr>
             <td>SBML (generic)</td>
             <td><code>urn:sedml:language:sbml</code></td>
-            <td></td>
+            <td><a href="http://sbml.org/Special/specifications/" target="_blank">http://sbml.org/Special/specifications/</a></td>
         </tr>
         <tr>
             <td>SBML Level 1 Version 1</td>
@@ -233,43 +252,53 @@
         <tr>
             <td>VCML (generic)</td>
             <td><code>urn:sedml:language:vcml</code></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>BNGL (generic)</td>
-            <td><code>urn:sedml:language:bngl</code></td>
-            <td><a href="https://bionetgen.org" target="_blank">https://bionetgen.org</a></td>
+            <td><a href="https://vcell.org" target="_blank">https://vcell.org</a></td>
         </tr>
         </tbody>
     </table>
 
     <h3 id="formats">Data Format URNs</h3>
     <p>To specify the format of a resource please use the according URN given.
-        The general scheme for a format URN in SED-ML is <code>urn:sedml:format:</code><i>format name</i>.
+        The general scheme for a format URN in SED-ML is <code>urn:sedml:format:<i>{ format name }</i></code>.
     </p>
     <table class="table table-responsive">
         <thead>
         <tr>
             <th> Data Format</th>
             <th> URN</th>
+            <th> More information</th>
         </tr>
         </thead>
         <tbody>
         <tr>
+            <td>HDF (generic)</td>
+            <td><code>urn:sedml:format:hdf</code></td>
+            <td><a href="https://portal.hdfgroup.org/display/support/Documentation" target="_blank">https://portal.hdfgroup.org/display/support/Documentation</a></td>
+        </tr>
+        <tr>
+            <td>HDF5</td>
+            <td><code>urn:sedml:format:hdf.5</code></td>
+            <td><a href="https://portal.hdfgroup.org/display/HDF5/HDF5" target="_blank">https://portal.hdfgroup.org/display/HDF5/HDF5</a></td>
+        </tr>
+        <tr>
             <td>NuML (generic)</td>
             <td><code>urn:sedml:format:numl</code></td>
+            <td><a href="https://github.com/NuML/NuML" target="_blank">https://github.com/NuML/NuML</a></td>
         </tr>
         <tr>
             <td>NuML Level 1 Version 1</td>
             <td><code>urn:sedml:format:numl.level-1.version-1</code></td>
+            <td><a href="https://github.com/NuML/NuML/raw/master/numl-spec-l1v1.pdf" target="_blank">https://github.com/NuML/NuML/raw/master/numl-spec-l1v1.pdf</a></td>
         </tr>
         <tr>
             <td>CSV</td>
             <td><code>urn:sedml:format:csv</code></td>
+            <td></td>
         </tr>
         <tr>
             <td>TSV</td>
             <td><code>urn:sedml:format:tsv</code></td>
+            <td></td>
         </tr>
         </tbody>
     </table>
@@ -278,7 +307,7 @@
     <p> As described in the <a href="specifications.html">SED-ML specification</a> some modeling
         languages use predefined symbols or implicit variables. In order to
         handle such variables the SED-ML introduced symbol URNs. The general scheme for a symbol
-        URN in SED-ML is <code>urn:sedml:symbol:</code><i>symbolName</i>.
+        URN in SED-ML is <code>urn:sedml:symbol:<i>{ symbolName }</i></code>.
     </p>
     <table class="table table-responsive">
         <thead>
@@ -306,7 +335,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <hr/>
-                        <p>&copy; 2017-2020 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
+                        <p>&copy; 2017-2021 sed-ml.org. <a href="https://github.com/SED-ML/sed-ml.github.io/issues" target="_blank">Report website issue <i class="fa fa-github fa-fw"></i></a></p>
                     </div>
                 </div>
                 <!-- END FOOTER -->

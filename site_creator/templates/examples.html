@@ -1,5 +1,5 @@
 {% extends "base_template.html" %}
-{% block title %}SED-ML examples{% endblock %}
+{% block title %}SED-ML | Examples{% endblock %}
 
 {% block content %}
 <!-- Page Heading -->
@@ -14,38 +14,91 @@
     <div class="col-lg-12">
         <h1 class="page-header"><i class="fa fa-fw fa-line-chart"></i> SED-ML examples</h1>
 
-        <h2>L1V3 specification examples</h2>
+        <h2>L1V3 examples (in COMBINE archives)</h2>
         <table class="table table-responsive">
             <tbody>
+            {% for example in examples %}
             <tr>
-                <th> COMBINE Archive</th>
-            </tr>
-            {% for archive in ['L1V3_ikappab', 'L1V3_leloup-sbml', 'L1V3_lorenz-cellml', 'L1V3_lorenz-sbml', 'L1V3_oscli-nested-pulse', 'L1V3_parameter-scan-2d', 'L1V3_plotting-data-csv',
-               'L1V3_plotting-data-numl', 'L1V3_repeated-scan-oscli', 'L1V3_repeated-steady-scan-oscli', 'L1V3_repeated-stochastic-runs',
-               'L1V3_repressilator', 'L1V3_vanderpol-cellml', 'L1V3_vanderpol-sbml'] %}
-            <tr>
-                <td><a href="./examples/L1V3/{{ archive }}.omex"><i class="fa fa-fw fa-archive"></i>{{ archive }}.omex</a></td>
+                <td>
+                    <div><a href="./examples/{{ example.filename }}"><i class="fa fa-fw fa-archive"></i>{{ example.name }}</a></div>
+
+                    {% if example.features %}
+                    <div>
+                        Features:
+                        <ul class="comma-separated-list">
+                            {% for feature in example.features %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    {% if example.experimentalFeatures %}
+                    <div>
+                        Experimental features:
+                        <ul class="comma-separated-list">
+                            {% for feature in example.experimentalFeatures %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    {% if example.modelLanguages %}
+                    <div>
+                        Model language(s):
+                        <ul class="comma-separated-list">
+                            {% for language in example.modelLanguages %}
+                            <li>{{ language }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    {% if example.source and example.source.citation %}
+                    <div>
+                        Source: {{ example.source.citation }}
+                     </div>
+                    {% endif %}
+
+                    {% if example.source and example.source.doi %}
+                    <div>
+                        DOI: <a href="https://doi.org/{{ example.source.doi }}">{{ example.source.doi }}</a>
+                    </div>
+                    {% endif %}
+
+                    {% if example.source and example.source.biomodelsId %}
+                    <div>
+                        BioModels: <a href="https://www.ebi.ac.uk/biomodels/{{ example.source.biomodelsId }}">{{ example.source.biomodelsId }}</a>
+                    </div>
+                    {% endif %}
+                </td>
             </tr>
             {% endfor %}
             </tbody>
         </table>
 
-        Download all L1V3 specification archives: <a href="./examples/L1V3/SED-ML_L1V3_examples.zip"><i class="fa fa-fw fa-download"></i> L1V3 examples</a>
+        <a href="./examples/L1V3/SED-ML_L1V3_examples.zip"><i class="fa fa-fw fa-download"></i> Download all of the examples as a .zip file.</a>
 
-
-
-        <h2>Other examples (COMBINE archives)</h2>
+        <h2>Additional examples</h2>
         <p>
-        <dt>SED-ML test suite
-            (<a href="https://github.com/SED-ML/sedml-test-suite">https://github.com/SED-ML/sedml-test-suite</a>)</dt>
-        <dd>SED-ML examples for testing the implementation.</dd>
+            <dt><a href="https://jjj.bio.vu.nl/models/experiments/">BioModels database</a></dt>
+            <dd>Database of models which includes SED-ML files for many entries. Entries with SED-ML files can also be obtained as COMBINE archives.</dd>
         </p>
         <p>
-        <dt>JWS Online simulation database
-            (<a href="https://jjj.bio.vu.nl/models/experiments/">https://jjj.bio.vu.nl/models/experiments/</a>)</dt>
-        <dd>JWS Online SED-ML and Combine archives.</dd>
+            <dt><a href="https://jjj.bio.vu.nl/models/experiments/">BioSimulators test suite</a></dt>
+            <dd>Test suite for checking that simulation tools execute SED-ML files and COMBINE archives consistently with the specifications of these formats. The test suite uses a collection of curated COMBINE archives, each of which includes SED-ML files. These examples involve multiple model languages, including BNGL, SBML, SBML-fbc, and SBML-qual. To test simulation tools that involve a broad range of model languages, modeling frameworks, and simulation algorithms, the test suite can generate synthetic COMBINE archives and SED-ML files that are appropriate for testing a particular simulation tool (i.e., SED-ML files that involve model formats and simulation algorithms that the simulator can execute). The test suite can also save these synthetic archives to files for further inspection.</dd>
         </p>
-
+        <p>
+            <dt><a href="https://jjj.bio.vu.nl/models/experiments/">JWS Online simulation database</a></dt>
+            <dd>Database of simulation experiments which can be exported to SED-ML files and COMBINE archives.</dd>
+        </p>
+        <!--
+        <p>
+            <dt><a href="https://github.com/SED-ML/sedml-test-suite">SED-ML test suite</a></dt>
+            <dd>Examples for testing the execution of SED-ML files.</dd>
+        </p>
+        -->
     </div>
 </div>
 {% endblock %}

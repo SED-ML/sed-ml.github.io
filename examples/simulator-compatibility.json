@@ -1,0 +1,134 @@
+[{
+        "filename": "L1V3/L1V3_ikappab.omex",
+        "simulators": [{
+                "id": "pysces",
+                "notImplemented": "_EventsProblem__CODE_raterule"
+            },
+            {
+                "id": "tellurium"
+            }
+        ]
+    },
+    {
+        "filename": "L1V3/L1V3_leloup-sbml.omex",
+        "simulators": [{
+                "id": "pysces"
+            },
+            {
+                "id": "tellurium",
+                "failure": "Can't resolve models referenced by URI fragments"
+            }
+        ]
+    },
+    {
+        "filename": "L1V3/L1V3_lorenz-cellml.omex",
+        "simulators": []
+    },
+    {
+        "filename": "L1V3/L1V3_lorenz-sbml.omex",
+        "simulators": [{
+                "id": "tellurium"
+            },
+            {
+                "id": "pysces",
+                "notImplemented": "Doesn't yet support vector aggregate functions"
+            }
+        ]
+    },
+    {
+        "filename": "L1V3/L1V3_oscli-nested-pulse.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "one step not supported"
+        }, {
+            "id": "tellurium",
+            "failure": "tellurium has problem handling calculation"
+        }]
+    },
+    {
+        "filename": "L1V3/L1V3_parameter-scan-2d.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "steady state not supported"
+        }, {
+            "id": "tellurium",
+            "failure": "has bug with accessing libsedml.RepeatedTask which doesn't exist"
+        }]
+    },
+    {
+        "filename": "L1V3/L1V3_plotting-data-csv.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "data descriptions not supported"
+        }, {
+            "id": "tellurium",
+            "failure": "can't resolve data description"
+        }]
+    },
+    {
+        "filename": "L1V3/L1V3_plotting-data-numl.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "data descriptions not supported"
+        }, {
+            "id": "tellurium",
+            "failure": "can't resolve data description"
+        }]
+    },
+    {
+        "filename": "L1V3/L1V3_repeated-scan-oscli.omex",
+        "simulators": [{
+                "id": "pysces",
+                "notImplemented": "Plots for the output of a repeated task which are ill-defined."
+            },
+            {
+                "id": "tellurium",
+                "failure": "Can't handle calculation involving range"
+            }
+        ]
+    },
+    {
+        "filename": "L1V3/L1V3_repeated-steady-scan-oscli.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "steady state not supported."
+        }, {
+            "id": "tellurium",
+            "failure": "Can't handle calculation involving range"
+        }]
+    },
+    {
+        "filename": "L1V3/L1V3_repeated-stochastic-runs.omex",
+        "simulators": [{
+                "id": "gillespy2",
+                "notImplemented": "Plots for the output of a repeated task which are ill-defined."
+            },
+            {
+                "id": "tellurium"
+            }
+        ]
+    },
+    {
+        "filename": "L1V3/L1V3_repressilator.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "Doesn't yet support vector aggregate functions"
+        }, {
+            "id": "tellurium",
+            "failure": "Can't resolve models referenced by URI fragments"
+        }]
+    },
+    {
+        "filename": "L1V3/L1V3_vanderpol-cellml.omex",
+        "simulators": []
+    },
+    {
+        "filename": "L1V3/L1V3_vanderpol-sbml.omex",
+        "simulators": [{
+            "id": "pysces",
+            "notImplemented": "Plots for the output of a repeated task which are ill-defined."
+        }, {
+            "id": "tellurium"
+        }]
+    }
+]

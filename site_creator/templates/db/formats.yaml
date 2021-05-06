@@ -1,11 +1,19 @@
 formats:
+- format: 'HDF (generic)'
+  urn:    'urn:sedml:format:hdf'
+  url:    'https://portal.hdfgroup.org/display/support/Documentation'
+
+- format: 'HDF5'
+  urn:    'urn:sedml:format:hdf.5'
+  url:    'https://portal.hdfgroup.org/display/HDF5/HDF5'
+
 - format: 'NuML (generic)'
   urn:    'urn:sedml:format:numl'
-  url:
+  url:    'https://github.com/NuML/NuML'
 
 - format: 'NuML Level 1 Version 1'
   urn:    'urn:sedml:format:numl.level-1.version-1'
-  url:
+  url:    'https://github.com/NuML/NuML/raw/master/numl-spec-l1v1.pdf'
 
 - format: 'CSV'
   urn:    'urn:sedml:format:csv'
