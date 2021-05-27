@@ -19,6 +19,10 @@ languages:
   urn:      'urn:sedml:language:cellml.2_0'
   url:      'https://www.cellml.org/specifications/cellml_2.0'
 
+- language: 'MorpheusML (generic)'
+  urn:      'urn:sedml:language:morpheusml'
+  url:      'https://morpheus.gitlab.io/'
+
 - language: 'NeuroML (generic)'
   urn:      'urn:sedml:language:neuroml'
   url:      'https://docs.neuroml.org/Userdocs/Specification.html'
@@ -79,6 +83,10 @@ languages:
   urn:      'urn:sedml:language:sbml.level-3.version-2'
   url:      'http://sbml.org/Special/specifications/sbml-level-3/version-2/core/release-1-rc2/sbml-level-3-version-2-core.pdf'
 
+- language: 'Smoldyn (generic)'
+  urn:      'urn:sedml:language:smoldyn'
+  url:      'http://www.smoldyn.org/'
+
 - language: 'VCML (generic)'
   urn:      'urn:sedml:language:vcml'
-  url:      'https://vcell.org'    
+  url:      'https://vcell.org'
