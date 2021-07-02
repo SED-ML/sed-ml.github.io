@@ -19,9 +19,17 @@ languages:
   urn:      'urn:sedml:language:cellml.2_0'
   url:      'https://www.cellml.org/specifications/cellml_2.0'
 
+- language: 'GINML (generic)'
+  urn:      'urn:sedml:language:ginml'
+  url:      'https//ginsim.org'
+
 - language: 'HOC (generic)'
   urn:      'urn:sedml:language:hoc'
   url:      'https://www.neuron.yale.edu/neuron/static/new_doc/programming/hoc.html'
+
+- language: 'Kappa (generic)'
+  urn:      'urn:sedml:language:kappa'
+  url:      'https://kappalanguage.org/'
 
 - language: 'LEMS (generic)'
   urn:      'urn:sedml:language:lems'
@@ -50,6 +58,10 @@ languages:
 - language: 'NeuroML Version 2.1'
   urn:      'urn:sedml:language:neuroml.version-2_1'
   url:      'https://docs.neuroml.org/Userdocs/NeuroMLv2.html'
+
+- language: 'pharmML (generic)'
+  urn:      'urn:sedml:language:pharmml'
+  url:      'http://www.pharmml.org/'
 
 - language: 'SBML (generic)'
   urn:      'urn:sedml:language:sbml'
@@ -98,3 +110,7 @@ languages:
 - language: 'VCML (generic)'
   urn:      'urn:sedml:language:vcml'
   url:      'https://vcell.org'
+
+- language: 'ZGINML (generic)'
+  urn:      'urn:sedml:language:zginml'
+  url:      'https//ginsim.org'
