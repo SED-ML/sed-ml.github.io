@@ -1,4 +1,8 @@
 formats:
+- format: 'CSV'
+  urn:    'urn:sedml:format:csv'
+  url:
+
 - format: 'HDF (generic)'
   urn:    'urn:sedml:format:hdf'
   url:    'https://portal.hdfgroup.org/display/support/Documentation'
@@ -6,6 +10,10 @@ formats:
 - format: 'HDF5'
   urn:    'urn:sedml:format:hdf.5'
   url:    'https://portal.hdfgroup.org/display/HDF5/HDF5'
+
+- format: 'JSON (generic)'
+  urn:    'urn:sedml:format:json'
+  url:    'https://www.json.org/'
 
 - format: 'NuML (generic)'
   urn:    'urn:sedml:format:numl'
@@ -15,10 +23,18 @@ formats:
   urn:    'urn:sedml:format:numl.level-1.version-1'
   url:    'https://github.com/NuML/NuML/raw/master/numl-spec-l1v1.pdf'
 
-- format: 'CSV'
-  urn:    'urn:sedml:format:csv'
-  url:
-
 - format: 'TSV'
   urn:    'urn:sedml:format:tsv'
   url:
+
+- format: 'XLSX (Generic)'
+  urn:    'urn:sedml:format:xlsx'
+  url:    'https://www.ecma-international.org/publications-and-standards/standards/ecma-376/'
+
+- format: 'XML (Generic)'
+  urn:    'urn:sedml:format:xml'
+  url:    'https://www.w3.org/XML/'
+
+- format: 'YAML (Generic)'
+  urn:    'urn:sedml:format:yaml'
+  url:    'https://yaml.org/'
