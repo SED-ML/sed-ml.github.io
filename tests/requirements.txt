@@ -1,2 +1,2 @@
-biosimulators-utils[cellml,sbml,containers] >= 0.1.75
+biosimulators-utils[cellml,sbml,containers] >= 0.1.89
 pytest
