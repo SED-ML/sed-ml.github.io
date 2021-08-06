@@ -111,6 +111,10 @@ languages:
   urn:      'urn:sedml:language:vcml'
   url:      'https://vcell.org'
 
+- language: 'XPP (generic)'
+  urn:      'urn:sedml:language:xpp'
+  url:      'http://www.math.pitt.edu/~bard/xpp/xpp.html'
+
 - language: 'ZGINML (generic)'
   urn:      'urn:sedml:language:zginml'
   url:      'https//ginsim.org'
