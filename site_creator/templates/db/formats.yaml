@@ -8,7 +8,7 @@ formats:
   url:    'https://portal.hdfgroup.org/display/support/Documentation'
 
 - format: 'HDF5'
-  urn:    'urn:sedml:format:hdf.5'
+  urn:    'urn:sedml:format:hdf.version-5'
   url:    'https://portal.hdfgroup.org/display/HDF5/HDF5'
 
 - format: 'JSON (generic)'
