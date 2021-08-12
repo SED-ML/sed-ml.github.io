@@ -36,6 +36,12 @@ jobs:
       - name: Install requirements
         run: python -m pip install -r tests/requirements.txt
 
+      - name: Compile example COMBINE archives
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends zipcmp
+          python scripts/compile_examples_combine_archives.py
+
       - name: Test examples
         run: python -m pytest tests/
 
@@ -91,11 +97,33 @@ jobs:
           git add *.html
           git commit -m "Updated compiled files for website"
           if [[ $? = 0 ]]; then
-            compiledWebsiteChanged=1
+            websiteChanged=1
           else
-            compiledWebsiteChanged=0
+            websiteChanged=0
           fi
-          echo "::set-output name=compiledWebsiteChanged::$compiledWebsiteChanged"
+          echo "::set-output name=websiteChanged::$websiteChanged"
+
+      - name: Compile example COMBINE archives
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends zipcmp
+          python scripts/compile_examples_combine_archives.py
+
+      - id: commit-example-combine-archives
+        name: Commit compiled example COMBINE archives
+        run: |
+          git stash
+          git pull
+          set +e
+          git stash pop
+          git add examples/*.omex
+          git commit -m "Updated example COMBINE archives"
+          if [[ $? = 0 ]]; then
+            examplesChanged=1
+          else
+            examplesChanged=0
+          fi
+          echo "::set-output name=examplesChanged::$examplesChanged"
 
       - name: Bundle examples
         working-directory: examples/L1V3
@@ -112,14 +140,14 @@ jobs:
           git add SED-ML_L1V3_examples.zip
           git commit -m "Updated bundle of example files"
           if [[ $? = 0 ]]; then
-            examplesBundleChanged=1
+            bundleChanged=1
           else
-            examplesBundleChanged=0
+            bundleChanged=0
           fi
-          echo "::set-output name=examplesBundleChanged::$examplesBundleChanged"
+          echo "::set-output name=bundleChanged::$bundleChanged"
 
       - name: Push the changes to the compiled website
-        if: steps.commit-compiled-website.outputs.compiledWebsiteChanged == '1' || steps.commit-bundled-examples.outputs.examplesBundleChanged == '1'
+        if: steps.commit-compiled-website.outputs.websiteChanged == '1' || steps.commit-example-combine-archives.outputs.examplesChanged == '1' || steps.commit-bundled-examples.outputs.bundleChanged == '1'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
