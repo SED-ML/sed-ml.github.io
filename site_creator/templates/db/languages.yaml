@@ -35,6 +35,10 @@ languages:
   urn:      'urn:sedml:language:lems'
   url:      'https://github.com/LEMS/LEMS'
 
+- language: 'Mass Action Stoichiometric Simulation (MASS) (generic)'
+  urn:      'urn:sedml:language:mass'
+  url:      'https://masspy.readthedocs.io/en/stable/tutorials/reading_writing_models.html'
+
 - language: 'MorpheusML (generic)'
   urn:      'urn:sedml:language:morpheusml'
   url:      'https://morpheus.gitlab.io/'
@@ -62,6 +66,10 @@ languages:
 - language: 'pharmML (generic)'
   urn:      'urn:sedml:language:pharmml'
   url:      'http://www.pharmml.org/'
+
+- language: 'Resource Balance Analysis (RBA) (generic)'
+  urn:      'urn:sedml:language:rba'
+  url:      'https://rba.inrae.fr/'
 
 - language: 'SBML (generic)'
   urn:      'urn:sedml:language:sbml'
