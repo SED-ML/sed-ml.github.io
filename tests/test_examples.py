@@ -6,10 +6,13 @@
 :License: MIT
 """
 
+from biosimulators_utils.combine.data_model import CombineArchiveContentFormat
 from biosimulators_utils.combine.io import CombineArchiveReader
 from biosimulators_utils.combine.validation import validate
+from biosimulators_utils.omex_meta.data_model import OmexMetaSchema
 from biosimulators_utils.simulator.exec import exec_sedml_docs_in_archive_with_containerized_simulator
 from biosimulators_utils.utils.core import flatten_nested_list_of_strings
+from biosimulators_utils.warnings import BioSimulatorsWarning
 import glob
 import json
 import math
@@ -24,6 +27,9 @@ import warnings
 EXAMPLES_DIR = os.path.join(os.path.dirname(__file__), '..', 'examples')
 with open(os.path.join(EXAMPLES_DIR, 'simulator-compatibility.json'), 'r') as file:
     EXAMPLES = json.load(file)
+
+
+CHECK_SIMULATION = os.getenv('CHECK_SIMULATION', '1').lower() in ['1', 'true']
 
 
 class ExamplesTestCase(unittest.TestCase):
@@ -51,17 +57,18 @@ class ExamplesTestCase(unittest.TestCase):
         self.validate_archive(example_filename)
 
         # Execute archive
-        simulation_checked = False
-        for simulator in example['simulators']:
-            if 'notImplemented' not in simulator and 'failure' not in simulator:
-                simulation_checked = True
-                temp_dirname = os.path.join(self.temp_dirname, example_name + '-output')
-                os.makedirs(temp_dirname)
-                exec_sedml_docs_in_archive_with_containerized_simulator(
-                    example_filename, temp_dirname, 'ghcr.io/biosimulators/' + simulator['id'] + ':latest')
+        if CHECK_SIMULATION:
+            simulation_checked = False
+            for simulator in example['simulators']:
+                if 'notImplemented' not in simulator and 'failure' not in simulator:
+                    simulation_checked = True
+                    temp_dirname = os.path.join(self.temp_dirname, example_name + '-output')
+                    os.makedirs(temp_dirname)
+                    exec_sedml_docs_in_archive_with_containerized_simulator(
+                        example_filename, temp_dirname, 'ghcr.io/biosimulators/' + simulator['id'] + ':latest')
 
-        if not simulation_checked:
-            warnings.warn('No simulator is available to test its execution.')
+            if not simulation_checked:
+                warnings.warn('No simulator is available to test its execution.')
 
     def validate_archive(self, filename):
         reader = CombineArchiveReader()
@@ -69,4 +76,20 @@ class ExamplesTestCase(unittest.TestCase):
         temp_dirname = os.path.join(self.temp_dirname, name)
         if not os.path.isdir(temp_dirname):
             os.makedirs(temp_dirname)
-        reader.run(filename, temp_dirname)
+        archive = reader.run(filename, temp_dirname)
+
+        error_msgs, warning_msgs = validate(
+            archive, temp_dirname,
+            formats_to_validate=list(CombineArchiveContentFormat.__members__.values()),
+            metadata_schema=OmexMetaSchema.biosimulations,
+        )
+
+        if warning_msgs:
+            msg = 'The COMBINE/OMEX archive may be invalid.\n  {}'.format(
+                flatten_nested_list_of_strings(warning_msgs).replace('\n', '\n  '))
+            warnings.warn(msg, BioSimulatorsWarning)
+
+        if error_msgs:
+            msg = 'The COMBINE/OMEX archive is not valid.\n  {}'.format(
+                flatten_nested_list_of_strings(error_msgs).replace('\n', '\n  '))
+            raise ValueError(msg)
