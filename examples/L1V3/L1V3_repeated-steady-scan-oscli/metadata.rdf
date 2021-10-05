@@ -1,153 +1,176 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:dcterms='http://purl.org/dc/terms/' xmlns:vCard='http://www.w3.org/2006/vcard/ns#'>
-  <rdf:Description rdf:about='.'>
-    <dcterms:description>SED-ML L1V3 specification example.</dcterms:description>
-    <dcterms:modified rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:modified>
-    <dcterms:created rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:created>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>König</vCard:family-name>
-        <vCard:given-name>Matthias</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='konigmatt@googlemail.com' />
-      <vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
-    </dcterms:creator>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>Bergmann</vCard:family-name>
-        <vCard:given-name>Frank</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='fbergmann@caltech.edu' />
-      <vCard:organization-name>Caltech</vCard:organization-name>
-    </dcterms:creator>
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+  xmlns:dcterms='http://purl.org/dc/terms/' 
+  xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about='http://omex-library.org/L1V3/L1V3_repeated-steady-scan-oscli.omex'>
+    <dc:title>Steady-state scan</dc:title>
+    <dc:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:modified>
+    <dc:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:created>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Matthias König</rdfs:label>
+        <foaf:familyName>König</foaf:familyName>
+        <foaf:givenName>Matthias</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:konigmatt@googlemail.com' />
+        <foaf:Organization>Humboldt University Berlin</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Frank Bergmann</rdfs:label>
+        <foaf:familyName>Bergmann</foaf:familyName>
+        <foaf:givenName>Frank</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:fbergmann@caltech.edu' />
+        <foaf:Organization>Caltech</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:license>
+      <rdf:Description>
+        <dc:identifier rdf:resource="https://identifiers.org/spdx:CC0-1.0"/>
+        <rdfs:label>CC0-1.0</rdfs:label>
+      </rdf:Description>
+    </dc:license>
   </rdf:Description>
-  <rdf:Description rdf:about='manifest.json'>
-    <dcterms:description>Information to create archive metadata</dcterms:description>
-    <dcterms:modified rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:modified>
-    <dcterms:created rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:created>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>König</vCard:family-name>
-        <vCard:given-name>Matthias</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='konigmatt@googlemail.com' />
-      <vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
-    </dcterms:creator>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>Bergmann</vCard:family-name>
-        <vCard:given-name>Frank</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='fbergmann@caltech.edu' />
-      <vCard:organization-name>Caltech</vCard:organization-name>
-    </dcterms:creator>
+  <rdf:Description rdf:about='http://omex-library.org/L1V3/L1V3_repeated-steady-scan-oscli.omex/manifest.xml'>
+    <dc:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:modified>
+    <dc:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:created>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Matthias König</rdfs:label>
+        <foaf:familyName>König</foaf:familyName>
+        <foaf:givenName>Matthias</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:konigmatt@googlemail.com' />
+        <foaf:Organization>Humboldt University Berlin</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Frank Bergmann</rdfs:label>
+        <foaf:familyName>Bergmann</foaf:familyName>
+        <foaf:givenName>Frank</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:fbergmann@caltech.edu' />
+        <foaf:Organization>Caltech</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
   </rdf:Description>
-  <rdf:Description rdf:about='repeated-steady-scan-oscli.xml'>
-    <dcterms:description></dcterms:description>
-    <dcterms:modified rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:modified>
-    <dcterms:created rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:created>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>König</vCard:family-name>
-        <vCard:given-name>Matthias</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='konigmatt@googlemail.com' />
-      <vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
-    </dcterms:creator>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>Bergmann</vCard:family-name>
-        <vCard:given-name>Frank</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='fbergmann@caltech.edu' />
-      <vCard:organization-name>Caltech</vCard:organization-name>
-    </dcterms:creator>
+  <rdf:Description rdf:about='http://omex-library.org/L1V3/L1V3_repeated-steady-scan-oscli.omex/repeated-steady-scan-oscli.xml'>
+    <dc:title></dc:title>
+    <dc:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:modified>
+    <dc:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:created>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Matthias König</rdfs:label>
+        <foaf:familyName>König</foaf:familyName>
+        <foaf:givenName>Matthias</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:konigmatt@googlemail.com' />
+        <foaf:Organization>Humboldt University Berlin</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Frank Bergmann</rdfs:label>
+        <foaf:familyName>Bergmann</foaf:familyName>
+        <foaf:givenName>Frank</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:fbergmann@caltech.edu' />
+        <foaf:Organization>Caltech</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
   </rdf:Description>
-  <rdf:Description rdf:about='oscli.xml'>
-    <dcterms:description></dcterms:description>
-    <dcterms:modified rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:modified>
-    <dcterms:created rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:created>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>König</vCard:family-name>
-        <vCard:given-name>Matthias</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='konigmatt@googlemail.com' />
-      <vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
-    </dcterms:creator>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>Bergmann</vCard:family-name>
-        <vCard:given-name>Frank</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='fbergmann@caltech.edu' />
-      <vCard:organization-name>Caltech</vCard:organization-name>
-    </dcterms:creator>
+  <rdf:Description rdf:about='http://omex-library.org/L1V3/L1V3_repeated-steady-scan-oscli.omex/oscli.xml'>
+    <dc:title></dc:title>
+    <dc:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:modified>
+    <dc:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:created>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Matthias König</rdfs:label>
+        <foaf:familyName>König</foaf:familyName>
+        <foaf:givenName>Matthias</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:konigmatt@googlemail.com' />
+        <foaf:Organization>Humboldt University Berlin</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Frank Bergmann</rdfs:label>
+        <foaf:familyName>Bergmann</foaf:familyName>
+        <foaf:givenName>Frank</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:fbergmann@caltech.edu' />
+        <foaf:Organization>Caltech</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
   </rdf:Description>
-  <rdf:Description rdf:about='results/sedml_webtools/plot1.pdf'>
-    <dcterms:description>Plot2D SED-ML webtools</dcterms:description>
-    <dcterms:modified rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:modified>
-    <dcterms:created rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:created>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>König</vCard:family-name>
-        <vCard:given-name>Matthias</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='konigmatt@googlemail.com' />
-      <vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
-    </dcterms:creator>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>Bergmann</vCard:family-name>
-        <vCard:given-name>Frank</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='fbergmann@caltech.edu' />
-      <vCard:organization-name>Caltech</vCard:organization-name>
-    </dcterms:creator>
+  <rdf:Description rdf:about='http://omex-library.org/L1V3/L1V3_repeated-steady-scan-oscli.omex/results/sedml_webtools/plot1.pdf'>
+    <dc:title>Plot2D SED-ML webtools</dc:title>
+    <dc:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:modified>
+    <dc:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:created>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Matthias König</rdfs:label>
+        <foaf:familyName>König</foaf:familyName>
+        <foaf:givenName>Matthias</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:konigmatt@googlemail.com' />
+        <foaf:Organization>Humboldt University Berlin</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Frank Bergmann</rdfs:label>
+        <foaf:familyName>Bergmann</foaf:familyName>
+        <foaf:givenName>Frank</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:fbergmann@caltech.edu' />
+        <foaf:Organization>Caltech</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
   </rdf:Description>
-  <rdf:Description rdf:about='results/tellurium/plot1.pdf'>
-    <dcterms:description>Plot2D tellurium</dcterms:description>
-    <dcterms:modified rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:modified>
-    <dcterms:created rdf:parseType='Resource'>
-      <dcterms:W3CDTF>2018-06-14T09:15:12Z</dcterms:W3CDTF>
-    </dcterms:created>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>König</vCard:family-name>
-        <vCard:given-name>Matthias</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='konigmatt@googlemail.com' />
-      <vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
-    </dcterms:creator>
-    <dcterms:creator rdf:parseType='Resource'>
-      <vCard:hasName rdf:parseType='Resource'>
-        <vCard:family-name>Bergmann</vCard:family-name>
-        <vCard:given-name>Frank</vCard:given-name>
-      </vCard:hasName>
-      <vCard:hasEmail rdf:resource='fbergmann@caltech.edu' />
-      <vCard:organization-name>Caltech</vCard:organization-name>
-    </dcterms:creator>
+  <rdf:Description rdf:about='http://omex-library.org/L1V3/L1V3_repeated-steady-scan-oscli.omex/results/tellurium/plot1.pdf'>
+    <dc:title>Plot2D tellurium</dc:title>
+    <dc:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:modified>
+    <dc:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF><rdf:value>2018-06-14T09:15:12Z</rdf:value></dcterms:W3CDTF>
+    </dc:created>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Matthias König</rdfs:label>
+        <foaf:familyName>König</foaf:familyName>
+        <foaf:givenName>Matthias</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:konigmatt@googlemail.com' />
+        <foaf:Organization>Humboldt University Berlin</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
+    <dc:creator>
+      <rdf:Description>
+        <rdfs:label>Frank Bergmann</rdfs:label>
+        <foaf:familyName>Bergmann</foaf:familyName>
+        <foaf:givenName>Frank</foaf:givenName>
+        <foaf:mbox rdf:resource='mailto:fbergmann@caltech.edu' />
+        <foaf:Organization>Caltech</foaf:Organization>
+      </rdf:Description>
+    </dc:creator>
   </rdf:Description>
 </rdf:RDF>
