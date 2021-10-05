@@ -22,7 +22,11 @@
     },
     {
         "filename": "L1V3/L1V3_lorenz-cellml.omex",
-        "simulators": []
+        "simulators": [
+            {
+                "id": "opencor"
+            }
+        ]
     },
     {
         "filename": "L1V3/L1V3_lorenz-sbml.omex",
@@ -78,8 +82,7 @@
     {
         "filename": "L1V3/L1V3_repeated-scan-oscli.omex",
         "simulators": [{
-                "id": "pysces",
-                "notImplemented": "Plots for the output of a repeated task which are ill-defined."
+                "id": "pysces"
             },
             {
                 "id": "tellurium",
@@ -100,8 +103,7 @@
     {
         "filename": "L1V3/L1V3_repeated-stochastic-runs.omex",
         "simulators": [{
-                "id": "gillespy2",
-                "notImplemented": "Plots for the output of a repeated task which are ill-defined."
+                "id": "gillespy2"
             },
             {
                 "id": "tellurium"
@@ -120,13 +122,15 @@
     },
     {
         "filename": "L1V3/L1V3_vanderpol-cellml.omex",
-        "simulators": []
+        "simulators": [{
+            "id": "opencor"
+        }]
     },
     {
         "filename": "L1V3/L1V3_vanderpol-sbml.omex",
         "simulators": [{
             "id": "pysces",
-            "notImplemented": "Plots for the output of a repeated task which are ill-defined."
+            "failure": "Cannot import model"
         }, {
             "id": "tellurium"
         }]
