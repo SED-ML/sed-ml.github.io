@@ -1,7 +1,27 @@
 languages:
-- language: 'BNGL (generic)'
+- language: 'Abstract Petri net notation (APNN) (generic)'
+  urn:      'urn:sedml:language:apnn'
+  url:      'https://ls4-www.cs.tu-dortmund.de/APNN-TOOLBOX/'
+
+- language: 'Berkeley Logic Interchange Format (BLIF) (generic)'
+  urn:      'urn:sedml:language:bngl'
+  url:      'http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.115.9222'
+
+- language: 'BioNetGen Language (BNGL) (generic)'
   urn:      'urn:sedml:language:bngl'
   url:      'https://bionetgen.org'
+
+- language: 'BooleanNet (generic)'
+  urn:      'urn:sedml:language:booleannet'
+  url:      'https://github.com/ialbert/booleannet'
+
+- language: 'BoolNet (generic)'
+  urn:      'urn:sedml:language:boolnet'
+  url:      'https://cran.r-project.org/web/packages/BoolNet/index.html'
+
+- language: 'boolSim (generic)'
+  urn:      'urn:sedml:language:boolsim'
+  url:      'https://www.vital-it.ch/research/software/boolSim'
 
 - language: 'CellML (generic)'
   urn:      'urn:sedml:language:cellml'
@@ -19,27 +39,43 @@ languages:
   urn:      'urn:sedml:language:cellml.2_0'
   url:      'https://www.cellml.org/specifications/cellml_2.0'
 
-- language: 'GINML (generic)'
+- language: 'CNET (generic)'
+  urn:      'urn:sedml:language:cnet'
+  url:      'https://people.kth.se/~dubrova/bns.html'
+
+- language: 'Genetic Network Analyzer (GNA) (generic)'
+  urn:      'urn:sedml:language:gna'
+  url:      'http://ibis.inrialpes.fr/people/dejong/GNA/user/ch03.html'
+
+- language: 'GINsim Markup Language (GINML) (generic)'
   urn:      'urn:sedml:language:ginml'
   url:      'https//ginsim.org'
 
-- language: 'HOC (generic)'
+- language: 'High Order Calculator (HOC) (generic)'
   urn:      'urn:sedml:language:hoc'
   url:      'https://www.neuron.yale.edu/neuron/static/new_doc/programming/hoc.html'
+
+- language: 'Integrated Net Analyzer (INA) (generic)'
+  urn:      'urn:sedml:language:ina'
+  url:      'https://www2.informatik.hu-berlin.de/~starke/ina.html'
 
 - language: 'Kappa (generic)'
   urn:      'urn:sedml:language:kappa'
   url:      'https://kappalanguage.org/'
 
-- language: 'LEMS (generic)'
+- language: 'Low Entropy Model Specification (LEMS) (generic)'
   urn:      'urn:sedml:language:lems'
   url:      'https://github.com/LEMS/LEMS'
+
+- language: 'MaBoSS (generic)'
+  urn:      'urn:sedml:language:maboss'
+  url:      'https://maboss.curie.fr/'
 
 - language: 'Mass Action Stoichiometric Simulation (MASS) (generic)'
   urn:      'urn:sedml:language:mass'
   url:      'https://masspy.readthedocs.io/en/stable/tutorials/reading_writing_models.html'
 
-- language: 'MorpheusML (generic)'
+- language: 'Morpheus Markup Language (MorpheusML) (generic)'
   urn:      'urn:sedml:language:morpheusml'
   url:      'https://morpheus.gitlab.io/'
 
@@ -63,15 +99,27 @@ languages:
   urn:      'urn:sedml:language:neuroml.version-2_1'
   url:      'https://docs.neuroml.org/Userdocs/NeuroMLv2.html'
 
-- language: 'pharmML (generic)'
+- language: 'NuSMV (generic)'
+  urn:      'urn:sedml:language:nusmv'
+  url:      'https://nusmv.fbk.eu/NuSMV/userman/index-v2.html'
+
+- language: 'Petri Net Markup Language (PNML) (generic)'
+  urn:      'urn:sedml:language:pnml'
+  url:      'https://www.pnml.org/'
+
+- language: 'Pharmacometrics Markup Language (pharmML) (generic)'
   urn:      'urn:sedml:language:pharmml'
   url:      'http://www.pharmml.org/'
+
+- language: 'Pint (generic)'
+  urn:      'urn:sedml:language:pint'
+  url:      'https://loicpauleve.name/pint/'
 
 - language: 'Resource Balance Analysis (RBA) (generic)'
   urn:      'urn:sedml:language:rba'
   url:      'https://rba.inrae.fr/'
 
-- language: 'SBML (generic)'
+- language: 'Systems Biology Markup Language (SBML) (generic)'
   urn:      'urn:sedml:language:sbml'
   url:      'http://sbml.org/Special/specifications/'
 
@@ -115,14 +163,18 @@ languages:
   urn:      'urn:sedml:language:smoldyn'
   url:      'http://www.smoldyn.org/'
 
-- language: 'VCML (generic)'
+- language: 'TruthTable (generic)'
+  urn:      'urn:sedml:language:truthtable'
+  url:      'http://colomoto.org/formats/truthtable.html'
+
+- language: 'Virtual Cell Markup Language (VCML) (generic)'
   urn:      'urn:sedml:language:vcml'
   url:      'https://vcell.org'
 
-- language: 'XPP (generic)'
+- language: 'XPP ODE (generic)'
   urn:      'urn:sedml:language:xpp'
   url:      'http://www.math.pitt.edu/~bard/xpp/xpp.html'
 
-- language: 'ZGINML (generic)'
+- language: 'Zipped GINsim Markup Language (ZGINML) (generic)'
   urn:      'urn:sedml:language:zginml'
   url:      'https//ginsim.org'
