@@ -4,7 +4,7 @@
 >
   <listOfSimulations>
     <uniformTimeCourse id="timecourse1" initialTime="0" outputStartTime="0" outputEndTime="4000" numberOfPoints="1000">
-      <algorithm kisaoID="KISAO:0000241" />
+      <algorithm kisaoID="KISAO:0000027" />
     </uniformTimeCourse>
   </listOfSimulations>
   <listOfModels>

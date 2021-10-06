@@ -8,4 +8,5 @@
 <content location="results/sedml_webtools/plot2.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
 <content location="results/tellurium/plot1.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
 <content location="results/tellurium/plot2.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
+<content location="create_vanderpol.py" format="http://purl.org/NET/mediatypes/application/x-python-code" master="false"/>
 </omexManifest>

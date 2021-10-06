@@ -7,4 +7,5 @@
 <content location="results/sedml_webtools/plot1.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
 <content location="results/sedml_webtools/report1.xml" format="http://identifiers.org/combine.specifications/numl" master="false"/>
 <content location="results/tellurium/plot1.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
+<content location="results/tellurium/report1.csv" format="http://purl.org/NET/mediatypes/text/csv" master="false"/>
 </omexManifest>

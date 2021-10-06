@@ -3,6 +3,7 @@
     <content location="metadata.rdf" format="http://identifiers.org/combine.specifications/omex-metadata" master="false"/>
     <content location="." format="http://identifiers.org/combine.specifications/omex" master="false"/>
     <content location="ikappab.sedml" format="http://identifiers.org/combine.specifications/sed-ml" master="true"/>
+    <content location="BIOMD0000000140_url.xml" format="http://identifiers.org/combine.specifications/sbml" master="false"/>
     <content location="results/sedml_webtools/plot1.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
     <content location="results/tellurium/plot1.pdf" format="http://purl.org/NET/mediatypes/application/pdf" master="false"/>
 </omexManifest>
