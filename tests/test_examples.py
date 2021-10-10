@@ -9,7 +9,8 @@
 from biosimulators_utils.combine.data_model import CombineArchiveContentFormat
 from biosimulators_utils.combine.io import CombineArchiveReader
 from biosimulators_utils.combine.validation import validate
-from biosimulators_utils.omex_meta.data_model import OmexMetaSchema
+from biosimulators_utils.config import Config
+from biosimulators_utils.omex_meta.data_model import OmexMetadataSchema
 from biosimulators_utils.simulator.exec import exec_sedml_docs_in_archive_with_containerized_simulator
 from biosimulators_utils.utils.core import flatten_nested_list_of_strings
 from biosimulators_utils.warnings import BioSimulatorsWarning
@@ -80,10 +81,14 @@ class ExamplesTestCase(unittest.TestCase):
             os.makedirs(temp_dirname)
         archive = reader.run(filename, temp_dirname)
 
+        config = Config(
+            OMEX_METADATA_SCHEMA=OmexMetadataSchema.biosimulations,
+        )
+
         error_msgs, warning_msgs = validate(
             archive, temp_dirname,
             formats_to_validate=list(CombineArchiveContentFormat.__members__.values()),
-            metadata_schema=OmexMetaSchema.biosimulations,
+            config=config,
         )
 
         if warning_msgs:
