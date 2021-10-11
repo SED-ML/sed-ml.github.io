@@ -1,4 +1,14 @@
 publications:
+- id:       'Smith2021'
+  year:     '2021'
+  authors:  'Lucian P. Smith, Frank T. Bergmann, Alan Garny, Tomáš Helikar, Jonathan Karr, David Nickerson, Herbert Sauro, Dagmar Waltemath, Matthias König'
+  title:    'The simulation experiment description markup language (SED-ML): language specification for level 1 version 4'
+  journal:  'Journal of Integrative Bioinformatics, vol. , no. , 2021, pp. 20210021. https://doi.org/10.1515/jib-2021-0021'
+  pmid:
+  doi:      '10.1515/jib-2021-002'
+  link:     'https://doi.org/10.1515/jib-2021-0021'
+  howToCite: False
+
 - id:       'Shaikh2021'
   year:     '2021'
   authors:  'Shaikh B, Marupilla G, Blinov ML, Moraru II, Karr JR'
