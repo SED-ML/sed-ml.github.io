@@ -66,7 +66,7 @@
                         {% if example.verifiedSimulators %}
                         <ul class="comma-separated-list">
                             {% for simulator in example.verifiedSimulators %}
-                            <li><a href="{{ simulator.url }}">{{ simulator.id }} {{ simulator.version }}</a></li>
+                            <li><a href="{{ simulator.url }}">{{ simulator.name }}</a> {{ simulator.version }}</li>
                             {% endfor %}
                         </ul>
                         {% else %}

@@ -58,7 +58,7 @@ EXAMPLES = read_yaml("examples")
 
 response = requests.get('https://api.biosimulators.org/simulators/latest')
 response.raise_for_status()
-simulator_latest_versions = {simulator['id']: simulator['version'] for simulator in response.json()}
+simulators_specs = {simulator['id']: simulator for simulator in response.json()}
 
 with open(os.path.join(os.path.dirname(__file__), '..', 'examples', 'simulator-compatibility.yml'), 'r') as file:
     example_simulator_compatibility = {example['filename']: example for example in yaml.load(file, Loader=yaml.FullLoader)}
@@ -67,11 +67,14 @@ for example in EXAMPLES:
     for simulator in example_simulator_compatibility[example['filename']]['simulators']:
         if simulator.get('notImplemented', None) is None:
             simulator_id = simulator['id']
-            simulator_version = simulator_latest_versions[simulator_id]
+            simulator_specs = simulators_specs[simulator_id]
+            simulator_version = simulator_specs['version']
+            simulator_name = simulator_specs['name']
             example['verifiedSimulators'].append({
                 'id': simulator_id,
+                'name': simulator_name,
                 'version': simulator_version,
-                'url': 'https://biosimulators.org/simulators/{}/{}'.format(simulator_id, simulator_version)
+                'url': 'https://biosimulators.org/simulators/{}'.format(simulator_id)
             })
     natsort.natsorted(example['verifiedSimulators'], key=lambda simulator: simulator['id'])
 
