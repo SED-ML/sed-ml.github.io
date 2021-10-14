@@ -14,6 +14,12 @@
     <div class="col-lg-12">
         <h1 class="page-header"><i class="fa fa-fw fa-line-chart"></i> SED-ML examples</h1>
 
+        <p>Below are several examples of SED-ML files. Each example is provided as a <a href="https://combinearchive.org/">COMBINE archive</a>, which contains both the example SED-ML file and all model and data files involved in the SED-ML file.</p>
+
+        <p>For each example, the table below also lists simulation tools which have been verified to be able to execute the example.</p>
+
+        <p class="alert alert-warning" role="alert">Note, because SED-ML files typically describe simulations involving specific model formats and simulation algorithms, each SED-ML file can only be executed by a subset of simulation tools. Information about the capabilities of simulation tools to execute SED-ML files involving specific formats and algorithms is available at <a href="https://biosimulators.org">BioSimulators</a>. In addition, <a href="https://run.biosimulations.org">runBioSimulations</a> provides a web application which can recommend specific tools for executing particular SED-ML files in COMBINE archives.</p>
+
         <h2>L1V3 examples (in COMBINE archives)</h2>
         <table class="table table-responsive">
             <tbody>
@@ -54,6 +60,19 @@
                         </ul>
                     </div>
                     {% endif %}
+                    
+                    <div>
+                        Verified simulation tool(s):
+                        {% if example.verifiedSimulators %}
+                        <ul class="comma-separated-list">
+                            {% for simulator in example.verifiedSimulators %}
+                            <li><a href="{{ simulator.url }}">{{ simulator.id }} {{ simulator.version }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        None
+                        {% endif %}
+                    </div>                    
 
                     {% if example.source and example.source.citation %}
                     <div>

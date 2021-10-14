@@ -5,6 +5,8 @@ from pathlib import Path
 import codecs
 import os
 from jinja2 import Environment, FileSystemLoader
+import natsort
+import requests
 import yaml
 
 TEMPLATE_DIR = Path(__file__).parent / 'templates'
@@ -52,6 +54,26 @@ SYMBOLS = read_yaml("symbols")
 FORMATS = sorted(read_yaml("formats"), key=lambda f: f['format'])
 UML_DIAGRAMS = read_yaml("uml_diagrams")
 EXAMPLES = read_yaml("examples")
+
+
+response = requests.get('https://api.biosimulators.org/simulators/latest')
+response.raise_for_status()
+simulator_latest_versions = {simulator['id']: simulator['version'] for simulator in response.json()}
+
+with open(os.path.join(os.path.dirname(__file__), '..', 'examples', 'simulator-compatibility.yml'), 'r') as file:
+    example_simulator_compatibility = {example['filename']: example for example in yaml.load(file, Loader=yaml.FullLoader)}
+for example in EXAMPLES:
+    example['verifiedSimulators'] = []
+    for simulator in example_simulator_compatibility[example['filename']]['simulators']:
+        if simulator.get('notImplemented', None) is None:
+            simulator_id = simulator['id']
+            simulator_version = simulator_latest_versions[simulator_id]
+            example['verifiedSimulators'].append({
+                'id': simulator_id,
+                'version': simulator_version,
+                'url': 'https://biosimulators.org/simulators/{}/{}'.format(simulator_id, simulator_version)
+            })
+    natsort.natsorted(example['verifiedSimulators'], key=lambda simulator: simulator['id'])
 
 
 def create_site(template="index.html", out_dir="../"):

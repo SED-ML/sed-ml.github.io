@@ -23,11 +23,12 @@ import shutil
 import tempfile
 import unittest
 import warnings
+import yaml
 
 
 EXAMPLES_DIR = os.path.join(os.path.dirname(__file__), '..', 'examples')
-with open(os.path.join(EXAMPLES_DIR, 'simulator-compatibility.json'), 'r') as file:
-    EXAMPLES = json.load(file)
+with open(os.path.join(EXAMPLES_DIR, 'simulator-compatibility.yml'), 'r') as file:
+    EXAMPLES = yaml.load(file, Loader=yaml.FullLoader)
 
 
 CHECK_SIMULATION = os.getenv('CHECK_SIMULATION', '1').lower() in ['1', 'true']
