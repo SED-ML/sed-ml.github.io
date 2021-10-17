@@ -131,10 +131,20 @@ jobs:
           echo "::set-output name=examplesChanged::$examplesChanged"
 
       - name: Bundle examples
+        id: bundle-examples
         working-directory: examples/L1V3
-        run: zip SED-ML_L1V3_examples.zip *.omex
+        run: |
+          zip SED-ML_L1V3_examples-new.zip *.omex
+          zipcmp SED-ML_L1V3_examples.zip SED-ML_L1V3_examples-new.zip
+          if [[ $? = 0 ]]; then
+            changed=0
+          else
+            changed=1
+          fi
+          echo "::set-output name=changed::$changed"
 
       - id: commit-bundled-examples
+        if: steps.bundle-examples.outputs.changed == '1'
         name: Commit changes to the bundled examples
         working-directory: examples/L1V3
         run: |
@@ -144,12 +154,6 @@ jobs:
           git stash pop
           git add SED-ML_L1V3_examples.zip
           git commit -m "Updated bundle of example files [skip ci]"
-          if [[ $? = 0 ]]; then
-            bundleChanged=1
-          else
-            bundleChanged=0
-          fi
-          echo "::set-output name=bundleChanged::$bundleChanged"
 
       - name: Determine branch to push compiled website to
         id: get-push-branch
@@ -161,7 +165,7 @@ jobs:
           fi
 
       - name: Push the changes to the compiled website
-        if: steps.commit-compiled-website.outputs.websiteChanged == '1' || steps.commit-example-combine-archives.outputs.examplesChanged == '1' || steps.commit-bundled-examples.outputs.bundleChanged == '1'
+        if: steps.commit-compiled-website.outputs.websiteChanged == '1' || steps.commit-example-combine-archives.outputs.examplesChanged == '1' || steps.bundle-examples.outputs.changed == '1'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
