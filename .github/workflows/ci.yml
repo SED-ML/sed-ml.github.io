@@ -171,4 +171,5 @@ jobs:
       - name: Create pull request
         if: steps.get-push-branch.outputs.branch != github.ref
         uses: peter-evans/create-pull-request@v3
-        branch: ${{ steps.get-push-branch.outputs.branch }}
+        with:
+          branch: ${{ steps.get-push-branch.outputs.branch }}
