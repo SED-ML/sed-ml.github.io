@@ -154,7 +154,7 @@ jobs:
       - name: Determine branch to push compiled website to
         id: get-push-branch
         run: |
-          if [ "${{ github.ref }}" == "master" ]; then
+          if [ "${{ github.ref }}" == "refs/heads/master" ]; then
             echo "::set-output name=branch::ci-compiled-website"
           else
             echo "::set-output name=branch::${{ github.ref }}"
@@ -169,7 +169,7 @@ jobs:
           force: ${{ steps.get-push-branch.outputs.branch == 'ci-compiled-website' }}
 
       - name: Create pull request
-        if: steps.get-push-branch.outputs.branch != github.ref
+        if: steps.get-push-branch.outputs.branch == 'ci-compiled-website'
         uses: peter-evans/create-pull-request@v3
         with:
           branch: ${{ steps.get-push-branch.outputs.branch }}
