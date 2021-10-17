@@ -151,9 +151,24 @@ jobs:
           fi
           echo "::set-output name=bundleChanged::$bundleChanged"
 
+      - name: Determine branch to push compiled website to
+        id: get-push-branch
+        run: |
+          if [ "${{ github.ref }}" == "master" ]; then
+            echo "::set-output name=branch::ci-compiled-website"
+          else
+            echo "::set-output name=branch::${{ github.ref }}"
+          fi
+
       - name: Push the changes to the compiled website
         if: steps.commit-compiled-website.outputs.websiteChanged == '1' || steps.commit-example-combine-archives.outputs.examplesChanged == '1' || steps.commit-bundled-examples.outputs.bundleChanged == '1'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: ${{ steps.get-push-branch.outputs.branch }}
+          force: ${{ steps.get-push-branch.outputs.branch == 'ci-compiled-website' }}
+
+      - name: Create pull request
+        if: steps.get-push-branch.outputs.branch != github.ref
+        uses: peter-evans/create-pull-request@v3
+        branch: ${{ steps.get-push-branch.outputs.branch }}
