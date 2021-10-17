@@ -138,8 +138,10 @@ jobs:
           zipcmp SED-ML_L1V3_examples.zip SED-ML_L1V3_examples-new.zip
           if [[ $? = 0 ]]; then
             changed=0
+            rm SED-ML_L1V3_examples-new.zip
           else
             changed=1
+            mv SED-ML_L1V3_examples-new.zip SED-ML_L1V3_examples.zip
           fi
           echo "::set-output name=changed::$changed"
 
