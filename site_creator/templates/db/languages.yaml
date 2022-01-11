@@ -43,6 +43,10 @@ languages:
   urn:      'urn:sedml:language:cnet'
   url:      'https://people.kth.se/~dubrova/bns.html'
 
+- language: 'GENESIS (generic)'
+  urn:      'urn:sedml:language:genesis'
+  url:      'http://genesis-sim.org/'
+
 - language: 'Genetic Network Analyzer (GNA) (generic)'
   urn:      'urn:sedml:language:gna'
   url:      'http://ibis.inrialpes.fr/people/dejong/GNA/user/ch03.html'
@@ -78,6 +82,10 @@ languages:
 - language: 'Morpheus Markup Language (MorpheusML) (generic)'
   urn:      'urn:sedml:language:morpheusml'
   url:      'https://morpheus.gitlab.io/'
+
+- language: 'Neocortical Simulator (NCS) (generic)'
+  urn:      'urn:sedml:language:ncs'
+  url:      'https://github.com/BrainComputationLab/ncs'
 
 - language: 'NeuroML (generic)'
   urn:      'urn:sedml:language:neuroml'
@@ -162,6 +170,10 @@ languages:
 - language: 'SBML Level 3 Version 2'
   urn:      'urn:sedml:language:sbml.level-3.version-2'
   url:      'http://sbml.org/Special/specifications/sbml-level-3/version-2/core/release-1-rc2/sbml-level-3-version-2-core.pdf'
+
+- language: 'SLI (generic)'
+  urn:      'urn:sedml:language:sli'
+  url:      'https://nest-simulator.readthedocs.io/en/stable/sli_docs/programming-in-sli.html'
 
 - language: 'Smoldyn (generic)'
   urn:      'urn:sedml:language:smoldyn'
