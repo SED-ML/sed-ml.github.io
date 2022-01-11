@@ -99,6 +99,10 @@ languages:
   urn:      'urn:sedml:language:neuroml.version-2_1'
   url:      'https://docs.neuroml.org/Userdocs/NeuroMLv2.html'
 
+- language: 'NEURON MODeling Language (generic)'
+  urn:      'urn:sedml:language:nmodl'
+  url:      'https://bluebrain.github.io/nmodl/'
+
 - language: 'NuSMV (generic)'
   urn:      'urn:sedml:language:nusmv'
   url:      'https://nusmv.fbk.eu/NuSMV/userman/index-v2.html'
