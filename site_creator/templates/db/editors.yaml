@@ -2,13 +2,12 @@ editors:
 # -----------------------------------------------------------------------------
 # Current editors
 # -----------------------------------------------------------------------------
-- name: 'Frank Bergmann'
+- name: 'Eran Agmon'
   active: True
   terms:
-  - '2020-2022'
-  - '2011-2014'
-  image: 'bergmann_bio.jpg'
-  text: '<a href="https://www.cos.uni-heidelberg.de/index.php/f.bergmann?l=_e">Frank T. Bergmann</a> (PhD. in Computational and Systems Biology) is a researcher at the University of Heidelberg where he is one of the core developers of <a href="https://copasi.org">COPASI</a>, a simulation and modeling environment supporting the COMBINE standards. He also maintains several <a href="https://github.com/fbergmann">open source projects</a>, supporting the use of the COMBINE standards.'
+  - '2023-2026'
+  image: 'agmon_bio.jpg'
+  text: '<a href="https://eagmon.github.io">Eran Agmon</a> is an Assistant Professor at the Center for Cell Analysis and Modeling at University of Connecticut Health. As the primary developer of <a href="https://vivarium-collective.github.io">Vivarium</a>, Eran has been developing software for integrating heterogeneous modeling methods to build multi-algorithmic, multi-scale simulations. He is interesting in building models of microbiomes that span molecular to multi-cellular and ecological scales.'
 
 - name: 'Tomas Helikar'
   active: True
@@ -50,6 +49,14 @@ editors:
   - '2011-2012'
   image: 'adams_bio.jpg'
   text: 'Richard Adams (Ph.D. in Cell Biology) is software project manager at the <a href="http://csbe.bio.ed.ac.uk/" class="external text" title="http://csbe.bio.ed.ac.uk/" rel="nofollow">Centre for Systems Biology, Edinburgh</a>. He works on the <a href="http://www.sbsi.ed.ac.uk" class="external text" title="http://www.sbsi.ed.ac.uk" rel="nofollow">SBSI systems biology software framework</a>, SED-ML tools and the jlibsedml Java library for SED-ML.'
+
+- name: 'Frank Bergmann'
+  active: False
+  terms:
+  - '2020-2022'
+  - '2011-2014'
+  image: 'bergmann_bio.jpg'
+  text: '<a href="https://www.cos.uni-heidelberg.de/index.php/f.bergmann?l=_e">Frank T. Bergmann</a> (PhD. in Computational and Systems Biology) is a researcher at the University of Heidelberg where he is one of the core developers of <a href="https://copasi.org">COPASI</a>, a simulation and modeling environment supporting the COMBINE standards. He also maintains several <a href="https://github.com/fbergmann">open source projects</a>, supporting the use of the COMBINE standards.'
 
 - name: 'Jonathan Cooper'
   active: False
