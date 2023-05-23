@@ -141,6 +141,7 @@ jobs:
             rm SED-ML_L1V3_examples-new.zip
           else
             changed=1
+            rm SED-ML_L1V3_examples.zip
             mv SED-ML_L1V3_examples-new.zip SED-ML_L1V3_examples.zip
           fi
           echo "::set-output name=changed::$changed"
