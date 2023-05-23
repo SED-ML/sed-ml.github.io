@@ -5,7 +5,7 @@ editors:
 - name: 'Eran Agmon'
   active: True
   terms:
-  - '2023-2026'
+  - '2023-2025'
   image: 'agmon_bio.jpg'
   text: '<a href="https://eagmon.github.io">Eran Agmon</a> is an Assistant Professor at the Center for Cell Analysis and Modeling at University of Connecticut Health. As the primary developer of <a href="https://vivarium-collective.github.io">Vivarium</a>, Eran has been developing software for integrating heterogeneous modeling methods to build multi-algorithmic, multi-scale simulations. He is interesting in building models of microbiomes that span molecular to multi-cellular and ecological scales.'
 
@@ -23,22 +23,23 @@ editors:
   image: 'karr_bio.png'
   text: '<a href="https://karrlab.org">Jonathan Karr</a> is an Assistant Professor in the Department of Genetics and Genomic Sciences at the Icahn School of Medicine at Mount Sinai. The goal of Jonathan&apos;s research is to develop comprehensive whole-cell models of all of the biochemical activity inside cells to enable a predictive foundation for medicine and bioengineering analogous to the Newtonian foundation for mechanical engineering.'
 
-- name: 'Matthias K&ouml;nig'
-  active: True
-  terms:
-  - '2020-2022'
-  - '2017-2019'
-  image: 'koenig_bio.png'
-  text: '<a href="https://livermetabolism.com">Matthias K&ouml;nig</a> (PhD. in Biophysics) leads an junior research group for Systems Biology and Systems Medicine of the liver at the Humboldt University Berlin. His research areas include computational modeling, data science, development of bioinformatics methods and machine learning based on biological, medical and clinical data. He has been actively involved in the development of SBML, SED-ML and software supporting these standards: Lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a> and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>; contributor of the SBML simulation software <a href="http://libroadrunner.org/">libroadrunner</a> and <a href="http://tellurium.analogmachine.org/">tellurium</a>.'
-
 - name: 'David Nickerson'
   active: True
   terms:
+  - '2023-2025'
   - '2019-2021'
   - '2015-2017'
   - '2011-2013'
   image: 'nickerson_bio.jpg'
-  text: '<a href="https://unidirectory.auckland.ac.nz/profile/dnic019">David Nickerson</a> (PhD in Bioengineering) is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz" class="external text" title="http://www.abi.auckland.ac.nz/">Auckland Bioengineering Institute</a> where he leads the Auckland Physiome Group, working on several projects addressing reproducibility, discoverability, and reusability in computational physiology. David is also involved in many aspects of the CellML project as well as various cardiac modeling projects. He also develops several CellML-related software tools and is the current CellML delegate to the COMBINE coordination group.'
+  text: '<a href="https://profiles.auckland.ac.nz/d-nickerson">David Nickerson</a> (PhD in Bioengineering) is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz" class="external text" title="http://www.abi.auckland.ac.nz/">Auckland Bioengineering Institute</a> where he leads the Auckland Physiome Group, working on several projects addressing reproducibility, discoverability, and reusability in computational physiology. David is also involved in many aspects of the CellML project as well as various cardiac modeling projects. He also develops several CellML-related software tools and is the current CellML delegate to the COMBINE coordination group.'
+
+- name: 'Lucian Smith'
+  active: True
+  terms:
+    - '2022-2024'
+    - '2016-2018'
+  image: 'lucian_bio.jpg'
+  text: 'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for both the University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and for Caltech with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a>. He is the co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and, more recently, of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML editor, working extensively with the SBML Hierarchical Model Composition specification.'
 
 # -----------------------------------------------------------------------------
 # Former editors
@@ -71,6 +72,14 @@ editors:
   - '2018-2020'
   image: 'garny_bio.jpg'
   text: '<a href="https://scholar.google.de/citations?user=qKuU2aMAAAAJ&hl=en">Alan Garny</a> (DPhil in Computational Physiology) is the project manager and lead developer of <a href="http://www.opencor.ws/">OpenCOR</a>, a CellML-based modelling environment that relies on COMBINE standards (incl. SED-ML). He is also involved in the <a href="https://www.cellml.org/">CellML</a> project, of which he is currently an editor, and in cardiac electrophysiological modelling.'
+
+- name: 'Matthias K&ouml;nig'
+  active: False
+  terms:
+  - '2020-2022'
+  - '2017-2019'
+  image: 'koenig_bio.png'
+  text: '<a href="https://livermetabolism.com">Matthias K&ouml;nig</a> (PhD. in Biophysics) leads an junior research group for Systems Biology and Systems Medicine of the liver at the Humboldt University Berlin. His research areas include computational modeling, data science, development of bioinformatics methods and machine learning based on biological, medical and clinical data. He has been actively involved in the development of SBML, SED-ML and software supporting these standards: Lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a> and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>; contributor of the SBML simulation software <a href="http://libroadrunner.org/">libroadrunner</a> and <a href="http://tellurium.analogmachine.org/">tellurium</a>.'
 
 - name: 'Nicolas Le Nov&egrave;re'
   active: False
@@ -113,13 +122,6 @@ editors:
   - '2018-2020'
   image: 'sauro_bio.png'
   text: '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is a Professor in the University of Washington, Department of Bioengineering. Herbert has been involved in standards and software development in systems biology for a long time and was one of the founding members of the original SBML team. The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
-
-- name: 'Lucian Smith'
-  active: False
-  terms:
-    - '2016-2018'
-  image: 'lucian_bio.jpg'
-  text: 'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for both the University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and for Caltech with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a>. He is the co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and, more recently, of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML editor, working extensively with the SBML Hierarchical Model Composition specification.'
 
 - name: 'Dagmar Waltemath'
   active: False
