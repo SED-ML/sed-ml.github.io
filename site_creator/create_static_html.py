@@ -101,7 +101,6 @@ def _create_html(html_template='report.html'):
     """
     # template environment
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR),
-                      extensions=['jinja2.ext.autoescape'],
                       trim_blocks=True,
                       lstrip_blocks=True)
     template = env.get_template(html_template)
