@@ -9,19 +9,21 @@ editors:
   image: 'agmon_bio.jpg'
   text: '<a href="https://eagmon.github.io">Eran Agmon</a> is an Assistant Professor at the Center for Cell Analysis and Modeling at University of Connecticut Health. As the primary developer of <a href="https://vivarium-collective.github.io">Vivarium</a>, Eran has been developing software for integrating heterogeneous modeling methods to build multi-algorithmic, multi-scale simulations. He is interesting in building models of microbiomes that span molecular to multi-cellular and ecological scales.'
 
-- name: 'Tomas Helikar'
+- name: 'Weiwei Ai'
   active: True
   terms:
-  - '2021-2023'
-  image: 'helikar_bio.png'
-  text: '<a href="http://helikarlab.org">Dr. Helikar</a> is an Associate Professor in the Department of Biochemistry at the University of Nebraska - Lincoln. His research expertise is in computational systems biology, technology development, and STEM education.'
+  - '2024-2026'
+  image: 'ai_bio.jpg'
+  text: '<a href="https://profiles.auckland.ac.nz/weiwei-ai">Weiwei Ai</a> (PhD in Electrical and Electronic Engineering) is a Research Fellow at the Auckland Bioengineering Institute, New Zealand.  Her research areas include multiscale modeling, machine learning applications in computational physiology, and modeling software design. Employing standards such as CellML, SEDML, and semantic annotation, she automates model processes from construction, integration, and reduction to system analysis. She is also interested in incorporating prior knowledge and structured standards into machine learning techniques to integrate knowledge graphs from research literature, biological ontologies, annotated models, and simulation results, along with experimental data.
 
-- name: 'Jonathan Karr'
+- name: 'Matthias K&ouml;nig'
   active: True
   terms:
-  - '2021-2023'
-  image: 'karr_bio.png'
-  text: '<a href="https://karrlab.org">Jonathan Karr</a> is an Assistant Professor in the Department of Genetics and Genomic Sciences at the Icahn School of Medicine at Mount Sinai. The goal of Jonathan&apos;s research is to develop comprehensive whole-cell models of all of the biochemical activity inside cells to enable a predictive foundation for medicine and bioengineering analogous to the Newtonian foundation for mechanical engineering.'
+  - '2024-2026'
+  - '2020-2022'
+  - '2017-2019'
+  image: 'koenig_bio.png'
+  text: '<a href="https://livermetabolism.com">Matthias K&ouml;nig</a> (PhD. in Biophysics) leads an junior research group for Systems Biology and Systems Medicine of the liver at the Humboldt University Berlin. His research areas include computational modeling, data science, development of bioinformatics methods and machine learning based on biological, medical and clinical data. He has been actively involved in the development of SBML, SED-ML and software supporting these standards: Lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a> and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>; contributor of the SBML simulation software <a href="http://libroadrunner.org/">libroadrunner</a> and <a href="http://tellurium.analogmachine.org/">tellurium</a>.'
 
 - name: 'David Nickerson'
   active: True
@@ -73,13 +75,19 @@ editors:
   image: 'garny_bio.jpg'
   text: '<a href="https://scholar.google.de/citations?user=qKuU2aMAAAAJ&hl=en">Alan Garny</a> (DPhil in Computational Physiology) is the project manager and lead developer of <a href="http://www.opencor.ws/">OpenCOR</a>, a CellML-based modelling environment that relies on COMBINE standards (incl. SED-ML). He is also involved in the <a href="https://www.cellml.org/">CellML</a> project, of which he is currently an editor, and in cardiac electrophysiological modelling.'
 
-- name: 'Matthias K&ouml;nig'
+- name: 'Tomas Helikar'
   active: False
   terms:
-  - '2020-2022'
-  - '2017-2019'
-  image: 'koenig_bio.png'
-  text: '<a href="https://livermetabolism.com">Matthias K&ouml;nig</a> (PhD. in Biophysics) leads an junior research group for Systems Biology and Systems Medicine of the liver at the Humboldt University Berlin. His research areas include computational modeling, data science, development of bioinformatics methods and machine learning based on biological, medical and clinical data. He has been actively involved in the development of SBML, SED-ML and software supporting these standards: Lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a> and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>; contributor of the SBML simulation software <a href="http://libroadrunner.org/">libroadrunner</a> and <a href="http://tellurium.analogmachine.org/">tellurium</a>.'
+  - '2021-2023'
+  image: 'helikar_bio.png'
+  text: '<a href="http://helikarlab.org">Dr. Helikar</a> is an Associate Professor in the Department of Biochemistry at the University of Nebraska - Lincoln. His research expertise is in computational systems biology, technology development, and STEM education.'
+
+- name: 'Jonathan Karr'
+  active: False
+  terms:
+  - '2021-2023'
+  image: 'karr_bio.png'
+  text: '<a href="https://karrlab.org">Jonathan Karr</a> is an Assistant Professor in the Department of Genetics and Genomic Sciences at the Icahn School of Medicine at Mount Sinai. The goal of Jonathan&apos;s research is to develop comprehensive whole-cell models of all of the biochemical activity inside cells to enable a predictive foundation for medicine and bioengineering analogous to the Newtonian foundation for mechanical engineering.'
 
 - name: 'Nicolas Le Nov&egrave;re'
   active: False
