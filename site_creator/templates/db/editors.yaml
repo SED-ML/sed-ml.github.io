@@ -14,7 +14,7 @@ editors:
   terms:
   - '2024-2026'
   image: 'ai_bio.jpg'
-  text: '<a href="https://profiles.auckland.ac.nz/weiwei-ai">Weiwei Ai</a> (PhD in Electrical and Electronic Engineering) is a Research Fellow at the Auckland Bioengineering Institute, New Zealand.  Her research areas include multiscale modeling, machine learning applications in computational physiology, and modeling software design. Employing standards such as CellML, SEDML, and semantic annotation, she automates model processes from construction, integration, and reduction to system analysis. She is also interested in incorporating prior knowledge and structured standards into machine learning techniques to integrate knowledge graphs from research literature, biological ontologies, annotated models, and simulation results, along with experimental data.
+  text: '<a href="https://profiles.auckland.ac.nz/weiwei-ai">Weiwei Ai</a> (PhD in Electrical and Electronic Engineering) is a Research Fellow at the Auckland Bioengineering Institute, New Zealand.  Her research areas include multiscale modeling, machine learning applications in computational physiology, and modeling software design. Employing standards such as CellML, SEDML, and semantic annotation, she automates model processes from construction, integration, and reduction to system analysis. She is also interested in incorporating prior knowledge and structured standards into machine learning techniques to integrate knowledge graphs from research literature, biological ontologies, annotated models, and simulation results, along with experimental data.'
 
 - name: 'Matthias K&ouml;nig'
   active: True
