@@ -91,6 +91,7 @@ tools:
   - L1V2
   - L1V3
   - L1V4
+  - L1V5
   modelLanguages:
   - SBML
 

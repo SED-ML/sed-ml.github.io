@@ -46,6 +46,7 @@ libraries:
   - L1V2
   - L1V3
   - L1V4
+  - L1V5
 
 - name:       'libSedML (old version)'
   link:       'http://libsedml.sf.net'
