@@ -35,13 +35,13 @@ editors:
   image: 'nickerson_bio.jpg'
   text: '<a href="https://profiles.auckland.ac.nz/d-nickerson">David Nickerson</a> (PhD in Bioengineering) is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz" class="external text" title="http://www.abi.auckland.ac.nz/">Auckland Bioengineering Institute</a> where he leads the Auckland Physiome Group, working on several projects addressing reproducibility, discoverability, and reusability in computational physiology. David is also involved in many aspects of the CellML project as well as various cardiac modeling projects. He also develops several CellML-related software tools and is the current CellML delegate to the COMBINE coordination group.'
 
-- name: 'Lucian Smith'
+- name: 'Herbert Sauro'
   active: True
   terms:
-    - '2022-2024'
-    - '2016-2018'
-  image: 'lucian_bio.jpg'
-  text: 'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for both the University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and for Caltech with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a>. He is the co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and, more recently, of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML editor, working extensively with the SBML Hierarchical Model Composition specification.'
+  - '2018-2020'
+  - '2025-2027'
+  image: 'sauro_bio.png'
+  text: '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is a Professor in the University of Washington, Department of Bioengineering. Herbert has been involved in standards and software development in systems biology for a long time and was one of the founding members of the original SBML team. The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
 
 # -----------------------------------------------------------------------------
 # Former editors
@@ -124,12 +124,13 @@ editors:
   image: 'sahle_bio.jpg'
   text: 'Sven Sahle (Ph. D. in Theoretical Chemistry) is a junior group leader in the <a href="http://www.cos.uni-heidelberg.de/index.php/u.kummer?l=_e" class="external text" title="http://www.cos.uni-heidelberg.de/index.php/u.kummer?l=_e" rel="nofollow">department for modeling of biological processes at the University of Heidelberg</a>. He is one of the lead software engineers of <a href="http://www.copasi.org" class="external text" title="http://www.copasi.org" rel="nofollow">COPASI</a>. His interests include kinetic modeling of signaling and metabolic processes with a focus on dynamic properties of biochemical models.'
 
-- name: 'Herbert Sauro'
-  active: False
+- name: 'Lucian Smith'
+  active: True
   terms:
-  - '2018-2020'
-  image: 'sauro_bio.png'
-  text: '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is a Professor in the University of Washington, Department of Bioengineering. Herbert has been involved in standards and software development in systems biology for a long time and was one of the founding members of the original SBML team. The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
+    - '2022-2024'
+    - '2016-2018'
+  image: 'lucian_bio.jpg'
+  text: 'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for the University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and worked with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a> through 2020 as an employee, and since then as a volunteer. He is the co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML editor, working extensively with several package specifications, including the SBML Hierarchical Model Composition specification.'
 
 - name: 'Dagmar Waltemath'
   active: False
