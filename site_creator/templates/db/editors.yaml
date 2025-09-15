@@ -125,7 +125,7 @@ editors:
   text: 'Sven Sahle (Ph. D. in Theoretical Chemistry) is a junior group leader in the <a href="http://www.cos.uni-heidelberg.de/index.php/u.kummer?l=_e" class="external text" title="http://www.cos.uni-heidelberg.de/index.php/u.kummer?l=_e" rel="nofollow">department for modeling of biological processes at the University of Heidelberg</a>. He is one of the lead software engineers of <a href="http://www.copasi.org" class="external text" title="http://www.copasi.org" rel="nofollow">COPASI</a>. His interests include kinetic modeling of signaling and metabolic processes with a focus on dynamic properties of biochemical models.'
 
 - name: 'Lucian Smith'
-  active: True
+  active: False
   terms:
     - '2022-2024'
     - '2016-2018'
