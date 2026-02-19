@@ -2,9 +2,7 @@ name: Continuous integration and deployment
 
 on:
   push:
-
-  schedule:
-    - cron: '0 0 * * 0' # weekly
+    branches: [ master ]
 
   workflow_dispatch:
 
@@ -22,7 +20,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.12'
 
       - name: Setup pip cache
         uses: actions/cache@v4
@@ -63,10 +61,10 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.12'
 
       - name: Setup pip cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: /opt/hostedtoolcache/Python
           key: ${{ runner.os }}-pip-${{ hashFiles('site_creator/requirements.txt') }}
