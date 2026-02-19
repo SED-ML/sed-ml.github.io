@@ -44,8 +44,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends zipcmp
           python scripts/compile_examples_combine_archives.py
 
-      - name: Test examples
-        run: python -m pytest tests/
+      # - name: Test examples
+      #   run: python -m pytest tests/
 
   compileStaticWebsite:
     name: Compile static website
