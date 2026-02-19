@@ -28,8 +28,8 @@ editors:
 - name: 'Herbert Sauro'
   active: True
   terms:
-  - '2018-2020'
   - '2025-2027'
+  - '2018-2020'
   image: 'sauro_bio.png'
   text: '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is a Professor in the University of Washington, Department of Bioengineering. Herbert has been involved in standards and software development in systems biology for a long time and was one of the founding members of the original SBML team. The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
 
