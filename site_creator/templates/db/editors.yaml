@@ -2,19 +2,19 @@ editors:
 # -----------------------------------------------------------------------------
 # Current editors
 # -----------------------------------------------------------------------------
-- name: 'Eran Agmon'
-  active: True
-  terms:
-  - '2023-2025'
-  image: 'agmon_bio.jpg'
-  text: '<a href="https://eagmon.github.io">Eran Agmon</a> is an Assistant Professor at the Center for Cell Analysis and Modeling at University of Connecticut Health. As the primary developer of <a href="https://vivarium-collective.github.io">Vivarium</a>, Eran has been developing software for integrating heterogeneous modeling methods to build multi-algorithmic, multi-scale simulations. He is interesting in building models of microbiomes that span molecular to multi-cellular and ecological scales.'
-
 - name: 'Weiwei Ai'
   active: True
   terms:
   - '2024-2026'
   image: 'ai_bio.jpg'
   text: '<a href="https://profiles.auckland.ac.nz/weiwei-ai">Weiwei Ai</a> (PhD in Electrical and Electronic Engineering) is a Research Fellow at the Auckland Bioengineering Institute, New Zealand.  Her research areas include multiscale modeling, machine learning applications in computational physiology, and modeling software design. Employing standards such as CellML, SEDML, and semantic annotation, she automates model processes from construction, integration, and reduction to system analysis. She is also interested in incorporating prior knowledge and structured standards into machine learning techniques to integrate knowledge graphs from research literature, biological ontologies, annotated models, and simulation results, along with experimental data.'
+
+- name: 'Jarrah Dowrick'
+  active: True
+  terms:
+  - '2026-2028'
+  image: 'dowrick_bio.jpg'
+  text: '<a href="https://profiles.auckland.ac.nz/j-dowrick">Jarrah Dowrick</a> is a Research Fellow with the Gastrointestinal Research Group at the Auckland Bioengineering Institute (ABI) and an active member of the Laboratory for Translational Research in Gastroenterology and Emerging Technologies (TARGET Lab). His current research focuses on advancing our understanding of bowel-based disorders of gut-brain interaction (DGBI), such as irritable bowel syndrome and functional constipation, by integrating experimental physiology, machine learning, and biophysical modelling. His research is supported by the ABI 12 Labours grant.'
 
 - name: 'Matthias K&ouml;nig'
   active: True
@@ -25,16 +25,6 @@ editors:
   image: 'koenig_bio.png'
   text: '<a href="https://livermetabolism.com">Matthias K&ouml;nig</a> (PhD. in Biophysics) leads an junior research group for Systems Biology and Systems Medicine of the liver at the Humboldt University Berlin. His research areas include computational modeling, data science, development of bioinformatics methods and machine learning based on biological, medical and clinical data. He has been actively involved in the development of SBML, SED-ML and software supporting these standards: Lead-developer of <a href="https://github.com/matthiaskoenig/cy3sbml">cy3sbml</a> and <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>; contributor of the SBML simulation software <a href="http://libroadrunner.org/">libroadrunner</a> and <a href="http://tellurium.analogmachine.org/">tellurium</a>.'
 
-- name: 'David Nickerson'
-  active: True
-  terms:
-  - '2023-2025'
-  - '2019-2021'
-  - '2015-2017'
-  - '2011-2013'
-  image: 'nickerson_bio.jpg'
-  text: '<a href="https://profiles.auckland.ac.nz/d-nickerson">David Nickerson</a> (PhD in Bioengineering) is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz" class="external text" title="http://www.abi.auckland.ac.nz/">Auckland Bioengineering Institute</a> where he leads the Auckland Physiome Group, working on several projects addressing reproducibility, discoverability, and reusability in computational physiology. David is also involved in many aspects of the CellML project as well as various cardiac modeling projects. He also develops several CellML-related software tools and is the current CellML delegate to the COMBINE coordination group.'
-
 - name: 'Herbert Sauro'
   active: True
   terms:
@@ -42,6 +32,15 @@ editors:
   - '2025-2027'
   image: 'sauro_bio.png'
   text: '<a href="https://bioe.uw.edu/portfolio-items/sauro/">Herbert Sauro</a> (PhD in Systems Biology) is a Professor in the University of Washington, Department of Bioengineering. Herbert has been involved in standards and software development in systems biology for a long time and was one of the founding members of the original SBML team. The <a href="http://tellurium.analogmachine.org/">Tellurium Python modeling platform</a> which has been developed with his collaborators and students, supports the current SED-ML and COMBINE standards.'
+
+- name: 'Lucian Smith'
+  active: True
+  terms:
+    - '2026-2028'
+    - '2022-2024'
+    - '2016-2018'
+  image: 'lucian_bio.jpg'
+  text: 'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for the University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and worked with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a> through 2020 as an employee, and since then as a volunteer. He is the co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML editor, working extensively with several package specifications, including the SBML Hierarchical Model Composition specification.'
 
 # -----------------------------------------------------------------------------
 # Former editors
@@ -52,6 +51,13 @@ editors:
   - '2011-2012'
   image: 'adams_bio.jpg'
   text: 'Richard Adams (Ph.D. in Cell Biology) is software project manager at the <a href="http://csbe.bio.ed.ac.uk/" class="external text" title="http://csbe.bio.ed.ac.uk/" rel="nofollow">Centre for Systems Biology, Edinburgh</a>. He works on the <a href="http://www.sbsi.ed.ac.uk" class="external text" title="http://www.sbsi.ed.ac.uk" rel="nofollow">SBSI systems biology software framework</a>, SED-ML tools and the jlibsedml Java library for SED-ML.'
+
+- name: 'Eran Agmon'
+  active: False
+  terms:
+  - '2023-2025'
+  image: 'agmon_bio.jpg'
+  text: '<a href="https://eagmon.github.io">Eran Agmon</a> is an Assistant Professor at the Center for Cell Analysis and Modeling at University of Connecticut Health. As the primary developer of <a href="https://vivarium-collective.github.io">Vivarium</a>, Eran has been developing software for integrating heterogeneous modeling methods to build multi-algorithmic, multi-scale simulations. He is interesting in building models of microbiomes that span molecular to multi-cellular and ecological scales.'
 
 - name: 'Frank Bergmann'
   active: False
@@ -110,6 +116,16 @@ editors:
   image: 'moraru_bio.jpg'
   text: '<a href="http://facultydirectory.uchc.edu/profile?profileId=Moraru-Ion">Ion Moraru</a> (M.D., Ph. D.) is a Professor of Cell Biology in the <a href="http://www.ccam.uchc.edu/">Richard D. Berlin Center for Cell Analysis and Modeling</a> at the University of Connecticut.'
 
+- name: 'David Nickerson'
+  active: False
+  terms:
+  - '2023-2025'
+  - '2019-2021'
+  - '2015-2017'
+  - '2011-2013'
+  image: 'nickerson_bio.jpg'
+  text: '<a href="https://profiles.auckland.ac.nz/d-nickerson">David Nickerson</a> (PhD in Bioengineering) is a Senior Research Fellow in the <a href="http://www.abi.auckland.ac.nz" class="external text" title="http://www.abi.auckland.ac.nz/">Auckland Bioengineering Institute</a> where he leads the Auckland Physiome Group, working on several projects addressing reproducibility, discoverability, and reusability in computational physiology. David is also involved in many aspects of the CellML project as well as various cardiac modeling projects. He also develops several CellML-related software tools and is the current CellML delegate to the COMBINE coordination group.'
+
 - name: 'Brett Olivier'
   active: False
   terms:
@@ -123,14 +139,6 @@ editors:
   - '2014-2016'
   image: 'sahle_bio.jpg'
   text: 'Sven Sahle (Ph. D. in Theoretical Chemistry) is a junior group leader in the <a href="http://www.cos.uni-heidelberg.de/index.php/u.kummer?l=_e" class="external text" title="http://www.cos.uni-heidelberg.de/index.php/u.kummer?l=_e" rel="nofollow">department for modeling of biological processes at the University of Heidelberg</a>. He is one of the lead software engineers of <a href="http://www.copasi.org" class="external text" title="http://www.copasi.org" rel="nofollow">COPASI</a>. His interests include kinetic modeling of signaling and metabolic processes with a focus on dynamic properties of biochemical models.'
-
-- name: 'Lucian Smith'
-  active: False
-  terms:
-    - '2022-2024'
-    - '2016-2018'
-  image: 'lucian_bio.jpg'
-  text: 'Lucian Smith (PhD. in Biochemistry) works as a Research Scientist for the University of Washington with the <a href="http://sys-bio.org/">Sauro lab</a>, and worked with the <a href="http://sbml.org/About#The_SBML_Team">SBML Team</a> through 2020 as an employee, and since then as a volunteer. He is the co-creator of <a href="http://antimony.sourceforge.net/">Antimony</a> and of <a href="http://phrasedml.sf.net/">phraSED-ML</a>, and has been an SBML editor, working extensively with several package specifications, including the SBML Hierarchical Model Composition specification.'
 
 - name: 'Dagmar Waltemath'
   active: False
